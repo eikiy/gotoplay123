@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+blockquote, q { quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none;}
+input, textarea { margin:0; padding:0;}
+* {-webkit-text-size-adjust:none;}
+a{text-decoration:none;}
+fieldset, img { border:0;}
+ol, ul { list-style:none;}
+abbr, acronym { border:0;}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+* html .clearfix {height: 1%;}
+*:first-child + html .clearfix { min-height: 1%;}
+
+body, h1, h2, h3, h4, h5, h6, p {font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: normal; color: #333;}
+p{font-size: 15px;}
+a{ text-decoration:none; outline: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+a:hover{ text-decoration:none;}
+select, input, textarea, button {  font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
+*:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; }
+html, body{ height: 100%; }
+
+/*===== start ======*/
+.ContentsBox{ max-width: 1380px; margin: 0 auto; min-width: 320px;}
+
+/*header*/
+.HeaderBox{ width: 100%; padding: 14px 0 0 0; min-height: 30px; background-color: #fff; z-index: 15; position: fixed; top: 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
+.HeaderBox .Menu h1.Gotopaly123_logo{ float: left; }
+.HeaderBox .Menu h1.Gotopaly123_logo a{width: 145px; height: 83px; display: block; background: url(../images/logo.png) center center no-repeat; background-size: contain;}
+.HeaderBox .Menu ul.menu{ float: left; padding-left: 90px;}
+.HeaderBox .Menu ul.menu li{ float: left; }
+.HeaderBox .Menu ul.menu li p{ position: relative; font-size: 17px;}
+.HeaderBox .Menu ul.menu li p a{ line-height: 60px; padding: 10px 35px 25px 35px; color: #6e6d6d; display: block; cursor: pointer; position: relative;}
+.HeaderBox .Menu ul.menu li p a:hover{ color: #f08700;}
+.HeaderBox .Menu ul.menu li p.btn_in a{ color: #f08700; }
+.HeaderBox .Menu ul.menu li p.btn_in a::after{ position: absolute; bottom: 0px; left: 0;content: ""; width: 100%; height: 4px; display: block; background-color: #f08700;}
+
+.HeaderBox .Menu .searchBox{ width: 100%; max-width: 195px; float: left; position: relative;}
+.HeaderBox .Menu .searchBox input{ width: calc(100% - 65px); height: 45px; line-height: 45px; color: #333; border-radius: 40px; background-color: #f6f6f6; font-size: 15px; padding: 0 45px 0 20px; }
+.HeaderBox .Menu .searchBox input::-webkit-input-placeholder { /* WebKit browsers */color:#888888;}
+.HeaderBox .Menu .searchBox input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:#888888;}
+.HeaderBox .Menu .searchBox input::-moz-placeholder { /* Mozilla Firefox 19+ */color:#888888;}
+.HeaderBox .Menu .searchBox input:-ms-input-placeholder { /* Internet Explorer 10+ */color:#888888;}
+.HeaderBox .Menu .searchBox::after{ content: '\f002'; width: 40px; height: 34px; line-height: 45px; position: absolute; top: 0px; cursor: pointer; right: 0px; color: #cfcfcf;  font-family:  Font Awesome\ 5 Free; font-weight: 900; }
+/*.HeaderBox .Menu .searchBox input[type=text], .HeaderBox .Menu .searchBox textarea { -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out;  outline: none;}
+.HeaderBox .Menu .searchBox input[type=text]:focus, .HeaderBox .Menu .searchBox textarea:focus { background-color: #000;}*/
+
+.HeaderBox .Menu ul.userBox{ float: right; text-align: right;padding: 28px 0 10px 0;}
+.HeaderBox .Menu ul.userBox li{ display: inline-block; margin: 0 10px; position: relative; }
+.HeaderBox .Menu ul.userBox li p a{ color: #666;}
+.HeaderBox .Menu ul.userBox li p a:hover{text-decoration: underline;}
+.HeaderBox .Menu ul.userBox li p a.p_green{ color: #68b82d; }
+.HeaderBox .Menu ul.userBox li p a.p_org{color:#f08700;}
+.HeaderBox .Menu ul.userBox li p.login{ position: relative; padding-left: 45px; cursor: pointer; }
+.HeaderBox .Menu ul.userBox li p.login span.img_avatar{ position: absolute; left: 0; top: -10px; width: 38px; height: 38px; display: inline-block; background-color: #f6f6f6; border-radius: 50%;}
+
+.HeaderBox .Menu ul.userBox li ul.user_toolBox{ display: none; position: absolute; top: 40px; right: 0; z-index: 14; width: 176px; background-color: #fff; padding: 15px 0; border-radius: 5px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);}
+.HeaderBox .Menu ul.userBox li ul.user_toolBox li{ text-align: center; display: block; }
+.HeaderBox .Menu ul.userBox li ul.user_toolBox li p a{line-height: 23px; padding: 8px 0; display: block;}
+.HeaderBox .Menu ul.userBox li ul.user_toolBox li p a:hover{ color: #f08700; text-decoration: none;}
+
+.HeaderBox .Menu .other_tools{float: right; padding: 16px 16px 16px 0;}
+
+.HeaderBox .the_language{ width:120px; float: left; position: relative;}
+.HeaderBox .the_language .form-select{ width: calc(100% - 120px); max-width: 125px;  border:none; display: block; }
+.HeaderBox .the_language .form-select{ background-color: transparent; width: 100%;height: 45px; padding: 8px 10px; border-radius: 45px; padding: 0 20px; font-size: 15px; line-height: 24px;  color: #666666; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
+.HeaderBox .the_language .form-select::-ms-expand{  display: none;}/*IE 10 */
+.HeaderBox .the_language::after{ content: "\f107"; position: absolute; top: 15px;  color: #555; right: 15px; display: inline-block; font-family:  Font Awesome\ 5 Free; font-size: inherit; text-rendering: auto; font-weight: 900; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+.HeaderBox .subMenuBox{ display: none; position: fixed; top: 109px; left: 0; width: 100%; background-color: rgba(0,0,0,.7); padding: 15px 0; z-index: 10; }
+.HeaderBox .subMenuBox ul.Activities_list{ float: left; width:calc(100% - 310px); text-align: left; padding-top: 10px;}
+.HeaderBox .subMenuBox ul.Activities_list li{ display: inline-block; padding-right: 10px; }
+.HeaderBox .subMenuBox ul.Activities_list li p{ font-size: 16px; min-width: 100px; position: relative; padding-left: 20px; }
+.HeaderBox .subMenuBox ul.Activities_list li p::before{content: "\f105"; position: absolute; left: 0; top: 11px;font-family:  Font Awesome\ 5 Free; font-weight: 900; color: #fff;}
+.HeaderBox .subMenuBox ul.Activities_list li p a{ color: #fff; line-height: 40px; padding: 0; }
+.HeaderBox .subMenuBox ul.Activities_list li p:hover{ color: #f08700; }
+
+.HeaderBox .subMenuBox .ad300x100{ float: right; width: 300px; height: 100px; background-color: #dfe4ea;}
+/**/
+.middle_contents{ width: 100%; background-color: #f8f9fa; padding: 40px 0; padding-top: 150px;}
+.middle_contents .leftBox{float: left;width: calc(100% - 325px);}
+.middle_contents .leftBox h2.h2_title{ font-size: 24px; padding-bottom: 25px; position: relative; font-weight: bold; padding-left: 50px;}
+.middle_contents .leftBox h2.h2_title::after{ content: ""; position: absolute; top: -8px; left: 0px; width: 45px; height: 45px;}
+.middle_contents .leftBox h2.h2_icon_01::after{ background:url(../images/event_type_icon_01.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_02::after{ background:url(../images/event_type_icon_02.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_03::after{ background:url(../images/event_type_icon_03.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_04::after{ background:url(../images/event_type_icon_04.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_05::after{ background:url(../images/event_type_icon_05.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_06::after{ background:url(../images/event_type_icon_06.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_07::after{ background:url(../images/event_type_icon_07.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_08::after{ background:url(../images/event_type_icon_08.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_09::after{ background:url(../images/event_type_icon_09.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_10::after{ background:url(../images/event_type_icon_10.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_11::after{ background:url(../images/event_type_icon_11.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_12::after{ background:url(../images/event_type_icon_12.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_13::after{ background:url(../images/event_type_icon_13.png) center center no-repeat;  background-size: contain; }
+.middle_contents .leftBox h2.h2_icon_14::after{ background:url(../images/event_type_icon_14.png) center center no-repeat;  background-size: contain; }
+
+
+.middle_contents .leftBox h2.h2_title a{ color: #333; }
+.middle_contents .leftBox h2.h2_title a.more{position: absolute; top: 12px; right: 0; font-size: 15px; color: #68b82d; padding-right: 5px;}
+.middle_contents .leftBox h2.h2_title a.more:hover{ text-decoration: underline; }
+.middle_contents .leftBox h2.h2_title span{color: #848484; padding-left: 8px; font-size: 16px; font-weight: normal;}
+
+.middle_contents .leftBox ul.events_list{ width: 100%; padding-bottom: 50px; }
+.middle_contents .leftBox ul.events_list li{ width:calc(33.333% - 16px); float: left; margin: 0 12px 22px;background-color: #fff; -moz-box-shadow: 1px 1px 1px 0 rgba(51,51,51,0.1); -webkit-box-shadow: 1px 1px 1px 0 rgba(51,51,51,0.1); box-shadow: 1px 1px 1px 0 rgba(51,51,51,0.1);}
+.middle_contents .leftBox ul.events_list li:nth-child(1) { margin-left: 0;}
+.middle_contents .leftBox ul.events_list li:nth-child(3) { margin-right: 0;}
+.middle_contents .leftBox ul.events_list li:nth-child(4) { display: none;}
+
+.middle_contents .leftBox .events_list .photo{height: 230px; position: relative; background-size: cover; background-color: #eee; background-repeat: no-repeat; background-position: center center;}
+.middle_contents .leftBox .events_list .photo:hover{opacity: .9;}
+.middle_contents .leftBox .events_list .photo p.where{ position: absolute; bottom: 10px; right: 10px; font-size: 14px; line-height: 24px; padding: 3px 15px; border-radius: 20px; color: #fff; background-color: rgba(0,0,0,.8);}
+.middle_contents .leftBox .events_list .event_post_Summery{padding: 12px 0 10px; width: calc(100% - 30px); margin: 0 auto;}
+.middle_contents .leftBox .events_list .event_post_Summery p.date{ font-size: 15px; color: #777777; padding-bottom: 3px; }
+.middle_contents .leftBox .events_list .event_post_Summery h3.even_name{font-size: 20px; line-height: 30px;}
+.middle_contents .leftBox .events_list .event_post_Summery h3.even_name a{ color: #333; }
+.middle_contents .leftBox .events_list .event_post_Summery h3.even_name a:hover{ color: #68b82d;}
+.middle_contents .leftBox .events_list .event_post_Summery .other_info{width: 100%; padding-top:8px; }
+.middle_contents .leftBox .events_list .event_post_Summery .other_info p{float: left; color: #a3a3a3; font-size: 13px; line-height: 16px; padding-right: 10px; position: relative; padding-left: 20px; margin-bottom: 8px;}
+.middle_contents .leftBox .events_list .event_post_Summery .other_info p::before{ content: ""; position: absolute; top: 0; left: 0; font-weight: 900; font-family: Font Awesome\ 5 Free; }
+.middle_contents .leftBox .events_list .event_post_Summery .other_info p.heart::before{content: "\f004";}
+.middle_contents .leftBox .events_list .event_post_Summery .other_info p.eye::before{content: "\f06e";}
+.middle_contents .leftBox .events_list .event_post_Summery .other_info p.good::before{content: "\f164";}
+
+.middle_contents .AdBox{ float: right; width: 300px; }
+.middle_contents .AdBox .ad300x600{width: 300px; height: 600px; display: block; background-color: #dfe4ea; margin-bottom: 25px;}
+
+/*footer*/
+.FooterBox{ width: 100%; border-top: 4px solid #494744;}
+.FooterBox .serviceBox{width: 100%; background-color: #f2f0eb;padding: 32px 0;}
+.FooterBox .serviceBox .infoBox{float: left; width:calc(22% - 10px); padding-right: 10px;}
+.FooterBox .serviceBox .infoBox h4{ font-size: 16px; color: #666; line-height: 26px; font-weight:bold; padding-bottom: 10px;}
+.FooterBox .serviceBox .infoBox h5{ font-size: 14px; color: #666; line-height: 26px; padding-bottom: 10px;}
+.FooterBox .serviceBox .infoBox p{line-height: 26px; color: #666;}
+.FooterBox .serviceBox .infoBox p a{ color: #666;}
+.FooterBox .serviceBox .infoBox p a:hover{text-decoration: underline;}
+.FooterBox .serviceBox .infoBox p.company{ font-size: 14px; color: #959595;line-height: 22px; padding-top: 10px;}
+.FooterBox .serviceBox .infoBox p.doubt{ max-width: 328px;}
+.FooterBox .serviceBox .infoBox p.doubt span{font-weight: bold;}
+.FooterBox .serviceBox .box-w{ width: calc(28% - 10px); }
+
+.FooterBox .serviceBox .infoBox .followUsBox{ width: 100%; }
+.FooterBox .serviceBox .infoBox p.icon{ text-align: left; }
+.FooterBox .serviceBox .infoBox .followUsBox p.icon a{width: 40px; height: 40px; display: inline-block; border-radius: 50%; overflow: hidden; margin-right: 10px;}
+.FooterBox .serviceBox .infoBox .followUsBox p.icon a.fb{ background: url(../images/follow_us_icon_fb.png) center center no-repeat; background-size: contain;}
+.FooterBox .serviceBox .infoBox .followUsBox p.icon a.youtube{ background: url(../images/follow_us_icon_youtube.png) center center no-repeat; background-size: contain;}
+.FooterBox .serviceBox .infoBox .followUsBox p.icon a.line{ background: url(../images/follow_us_icon_line.png) center center no-repeat; background-size: contain;}
+.FooterBox .serviceBox .infoBox .followUsBox p.icon a:hover{ opacity: .9; }
+
+.FooterBox .serviceBox .infoBox .shareUsBox{ width: 100%; }
+.FooterBox .serviceBox .infoBox .shareUsBox p.icon a{ color: #ffffff; display: inline-block; padding:3px 14px; border-radius: 4px; background-color: #b8b4ab; padding-left: 30px; margin:0 5px 5px 0;}
+.FooterBox .serviceBox .infoBox .shareUsBox p.icon a.fb{ background: url(../images/follow_us_icon_fb_gray.png) center left no-repeat #b8b4ab; background-size: contain;}
+.FooterBox .serviceBox .infoBox .shareUsBox p.icon a.line{ background: url(../images/follow_us_icon_line_gray.png) 5px center no-repeat #b8b4ab; background-size: contain; padding-left: 40px;}
+.FooterBox .serviceBox .infoBox .shareUsBox p.icon a:hover{ text-decoration: none;}
+.FooterBox .serviceBox .infoBox .shareUsBox p.icon a.fb:hover{ background: url(../images/follow_us_icon_fb_gray.png) center left no-repeat #3b5998; background-size: contain;}
+.FooterBox .serviceBox .infoBox .shareUsBox p.icon a.line:hover{ background: url(../images/follow_us_icon_line_gray.png) 5px center no-repeat #00c200; background-size: contain;}
+
+.FooterBox .downloadAppBox{width: 100%; background-color: #f8f9fa; padding: 25px 0 0 0;}
+.FooterBox .downloadAppBox .lBox{ float: left; padding-bottom: 20px;}
+.FooterBox .downloadAppBox .lBox h5{ color: #666; font-size: 16px; padding-bottom: 10px; }
+.FooterBox .downloadAppBox .lBox ul{width: 100%;}
+.FooterBox .downloadAppBox .lBox ul li{float: left; margin-right: 10px;}
+.FooterBox .downloadAppBox .lBox ul li a{float: left;}
+.FooterBox .downloadAppBox .lBox ul li a.btn{ text-indent: -9999px; width: 250px; height: 75px; display:inline-block;  border-radius: 4px; overflow: hidden;  }
+.FooterBox .downloadAppBox .lBox ul li a.qrcode{ width: 75px; height: 75px; display: inline-block; margin: 0 10px;}
+.FooterBox .downloadAppBox .lBox ul li.ios a.btn{ background: url(../images/downloadAppBox_ios.png) center center no-repeat #fff; background-size: contain;}
+.FooterBox .downloadAppBox .lBox ul li.ios a.qrcode{ background:url(../images/downloadAppBox_ios_qrcode.png) center center no-repeat; background-size: contain; }
+.FooterBox .downloadAppBox .lBox ul li.android a.btn{ background: url(../images/downloadAppBox_android.png) center center no-repeat #fff; background-size: contain;}
+.FooterBox .downloadAppBox .lBox ul li.android a.qrcode{background:url(../images/downloadAppBox_android_qrcode.png) center center no-repeat; background-size: contain; }
+
+.FooterBox .downloadAppBox .fbBox{float: right; width: 380px; height: 130px; background-color: #b8b4ab; overflow: hidden;}
+.FooterBox .copyright{ width: 100%; background-color: #333333; padding: 32px 0;}
+.FooterBox .copyright p{text-align: center; color: #fff; font-size: 12px; line-height: 22px; letter-spacing: 1px;}
+
+
+
+/*==== RWD ====*/
+@media (max-width:1380px){
+	.ContentsBox{ width:95%; margin: 0 auto; }
+	.HeaderBox .Menu ul.menu{padding-left: 35px;}
+	.HeaderBox .Menu ul.menu li p a{padding: 10px 24px 25px 24px;}
+	.HeaderBox .Menu .searchBox{max-width: 170px;}
+}
+
+@media (max-width:1200px){
+	.HeaderBox .Menu ul.menu{padding-left: 15px;}
+	.HeaderBox .Menu ul.menu li p a{padding: 10px 15px 25px 15px;}
+
+	.middle_contents .leftBox ul.events_list li{ width: calc(50% - 16px);}
+	.middle_contents .leftBox ul.events_list li:nth-child(2) { margin-right: 0;}
+	.middle_contents .leftBox ul.events_list li:nth-child(3) { margin-right: 12px; margin-left: 0;}
+	.middle_contents .leftBox ul.events_list li:nth-child(4) { margin-right: 0; display: block; }
+}
+@media (max-width:1130px){
+	.HeaderBox .Menu h1.Gotopaly123_logo a{height: 58px;}
+	.HeaderBox .Menu ul.userBox{display: none;}
+	.HeaderBox .Menu ul.menu li p a{ padding: 10px 24px 25px 24px;}
+	.HeaderBox .Menu .other_tools{padding: 5px 30px 16px 0;}
+}
+@media (max-width:1000px){
+	.middle_contents .leftBox{width: 100%;}
+	.middle_contents .AdBox{display: none;}
+}
+@media (max-width:850px){
+	.HeaderBox .Menu ul.menu{ padding-left: 35px;}
+}
+@media (max-width:600px){
+	.ContentsBox{width: 90%;}
+	.middle_contents .leftBox ul.events_list li{ width: calc(100%); margin: 0  0 22px;}
+	.middle_contents .leftBox ul.events_list li:nth-child(4){display: none;}
+}
