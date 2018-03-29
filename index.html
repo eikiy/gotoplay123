@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="on-server/css/fontawesome-all.css">
 <script type="text/javascript" src="on-server/js/fontawesome-all.css.js"></script>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
@@ -21,9 +22,10 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/retina.min.js"></script>
-    
-<!--     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script> -->
+<script type="text/javascript" src="js/menu.js"></script>    
+
+  <!-- jQuery -->
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 <script src="js/jquery.vide.js"></script>
 <script>
 //  $(document).ready(function () {
@@ -41,7 +43,32 @@
 //    });
 //  });
 </script>
-<script type="text/javascript" src="js/menu.js"></script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+   <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth:300,
+        itemMargin: 8,
+        minItems: 1,
+        maxItems: 3,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+<!--     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script> -->
+
+
 
 </head>
 <body class="page">
@@ -54,29 +81,47 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="mobile-nav" id="sideMenu">
-        <ul class="userBox clearfix">
+    <div class="mobile-nav" id="sideMenu">
+        <!-- 未登入前顯示 -->
+        <!-- <ul class="userBox clearfix">
             <li><p><a class="p_green" href="apply_for_leader.html">申請成為活動發起人</a></p></li>
             <li><p class="both2"><a class="p_org" href="register.html">免費註冊</a> <a href="login.html">登入</a></p></li>
-            <!-- <li><p class="login"><span class="img_avatar" style="background:url(images/img_default_avatar.png) center center no-repeat;  background-size: contain;"></span>登入</p>
+        </ul> -->
+        <!-- 未登入前顯示 END-->
+        <!-- 登入後顯示 -->
+        <ul class="userBox clearfix">
+            <!-- <li><p class="both2"><a class="p_org" href="register.html">免費註冊</a> <a href="login.html">登入</a></p></li> -->
+            <li><p class="login"><span class="img_avatar" style="background:url(images/img_default_avatar.png) center center no-repeat;  background-size: contain;"></span>TonyLiu123</p>
                 <ul class="user_toolBox">
                     <li><p><a href="#">帳號管理</a></p></li>
                     <li><p><a href="#">編輯個人資料</a></p></li>
                     <li><p><a href="#">編輯個人/領隊資料</a></p></li>
                     <li><p><a href="#">我的報名活動</a></p></li>
                     <li><p><a href="#">我的發起活動</a></p></li>
-                    <li><p><a href="#">登出</a></p></li>
+                    <li><p><a class="p_green" href="apply_for_leader.html">申請成為活動發起人</a></p></li>
                 </ul>
-            </li> -->
+            </li>
         </ul>
-        <!-- <ul class="Oneself">
-            <li><p><a href="index.html">首頁</a></p></li>
-            <li><p><a href="events_list.html">活動</a></p></li>
-            <li><p><a href="#">活動相片</a></p></li>
-            <li><p><a href="terms.html">其他條款</a></p></li>
-            <li><p><a href="service.html">客服中心</a></p></li>
-        </ul> -->
-</div>
+        <!-- 登入後顯示 END -->
+        <ul class="userBox menu_s clearfix">
+            <li><ul class="user_toolBox">
+                    <li><p><a href="index.html">首頁</a></p></li>
+                    <li><p><a href="events_list.html">活動</a></p></li>
+                    <li><p><a href="#">活動相片</a></p></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- 登入後才顯示這顆登出按鈕 -->
+        <p class="loginout"><a href="#">登出</a></p>
+        <div class="the_language">
+            <select class="form-select" name="" required="" data-parsley-min="1" data-parsley-min-message="語系">
+                <option value="0">繁體中文</option>
+                <option value="1">简体中文</option>
+                <option value="2">English</option>
+            </select>
+        </div>
+    </div>
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="jvmobilemenu/jv-jquery-mobile-menu-min.js"></script>
     <script src="js/script-right.js"></script>
@@ -106,7 +151,7 @@
                         </ul>
                         <div class="ad300x100"></div>
                     </div>
-                </div>  
+                </div>
             </li>
             <li class="the_event_photo"><p class="color"><a>活動相片</a></p>
                 <div class="subMenuBox">
@@ -128,7 +173,7 @@
                         </ul>
                         <div class="ad300x100"></div>
                     </div>
-                </div> 
+                </div>
             </li>
         </ul>
         <ul class="userBox clearfix">
@@ -156,74 +201,94 @@
             </div>
         </div>
     </nav>
-    
 </header>
 <main class="middle_contents">
     <section class="index_mainBanner">
-        <div class="searchBox">
+        <p class="source">北大武山-感謝山友馮薇授權</p>
+        <div class="main_kv_video" id="block" data-vide-bg="video/video_01" data-vide-options="position: 0% 50%"></div>
+        <div class="main_searchBox clearfix">
+            <div class="the_item">
+                <select class="form-select" name="" required="" data-parsley-min="1" data-parsley-min-message="區域">
+                    <option value="0">區域</option>
+                    <option value="1">台北市</option>
+                    <option value="2">新北市</option>
+                </select>
+            </div>
+            <div class="the_data">
+                <input type="" name="" placeholder="起始日期">
+            </div>
+            <div class="the_data">
+                <input type="" name="" placeholder="起始日期">
+            </div>
+            <div class="the_item">
+                <select class="form-select" name="" required="" data-parsley-min="1" data-parsley-min-message="活動類型">
+                    <option value="0">活動類型</option>
+                    <option value="1">登山</option>
+                    <option value="2">自行車</option>
+                </select>
+            </div>
+            <p class="btn org"><a href="#">簡易搜尋</a></p>
         </div>
     </section>
-    <div id="block" style="width: 100%; height: 500px;" data-vide-bg="video/ocean" data-vide-options="position: 0% 50%"></div>
-
-
     <section class="ContentsBox clearfix">
-       <div class="leftBox"><div class="">
-       </div>
+       <div class="leftBox">
             <h2 class="h2_title h2_icon_01">熱門活動</h2>
-            <ul class="events_list clearfix">
-                <li>
-                    <a href="event_info.html">
-                    <div class="photo" style="background-image:url(images/photo/01.jpg)"><p class="where">澎湖</p></div></a>
-                    <div class="event_post_Summery">
-                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
-                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
-                        <div class="other_info clearfix">
-                            <p class="heart">22人追蹤</p>
-                            <p class="eye">153人看過</p>
-                            <p class="good">153人按讚</p>
+            <div class="flexslider carousel">
+                <ul class="events_list slides clearfix">
+                    <li>
+                        <a href="event_info.html">
+                        <div class="photo" style="background-image:url(images/photo/01.jpg)"><p class="where">澎湖</p></div></a>
+                        <div class="event_post_Summery">
+                            <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                            <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                            <div class="other_info clearfix">
+                                <p class="heart">22人追蹤</p>
+                                <p class="eye">153人看過</p>
+                                <p class="good">153人按讚</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="event_info.html">
-                    <div class="photo" style="background-image:url(images/photo/02.jpg)"><p class="where">阿里山</p></div></a>
-                    <div class="event_post_Summery">
-                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
-                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
-                        <div class="other_info clearfix">
-                            <p class="heart">22人追蹤</p>
-                            <p class="eye">153人看過</p>
-                            <p class="good">153人按讚</p>
+                    </li>
+                    <li>
+                        <a href="event_info.html">
+                        <div class="photo" style="background-image:url(images/photo/02.jpg)"><p class="where">阿里山</p></div></a>
+                        <div class="event_post_Summery">
+                            <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                            <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                            <div class="other_info clearfix">
+                                <p class="heart">22人追蹤</p>
+                                <p class="eye">153人看過</p>
+                                <p class="good">153人按讚</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="event_info.html">
-                    <div class="photo" style="background-image:url(images/photo/03.jpg)"><p class="where">北海道</p></div></a>
-                    <div class="event_post_Summery">
-                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
-                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
-                        <div class="other_info clearfix">
-                            <p class="heart">22人追蹤</p>
-                            <p class="eye">153人看過</p>
-                            <p class="good">153人按讚</p>
+                    </li>
+                    <li>
+                        <a href="event_info.html">
+                        <div class="photo" style="background-image:url(images/photo/03.jpg)"><p class="where">北海道</p></div></a>
+                        <div class="event_post_Summery">
+                            <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                            <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                            <div class="other_info clearfix">
+                                <p class="heart">22人追蹤</p>
+                                <p class="eye">153人看過</p>
+                                <p class="good">153人按讚</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="event_info.html">
-                    <div class="photo" style="background-image:url(images/photo/03.jpg)"><p class="where">北海道</p></div></a>
-                    <div class="event_post_Summery">
-                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
-                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
-                        <div class="other_info clearfix">
-                            <p class="heart">22人追蹤</p>
-                            <p class="eye">153人看過</p>
-                            <p class="good">153人按讚</p>
+                    </li>
+                    <li>
+                        <a href="event_info.html">
+                        <div class="photo" style="background-image:url(images/photo/03.jpg)"><p class="where">北海道</p></div></a>
+                        <div class="event_post_Summery">
+                            <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                            <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                            <div class="other_info clearfix">
+                                <p class="heart">22人追蹤</p>
+                                <p class="eye">153人看過</p>
+                                <p class="good">153人按讚</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
             <h2 class="h2_title h2_icon_02"><a href="event_more.html">登山<span>Mountain climbing</span></a><a class="more" href="event_more.html">看更多活動 <i class="fas fa-angle-double-right"></i></a></h2>
             <ul class="events_list clearfix">
                 <li>
@@ -389,6 +454,11 @@
                     </div>
                 </li>
             </ul>
+            
+            <div class="AdBox2">
+                <div class="ad300x250"></div>
+            </div>
+            
             <h2 class="h2_title h2_icon_05"><a href="event_more.html">露營<span>Camping</span></a><a class="more" href="event_more.html">看更多活動 <i class="fas fa-angle-double-right"></i></a></h2>
             <ul class="events_list clearfix">
                 <li>
@@ -554,6 +624,11 @@
                     </div>
                 </li>
             </ul>
+
+            <div class="AdBox2">
+                <div class="ad300x250"></div>
+            </div>
+
             <h2 class="h2_title h2_icon_08"><a href="event_more.html">慢跑<span>Jogging</span></a><a class="more" href="event_more.html">看更多活動 <i class="fas fa-angle-double-right"></i></a></h2>
             <ul class="events_list clearfix">
                 <li>
@@ -719,6 +794,11 @@
                     </div>
                 </li>
             </ul>
+
+            <div class="AdBox2">
+                <div class="ad300x250"></div>
+            </div>
+
             <h2 class="h2_title h2_icon_11"><a href="event_more.html">武術<span>Martial arts</span></a><a class="more" href="event_more.html">看更多活動 <i class="fas fa-angle-double-right"></i></a></h2>
             <ul class="events_list clearfix">
                 <li>
@@ -774,6 +854,7 @@
                     </div>
                 </li>
             </ul>
+
             <h2 class="h2_title h2_icon_12"><a href="event_more.html">氣功瑜珈<span>Qigong</span></a><a class="more" href="event_more.html">看更多活動 <i class="fas fa-angle-double-right"></i></a></h2>
             <ul class="events_list clearfix">
                 <li>
@@ -829,6 +910,13 @@
                     </div>
                 </li>
             </ul>
+
+
+            <div class="AdBox2">
+                <div class="ad300x250"></div>
+            </div>
+
+
             <h2 class="h2_title h2_icon_13"><a href="event_more.html">攝影<span>Photography</span></a><a class="more" href="event_more.html">看更多活動 <i class="fas fa-angle-double-right"></i></a></h2>
             <ul class="events_list clearfix">
                 <li>
@@ -939,18 +1027,34 @@
                     </div>
                 </li>
             </ul>
+            <div class="AdBox">
+                <div class="ad300x100"></div>
+                <div class="ad300x100"></div>
+                <div class="ad300x100"></div>
+                <div class="ad300x100"></div>
+            </div>
         </div>
-        <div class="AdBox">
-            <div class="ad300x600"></div>
-            <div class="ad300x600"></div>
-            <div class="ad300x600"></div>
-            <div class="ad300x600"></div>
-            <div class="ad300x600"></div>
-            <div class="ad300x600"></div>
-            <div class="ad300x600"></div>
-            <div class="ad300x600"></div>
-            <div class="ad300x600"></div>
-            <div class="ad300x600"></div>
+        <div class="rightAD">
+            <div class="AdBox">
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+            </div>
         </div>
     </section>
 </main>
@@ -1012,7 +1116,7 @@
                 </ul>
             </div>
             <div class="fbBox">
-                <div class="fb-page" data-href="https://www.facebook.com/facebook/" data-height="130" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/facebook/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook/">Facebook</a></blockquote></div>
+                <div class="fb-page" data-href="https://www.facebook.com/facebook/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/facebook/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook/">Facebook</a></blockquote></div>
             </div>
         </div>
     </section>
