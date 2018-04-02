@@ -25,7 +25,8 @@ select, input, textarea, button {  font-family:'Roboto', 'Noto Sans TC',Arial,"å
 html, body{ height: 100%; }
 
 /*===== start ======*/
-.ContentsBox{ max-width: 1380px; margin: 0 auto; min-width: 320px;}
+body{ min-width: 320px;}
+.ContentsBox{ max-width: 1380px; margin: 0 auto;}
 
 .ad300x100{ width: 300px; height: 100px; display: inline-block; background-color: #dfe4ea;}
 .ad300x600{ width: 300px; height: 600px; display: inline-block; background-color: #e4e4e4;}
@@ -200,7 +201,7 @@ html, body{ height: 100%; }
 .FooterBox .serviceBox .infoBox p a{ color: #666;word-break: keep-all;}
 .FooterBox .serviceBox .infoBox p a:hover{text-decoration: underline;}
 .FooterBox .serviceBox .infoBox p.company{ font-size: 14px; color: #959595;line-height: 22px; padding-top: 10px;}
-.FooterBox .serviceBox .infoBox p.doubt{ max-width: 328px;}
+.FooterBox .serviceBox .infoBox p.doubt{ max-width: 328px; font-size: 14px; /*font-weight: bold;*/}
 .FooterBox .serviceBox .infoBox p.doubt span{font-weight: bold;}
 .FooterBox .serviceBox .box-w{ width: calc(28% - 10px); }
 
@@ -232,7 +233,7 @@ html, body{ height: 100%; }
 .FooterBox .downloadAppBox .lBox ul li.android a.btn{ background: url(../images/downloadAppBox_android.png) center center no-repeat #fff; background-size: contain;}
 .FooterBox .downloadAppBox .lBox ul li.android a.qrcode{background:url(../images/downloadAppBox_android_qrcode.png) center center no-repeat; background-size: contain; }
 
-.FooterBox .downloadAppBox .fbBox{position: absolute; right: 0; bottom: 0; width: 100%; max-width: 380px; background-color: #b8b4ab; overflow: hidden;}
+.FooterBox .downloadAppBox .fbBox{position: absolute; right: 0; bottom: 0; width: 100%; max-width: 380px;/* background-color: #b8b4ab;*/ overflow: hidden;}
 .FooterBox .downloadAppBox .fbBox .fb-page{ height:130px;}
 
 .FooterBox .copyright{ width: 100%; background-color: #333333; padding: 35px 0;}
@@ -251,31 +252,34 @@ html, body{ height: 100%; }
 .registerBox .ContentsBox{padding: 80px 0; max-width: 460px;}
 .registerBox h1.Gotoplay123_logo{ width: 100%;}
 .registerBox h1.Gotoplay123_logo a{width: 150px; height: 88px; margin: 0 auto 30px auto; display: block; background: url(../images/logo.png) center center no-repeat; background-size: contain;}
-.registerBox h2{ font-size: 20px; color: #555; text-align: center; padding-bottom: 20px; }
-.registerBox .fillinBox{ width:calc(100% - 110px); padding:40px 55px; background-color: #fff; -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px; margin: 0 auto;}
-.registerBox .fillinBox input.tbox{ width:calc(100% - 30px); color: #333; margin-bottom: 10px; font-size: 15px; background-color: #eff0f1; height: 35px; line-height: 35px; padding: 5px 15px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
-.registerBox .fillinBox input.tbox::-webkit-input-placeholder { color: #888888;}/* WebKit browsers */
-.registerBox .fillinBox input.tbox::-moz-placeholder { color: #888888;}/* Mozilla Firefox 4 to 18 */
-.registerBox .fillinBox input.tbox::-moz-placeholder { color: #888888; }/* Mozilla Firefox 19+ */
-.registerBox .fillinBox input.tbox::-ms-input-placeholder { color: #888888;}/* Internet Explorer 10+ */  
-.registerBox .fillinBox input.tbox[type=text]{ -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out;  outline: none;}
-.registerBox .fillinBox input.tbox[type=text]:focus { background-color: #faf4ed;}
-.registerBox .fillinBox p.p_s_note{ font-size: 13px; color: #9e9e9e; padding:0 15px 10px 15px; }
-.registerBox p.for_note{ color: #F94F4F; font-size: 13px; padding-bottom: 15px; position: relative; }
-.registerBox p.for_note i{ padding-right: 5px; }
+.registerBox h2{ font-size: 20px; color: #555; text-align: center; padding-bottom: 25px; }
+.registerBox p.send{ text-align: center; line-height: 26px; padding-bottom: 20px; }
+.registerBox p.send span{color: #68b82d;}
+
+.fillinBox{ width:calc(100% - 110px); padding:40px 55px; background-color: #fff; -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px; margin: 0 auto; box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 35px, rgba(0, 0, 0, 0.22) 0px 10px 18px; }
+.fillinBox input.tbox, .fillinBox textarea.tbox{ width:calc(100% - 30px); color: #333; margin-bottom: 10px; font-size: 15px; background-color: #eff0f1; height: 35px; line-height: 35px; padding: 5px 15px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+.fillinBox input.tbox::-webkit-input-placeholder, .fillinBox textarea.tbox::-webkit-input-placeholder { color: #888888;}/* WebKit browsers */
+.fillinBox input.tbox::-moz-placeholder, .fillinBox textarea.tbox::-moz-placeholder { color: #888888;}/* Mozilla Firefox 4 to 18 */
+.fillinBox input.tbox::-ms-input-placeholder, .fillinBox textarea.tbox::-ms-input-placeholder { color: #888888;}/* Internet Explorer 10+ */
+.fillinBox input.tbox[type=text], .fillinBox textarea.tbox[type=text]{ -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out;  outline: none;}
+.fillinBox input.tbox[type=text]:focus, .fillinBox textarea.tbox[type=text]:focus { background-color: #faf4ed;}
+
+.fillinBox p.p_s_note{ font-size: 13px; color: #9e9e9e; padding:0 15px 10px 15px; }
+.fillinBox p.for_note{ color: #F94F4F; font-size: 13px; padding-bottom: 15px; position: relative; }
+.fillinBox p.for_note i{ padding-right: 5px; }
 
 .registerBox .btn{width: 100%; padding-bottom: 10px;}
-.registerBox .btn .btn_style{ background-color: #68b82d; cursor: pointer; position: relative; display: block; width: 100%; text-align: center; height: 44px; line-height: 44px; font-size: 16px; color: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
-.registerBox .btn .btn_style:hover{opacity: .9;}
+.registerBox .btn .btn_style, .editBox .btn .btn_style{ background-color: #68b82d; cursor: pointer; position: relative; display: block; width: 100%; text-align: center; height: 44px; line-height: 44px; font-size: 16px; color: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; appearance: none; -moz-appearance: none; /* Firefox */-webkit-appearance: none}
+.registerBox .btn .btn_style:hover, .editBox .btn .btn_style:hover{opacity: .9;}
 .registerBox .btn .btn_style i{ position: absolute; left: 10px; height: 44px; line-height: 44px; left: 6%; font-size: 18px; }
-/*.registerBox .btn .btn_style::before{content: '\f082'; position: absolute; top: 0px; height: 44px; left: 12px; display: block; font-family: Font Awesome\ 5 Free; font-weight: 900;}
-*/.registerBox .btn .fb{ background-color: #3d5a96; }
+/*.registerBox .btn .btn_style::before{content: '\f082'; position: absolute; top: 0px; height: 44px; left: 12px; display: block; font-family: Font Awesome\ 5 Free; font-weight: 900;}*/
+.registerBox .btn .fb{ background-color: #3d5a96; }
 .registerBox .btn .google{ background-color: #db4c3f; }
 
 .registerBox .confirm{ width: 100%; margin: 0 auto; padding-bottom: 40px;}
 .registerBox .confirm .the_radio{ width: 15px; height: 21px; float: left; margin-right: 8px; }
 .registerBox .confirm label{ width: inherit; }
-.registerBox .confirm p{float: left; line-height: 20px; width: calc(100% - 23px); font-size: 14px;}
+.registerBox .confirm p{float: left; line-height: 22px; width: calc(100% - 23px); font-size: 14px;}
 .registerBox .confirm p a{ color: #68b82d; text-decoration: underline; margin: 0 3px;}
 .registerBox .confirm p a:hover{text-decoration: none;}
 .registerBox .forget p{ width: initial; }
@@ -290,20 +294,79 @@ html, body{ height: 100%; }
 .registerBox p.gologin a{ color: #f08700;}
 .registerBox p.gologin a:hover{ text-decoration: underline; }
 .registerBox .Copyright_info{width: 100%; padding: 10px 0;}
-.registerBox .Copyright_info p{ float: left; color: #fff; font-size: 13px; padding: 5px 0; line-height: 20px; }
+.registerBox .Copyright_info p{ float: left; color: #fff; font-size: 13px; padding: 5px 0; line-height: 20px; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);}
 
 .registerBox .Copyright_info .the_language{float: right; position: relative; width: 100px;}
-.registerBox .Copyright_info .the_language .form-select{  border:none; display: block; background-color: transparent; width:100px; height: 30px;  -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; padding: 0 20px 0 10px; font-size: 15px; line-height: 24px;  color: #fff; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
+.registerBox .Copyright_info .the_language .form-select{  border:none; display: block; background-color: transparent; width:100px; height: 30px;text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);  -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; padding: 0 20px 0 10px; font-size: 15px; line-height: 24px;  color: #fff; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
 .registerBox .Copyright_info .the_language .form-select::-ms-expand{  display: none;}/*IE 10 */
 .registerBox .Copyright_info .the_language::after{ content: "\f107"; position: absolute; top: 7px;  color: #fff; right: 5px; display: inline-block; font-family:  Font Awesome\ 5 Free; font-size: inherit; text-rendering: auto; font-weight: 900; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
-
+.registerBox .Copyright_info .the_language .form-select option{ color: #333; }
 .br_01{ background-image: url(../images/br/br_02.jpg);}
 .br_02{ background-image: url(../images/br/br_03.jpg);}
 .br_03{ background-image: url(../images/br/br_04.jpg);}
 
+
+.editBox{ width: 100%; min-height:calc( 100vh - 220px); background:url(../images/br/br_04.jpg) center center no-repeat; background-size: cover; background-attachment: fixed;}
+.editBox .ContentsBox{ padding: 170px 0 110px 0; max-width: 700px;}
+.editBox h2.h2_title{ font-size: 26px; color: #68b82d; text-align: center; padding-bottom: 15px; }
+.editBox .fillinBox ul{width: 100%;}
+.editBox .fillinBox ul li{ padding-bottom: 15px; }
+.editBox .fillinBox p.label_title{ padding: 12px; font-weight: bold;}
+.editBox .fillinBox p.info_show{ color: #68b82d; width: calc(100% - 30px); padding: 10px 15px; font-size: 15px; line-height: 24px;}
+.editBox .fillinBox .f_red{ color: #ff2121; }
+.editBox .fillinBox textarea.tbox{ min-height: 50px; }
+.editBox .fillinBox .website p.right_title{ line-height: 45px; float: left; width: 90px; padding-left: 12px;  }
+.editBox .fillinBox .website input.tbox{ float: left; width: calc(100% - 143px); }
+
+.editBox .user .left_photo{ width: 85px; float: left; }
+.editBox .user .left_photo a.img{ width: 76px; height: 76px; display: block; border-radius: 50%; overflow:hidden; cursor: pointer; background-position: center center ; background-size: cover;}
+.editBox .user .left_photo a.img:hover{opacity: .9;}
+.editBox .user .left_photo p{text-align: center; max-width: 76px; font-size: 14px; padding: 6px 0;}
+.editBox .user .left_photo p a {color: #68b82d; cursor: pointer;}
+.editBox .user .left_photo p a:hover{ text-decoration: underline; }
+
+.editBox .user .user_name{ width:calc(100% - 85px); float: left; }
+
+.editBox .form-select{ width:120px; float: left; position: relative; margin-right: 10px;}
+.editBox .form-select .md-input{ border:none; display: block; background-color: #eff0f1; width: 100%; height: 45px; padding: 0px 15px; -moz-border-radius: 5px; -webkit-border-radius: 5px;  border-radius: 5px; font-size: 15px; line-height: 45px;  color: #333; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
+.editBox .form-select::after{ content: "\f107"; position: absolute; top: 15px;  color: #555; right: 15px; display: inline-block; font-family:  Font Awesome\ 5 Free; font-weight: 900;}
+.editBox .form-select::-ms-expand{  display: none;}/*IE 10 */
+.editBox .w95{ width: 95px; }
+
+.editBox .fillinBox input.t50{ max-width: 300px; }
+.editBox .radio_select{ width:calc(100% - 30px); padding: 0 15px;}
+.editBox .radio_select .the_radio{ width: 15px; height: 44px; float: left; }
+.editBox .radio_select label{float: left; padding-left: 10px;}
+.editBox .radio_select span{ color: #333; display: inline-block; line-height: 45px; padding-right: 20px; font-size: 15px;}
+
+.editBox .addressBox .form-select{ width:160px;}
+.editBox .addressBox input.tbox{ width:calc(50% - 40px) ; max-width: 160px; margin-right: 10px;}
+.editBox .addressBox input.tbox100{ width: calc(100% - 30px); max-width: inherit; margin-top: 10px;}
+.editBox .btn{ padding-bottom: 10px; max-width: 360px; margin: 0 auto;}
+.editBox .btn .btn_done{ max-width: 360px; height: 56px; line-height: 56px;}
+.editBox .upload_files .btn{ max-width:170px; margin: 0; padding: 0 15px 10px 15px; }
+.editBox .upload_files .files_name{text-align: left; padding:0 15px 15px 15px;}
+.editBox .upload_files .files_name p{ display: inline-block; margin-right: 15px; color: #333; line-height: 30px;}
+.editBox .upload_files .files_name p i{padding-right: 5px; color: #68b82d; font-size: 18px;}
+.editBox .upload_files .files_name p i.none{ cursor: pointer; color: #bbbbbb; padding: 0 0 0 10px;}
+.editBox .upload_files .files_name p i.none:hover{ color: #333; }
+.editBox .fillinBox .the_radio{ width: 18px; height: 44px; float: left; }
+.editBox .fillinBox .map_ex{ padding: 0 15px; }
+.editBox .fillinBox .map_ex label{ float: left;}
+.editBox .fillinBox .map_ex p{ line-height: 20px; color: #666; }
+.editBox .fillinBox .map_ex p a{ color: #68b82d; }
+.editBox .fillinBox .map_ex p a:hover{text-decoration: underline;}
+.editBox .fillinBox .map_ex .the_radio{height: 20px;}
+
+.editBox p.goback{text-align: center; padding: 10px 0 20px 0;}
+.editBox p.goback a{color: #68b82d;}
+.editBox p.goback a:hover{text-decoration: underline;}
+
+
+
 /*==== RWD ====*/
 @media (max-width:1400px){
-	.ContentsBox{ width:95%; margin: 0 auto; }
+	.ContentsBox{ width:95%; msargin: 0 auto; }
 	.HeaderBox .Menu ul.menu{padding-left: 35px;}
 	.HeaderBox .Menu ul.menu li p a{padding: 10px 24px 25px 24px;}
 	.HeaderBox .Menu .searchBox{max-width: 170px;}
@@ -356,7 +419,7 @@ html, body{ height: 100%; }
 	.HeaderBox .Menu ul.menu{ display: none; }
 	.FooterBox .downloadAppBox .lBox{float: none;}
 	.FooterBox .downloadAppBox .lBox h5, .FooterBox .downloadAppBox .lBox ul li{text-align: center; margin-right: 0;}
-	.FooterBox .downloadAppBox .fbBox{margin: 0 auto; position: inherit; right: inherit; bottom: inherit;}
+	.FooterBox .downloadAppBox .fbBox{margin: 0 auto; position: inherit; right: inherit; bottom: inherit; text-align: center;}
 }
 @media (max-width:650px){
 	.gotopaly_noticeBox .bothBox .lBox{ width: 100%; }
@@ -382,18 +445,21 @@ html, body{ height: 100%; }
 	.registerBox h1.Gotoplay123_logo a{height: 70px; margin-bottom: 15px;}
 	.registerBox h2{padding-bottom: 10px;}
 	.registerBox h2 span{display: block;}
-	.registerBox .fillinBox{width: calc(100% - 50px); padding: 25px;}
-	.registerBox .fillinBox input.tbox{font-size: 14px;}
+	.registerBox .fillinBox, .editBox .fillinBox{width: calc(100% - 50px); padding: 25px;}
+	.registerBox .fillinBox input.tbox, .editBox .fillinBox input.tbox, .editBox .form-select .md-input {font-size: 14px;}
 	.registerBox .btn .btn_style{font-size: 15px;}
 	.registerBox .confirm{padding-bottom: 20px;}
 	.registerBox .confirm p{font-size: 13px;}
 	.registerBox .Copyright_info p{font-size: 11px;}
+	.editBox .w95, .editBox .addressBox .form-select{padding-bottom: 10px;}
+
 }
 @media (max-width:550px){
 	.HeaderBox .the_language{ display: none; }
 	.HeaderBox .Menu .searchBox input{font-size: 14px;}
 }
 @media (max-width:420px){
+	.registerBox .fillinBox, .editBox .fillinBox{width: calc(100% - 40px); padding: 20px;}
 	.registerBox .Copyright_info p{ width: 100%; float: none; text-align: center; padding-bottom: 10px;}
 	.registerBox .Copyright_info .the_language{float: none; margin: 0 auto; border-width:1px; border-style: solid; border-color: #fff;-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
 	.registerBox .Copyright_info .the_language::after{right: 10px;}

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>GoToPlay123來去玩(網) - 建立活動</title>
+<meta name='description' content="GoToPlay123來去玩(網)是一個招集戶外活動的平台，我們的目的是讓大家都能透過這個平台，自行策劃線路、約伴、排程及內容之自助招集或自由參加適合自己的戶外活動，適合喜愛戶外活動、崇尚自由、喜歡團體活動和樂於探索新奇目的地的大眾。"/>
+<meta name='keywords' content="GoToPlay123來去玩, GoToPlay123, 戶外活動, 揪團, 呼朋引伴, 約伴, 團體活動, 大自然, 探索, 邀約, 運動, 熱愛, 自由"/>
+
+<meta property="og:image" content="http://www.gotoplay123.com/images/share_pic.jpg"/>
+<meta property="og:title" content="GoToPlay123來去玩(網)"/>
+<meta property="og:url" content="http://www.gotoplay123.com"/>
+<meta property="og:description" content="GoToPlay123來去玩(網)是一個招集戶外活動的平台，我們的目的是讓大家都能透過這個平台，自行策劃線路、約伴、排程及內容之自助招集或自由參加適合自己的戶外活動，適合喜愛戶外活動、崇尚自由、喜歡團體活動和樂於探索新奇目的地的大眾。"/>
+<meta property="og:type" content="website"/>
+
+<!-- Share image -->
+<link rel="image_src" href="http://www.gotoplay123.com/images/share_pic.jpg">
+<!--Icon image  -->
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="on-server/css/fontawesome-all.css">
+<script type="text/javascript" src="on-server/js/fontawesome-all.css.js"></script>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Menu -->
+<link rel="stylesheet" type="text/css" href="jvmobilemenu/jv-jquery-mobile-menu.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/retina.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+
+
+</head>
+<body class="page">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="mobile-nav" id="sideMenu">
+        <!-- 未登入前顯示 -->
+        <!-- <ul class="userBox clearfix">
+            <li><p><a class="p_green" href="apply_for_leader.html">申請成為活動發起人</a></p></li>
+            <li><p class="both2"><a class="p_org" href="register.html">免費註冊</a> <a href="login.html">登入</a></p></li>
+        </ul> -->
+        <!-- 未登入前顯示 END-->
+        <!-- 登入後顯示 -->
+        <ul class="userBox clearfix">
+            <!-- <li><p class="both2"><a class="p_org" href="register.html">免費註冊</a> <a href="login.html">登入</a></p></li> -->
+            <li><p class="login"><span class="img_avatar" style="background:url(images/img_default_avatar.png) center center no-repeat;  background-size: contain;"></span>TonyLiu123</p>
+                <ul class="user_toolBox">
+                    <li><p><a href="#">帳號管理</a></p></li>
+                    <li><p><a href="#">編輯個人資料</a></p></li>
+                    <li><p><a href="#">編輯個人/領隊資料</a></p></li>
+                    <li><p><a href="#">我的報名活動</a></p></li>
+                    <li><p><a href="#">我的發起活動</a></p></li>
+                    <li><p><a class="p_green" href="apply_for_leader.html">申請成為活動發起人</a></p></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- 登入後顯示 END -->
+        <ul class="userBox menu_s clearfix">
+            <li><ul class="user_toolBox">
+                    <li><p><a href="index.html">首頁</a></p></li>
+                    <li><p><a href="events_list.html">活動</a></p></li>
+                    <li><p><a href="#">活動相片</a></p></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- 登入後才顯示這顆登出按鈕 -->
+        <p class="loginout"><a href="#">登出</a></p>
+        <div class="the_language">
+            <select class="form-select" name="" required="" data-parsley-min="1" data-parsley-min-message="語系">
+                <option value="0">繁體中文</option>
+                <option value="1">简体中文</option>
+                <option value="2">English</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="jvmobilemenu/jv-jquery-mobile-menu-min.js"></script>
+    <script src="js/script-right.js"></script>
+
+<!-- <header class="HeaderBox">
+    <nav class="Menu ContentsBox clearfix">
+        <h1 class="Gotoplay123_logo"><a href="index.html"></a></h1>
+        <ul class="menu clearfix">
+            <li><p><a href="index.html">首頁</a></p></li>
+            <li class="the_event"><p class="color"><a>活動</a></p>
+                <div class="subMenuBox">
+                    <div class="ContentsBox clearfix">
+                        <ul class="Activities_list">
+                            <li><p><a href="#">登山</a></p></li>
+                            <li><p><a href="#">自行車</a></p></li>
+                            <li><p><a href="#">旅行</a></p></li>
+                            <li><p><a href="#">露營</a></p></li>
+                            <li><p><a href="#">水世界</a></p></li>
+                            <li><p><a href="#">國外</a></p></li>
+                            <li><p><a href="#">慢跑</a></p></li>
+                            <li><p><a href="#">球類</a></p></li>
+                            <li><p><a href="#">舞蹈</a></p></li>
+                            <li><p><a href="#">武術</a></p></li>
+                            <li><p><a href="#">氣功瑜珈</a></p></li>
+                            <li><p><a href="#">攝影</a></p></li>
+                            <li><p><a href="#">其他</a></p></li>
+                        </ul>
+                        <div class="ad300x100"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="the_event_photo"><p class="color"><a>活動相片</a></p>
+                <div class="subMenuBox">
+                    <div class="ContentsBox clearfix">
+                        <ul class="Activities_list">
+                            <li><p><a href="#">登山</a></p></li>
+                            <li><p><a href="#">自行車</a></p></li>
+                            <li><p><a href="#">旅行</a></p></li>
+                            <li><p><a href="#">露營</a></p></li>
+                            <li><p><a href="#">水世界</a></p></li>
+                            <li><p><a href="#">國外</a></p></li>
+                            <li><p><a href="#">慢跑</a></p></li>
+                            <li><p><a href="#">球類</a></p></li>
+                            <li><p><a href="#">舞蹈</a></p></li>
+                            <li><p><a href="#">武術</a></p></li>
+                            <li><p><a href="#">氣功瑜珈</a></p></li>
+                            <li><p><a href="#">攝影</a></p></li>
+                            <li><p><a href="#">其他</a></p></li>
+                        </ul>
+                        <div class="ad300x100"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="userBox clearfix">
+            <li><p><a class="p_green" href="apply_for_leader.html">申請成為活動發起人</a></p></li>
+            <li><p><a class="p_org" href="register.html">免費註冊</a></p></li>
+            <li><p class="login"><span class="img_avatar" style="background:url(images/img_default_avatar.png) center center no-repeat;  background-size: contain;"></span>登入</p>
+                <ul class="user_toolBox">
+                    <li><p><a href="#">帳號管理</a></p></li>
+                    <li><p><a href="#">編輯個人資料</a></p></li>
+                    <li><p><a href="#">編輯個人/領隊資料</a></p></li>
+                    <li><p><a href="#">我的報名活動</a></p></li>
+                    <li><p><a href="#">我的發起活動</a></p></li>
+                    <li><p><a href="#">登出</a></p></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="other_tools clearfix">
+            <div class="searchBox"><input type="text" name="" placeholder="請輸入關鍵字"></div>
+            <div class="the_language">
+                <select class="form-select" name="" required="" data-parsley-min="1" data-parsley-min-message="語系">
+                    <option value="0">繁體中文</option>
+                    <option value="1">简体中文</option>
+                    <option value="2">English</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+</header> -->
+
+<main class="editBox">
+    <section class="ContentsBox">
+        <div class="fillinBox"><!-- 填寫過"個人資料"後，"申請活動發起人"那邊應該要幫他"帶入有填寫的資料"相反的，如果他先"申請過活動發起人"，"未填寫個人資料"，也該幫他自動帶入 -->
+            <h2 class="h2_title">建立活動</h2>
+            <form>
+                <ul>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>活動名稱</p></label>
+                        <input class="tbox" id="" name="" type="text" value="">
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>出發地</p></label>
+                        <input class="tbox t50" id="" name="" type="text" value="">
+                        <div class="map_ex clearfix">
+                            <input class="the_radio" type="checkbox" checked=""><label for=""><p class="p_s_note">輸入 Google Map 連結  <a href="#">範例教學</a></p></label>
+                        </div>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>目的地</p></label>
+                        <input class="tbox t50" id="" name="" type="text" value="">
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>活動日期</p></label>
+                        <input class="tbox t50" id="" name="" type="text" value="">
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>集合地點</p></label>
+                        <input class="tbox t50" id="" name="" type="text" value="">
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>集合時間</p></label>
+                        <div class="clearfix">
+                            <div class="form-select">
+                                <select class="md-input">
+                                    <option value="0">00:00</option>
+                                    <option value="1">12:00</option>
+                                    <option value="2" selected="selected">08</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>活動限制說明 (可複選)</p></label>
+                        <textarea class="tbox" type="text"></textarea>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>輸入你想成為活動發起人的理由</p></label>
+                        <textarea class="tbox" type="text"></textarea>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>請上傳你參加過活動的相片或影片</p></label>
+                        <div class="upload_files">
+                            <div class="btn"><a class="btn_style">上傳相片</a></div>
+                            <p class="p_s_note">最多可上傳20個檔案</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>請上傳你參加過活動的相片或影片</p></label>
+                        <div class="upload_files">
+                            <div class="files_name"><!-- 點選上傳選擇相片後才會顯示 files_name 這欄位，icon+檔名 按XX刪除 -->
+                                <p><i class="far fa-image"></i> 64w864e8w6e.jpg<a><i class="none fas fa-times"></i></a></p>
+                                <p><i class="far fa-file-video"></i> me_video.jpg<a><i class="none fas fa-times"></i></a></p>
+                                <p><i class="far fa-image"></i> Iloveroya.jpg<a><i class="none fas fa-times"></i></a></p>
+                            </div>
+                            <div class="btn"><a class="btn_style">上傳相片</a></div>
+                            <p class="p_s_note">最多可上傳20張相片，已選擇 3 個相片</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title">是否為旅行社</p></label>
+                        <div class="radio_select clearfix">
+                            <input class="the_radio" type="radio" name="text" value="travelAgency_01" checked=""><label for=""><span>是</span></label>
+                            <input class="the_radio" type="radio" name="text" value="travelAgency_02"><label for=""><span>否</span></label>
+                        </div>
+                        <!-- 勾選 是，才會出現以下欄位：公司名稱、負責人姓名 -->
+                        <!-- <div class="upload_files">
+                            <label for=""><p class="label_title">公司名稱</p></label>
+                            <input class="tbox" id="" name="" type="text" value="">
+                            <label for=""><p class="label_title">負責人姓名</p></label>
+                            <input class="tbox t50" id="" name="" type="text" value="">
+                            <label for=""><p class="label_title">身分證明文件 </p></label>
+                            <div class="files_name">
+                                <p><i class="far fa-image"></i> 64w864e8w6e.jpg<a><i class="none fas fa-times"></i></a></p>
+                            </div>
+                            <div class="btn"><a class="btn_style">上傳相片</a></div>
+                            <p class="p_s_note">請上傳任一證明文件(正面)如：健保卡、身分證、駕照</p>
+                        </div> -->
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title">申請者 E-mail</p></label>
+                        <p class="info_show">abc_tony1278273823.gmaol.com</p>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>連絡電話</p></label>
+                        <input class="tbox t50" id="" name="" type="text" value="">
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title">生日</p></label>
+                        <div class="clearfix">
+                            <div class="form-select">
+                                <select class="md-input">
+                                    <option value="0">西元</option>
+                                    <option value="1">1981</option>
+                                    <option value="2">1982</option>
+                                    <option value="3">1983</option>
+                                    <option value="4">1984</option>
+                                    <option value="5">1985</option>
+                                    <option value="6">1986</option>
+                                    <option value="7">1987</option>
+                                    <option value="8" selected="selected">1988</option>
+                                    <option value="9">1989</option>
+                                    <option value="10">1990</option>
+                                    <option value="11">1991</option>
+                                    <option value="12">1992</option>
+                                </select>
+                            </div>
+                            <div class="form-select w95">
+                                <select class="md-input">
+                                    <option value="0">月份</option>
+                                    <option value="0">一月</option>
+                                    <option value="0">二月</option>
+                                    <option value="0">三月</option>
+                                    <option value="0">四月</option>
+                                    <option value="0">五月</option>
+                                    <option value="0">六月</option>
+                                    <option value="0">七月</option>
+                                    <option value="0" selected="selected">八月</option>
+                                    <option value="0">九月</option>
+                                    <option value="0">十月</option>
+                                    <option value="0">十一月</option>
+                                    <option value="0">十二月</option>
+                                </select>
+                            </div>
+                            <div class="form-select w95">
+                                <select class="md-input">
+                                    <option value="0">日期</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8" selected="selected">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title">性別</p></label>
+                        <div class="radio_select clearfix">
+                            <input class="the_radio" type="radio" name="text" value="gender_01" checked=""><label for=""><span>男</span></label>
+                            <input class="the_radio" type="radio" name="text" value="gender_02"><label for=""><span>女</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title">緊急連絡人</p></label>
+                        <input class="tbox t50" id="" name="" type="text" value="">
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title">緊急連絡人電話</p></label>
+                        <input class="tbox t50" id="" name="" type="text" value="">
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>請輸入Line ID / Line 行動條碼</p></label>
+                        <input class="tbox t50" id="" name="" type="text" value="">
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>請上傳個人相片</p></label>
+                        <div class="upload_files">
+                            <div class="files_name"><!-- 點選上傳選擇相片後才會顯示 files_name 這欄位，icon+檔名 按XX刪除 -->
+                                <p><i class="far fa-image"></i> isme100x200.jpg<a><i class="none fas fa-times"></i></a></p>
+                            </div>
+                            <div class="btn"><a class="btn_style">上傳相片</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title">簡介</p></label>
+                        <textarea class="tbox" type="text">不多不少，剛剛好</textarea>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title">是否為醫護人員</p></label>
+                        <div class="radio_select clearfix">
+                            <input class="the_radio" type="radio" name="text" value="medicalStaff_01" checked=""><label for=""><span>是</span></label>
+                            <input class="the_radio" type="radio" name="text" value="medicalStaff_02"><label for=""><span>否</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title">備註</p></label>
+                        <textarea class="tbox"></textarea>
+                    </li>
+                </ul>
+                <div class="btn"><input class="btn_style btn_done" type="submit" class="" value="送出申請"></div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="FooterBox">
+    <section class="serviceBox">
+        <div class="ContentsBox clearfix">
+            <ul class="infoBox">
+                <li><h4>關於本站</h4></li>
+                <li><p><a href="about_us.html">關於GoToPlay123</a></p></li>
+                <li><p><a href="terms.html">關於會員約定事項</a></p></li>
+                <li><p class="company"><span>恆福科技有限公司</span><br>HANFORD TECHNOLOGY CO LTD</p></li>
+            </ul>
+            <ul class="infoBox">
+                <li><h4>網路條款</h4></li>
+                <li><p><a href="privacy.html">網路政策</a></p></li>
+                <li><p><a href="event_terms.html">活動風險告知及免責聲明</a></p></li>
+            </ul>
+            <ul class="infoBox box-w">
+                <li><h4>客服中心</h4></li>
+                <li><p class="doubt">若您對本服務隱私權保護政策或個人資料行使權利有任何疑問，請參考<span>關於本站</span>及<span>網路條款內容</span><br>
+                    Email：<a href="mailto:Service@gotoplay123.com">Service@gotoplay123.com</a><br>
+                    週一至週五 09:00-17:30</p></li>
+            </ul>
+            <div class="infoBox box-w">
+                <div class="followUsBox">
+                    <h5>Follow us</h5>
+                    <p class="icon">
+                        <a class="fb" href="#" title="GoToPlay Facebook"></a>
+                        <a class="youtube" href="#" title="GoToPlay Youtube"></a>
+                        <a class="line" href="#" title="GoToPlay @Line"></a>
+                    </p>
+                </div>
+                <div class="shareUsBox">
+                    <h5>分享這個快樂的網站給你的好友</h5>
+                    <p class="icon clearfix">
+                        <a class="fb" href="#">分享到Facebook</a>
+                        <a class="line" href="#">分享到Line</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="downloadAppBox">
+        <div class="ContentsBox clearfix">
+            <div class="lBox">
+                <h5>下載APP</h5>
+                <ul class="clearfix">
+                    <li class="ios">
+                        <a class="btn" href="#" target="_blank">App Store</a>
+                        <a class="qrcode" href="#" target="_blank"></a>
+                    </li>
+                    <li class="android">
+                        <a class="btn" href="#" target="_blank">Google Play</a>
+                        <a class="qrcode" href="#" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fbBox">
+                <div class="fb-page" data-href="https://www.facebook.com/facebook/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/facebook/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook/">Facebook</a></blockquote></div>
+            </div>
+        </div>
+    </section>
+    <section class="copyright">
+        <div class="ContentsBox">
+            <p>Copyright © GoToPlay123. All rights reserved.</p>
+        </div>
+    </section>
+</footer>
+
+</body>
+</html>
+
+
+
