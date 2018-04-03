@@ -1,4 +1,4 @@
-ㄋ<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
 <meta charset="UTF-8">
@@ -92,7 +92,7 @@
     <script src="jvmobilemenu/jv-jquery-mobile-menu-min.js"></script>
     <script src="js/script-right.js"></script>
 
-<!-- <header class="HeaderBox">
+<header class="HeaderBox">
     <nav class="Menu ContentsBox clearfix">
         <h1 class="Gotoplay123_logo"><a href="index.html"></a></h1>
         <ul class="menu clearfix">
@@ -167,7 +167,7 @@
             </div>
         </div>
     </nav>
-</header> -->
+</header>
 
 <main class="editBox">
     <section class="ContentsBox">
@@ -182,26 +182,42 @@
                     <li>
                         <label for=""><p class="label_title"><span class="f_red">*</span>出發地</p></label>
                         <input class="tbox t50" id="" name="" type="text" value="">
+                        <!-- 勾選才會出現此 input 欄位 ↓ -->
+                        <!-- <input class="tbox" id="" name="" type="text" value="" placeholder="請輸入 Google Map 連結"> -->
                         <div class="map_ex clearfix">
-                            <input class="the_radio" type="checkbox" checked=""><label for=""><p class="p_s_note">輸入 Google Map 連結  <a href="#">範例教學</a></p></label>
+                            <input class="the_radio" type="checkbox"><label for=""><p class="p_s_note">輸入 Google Map 連結  <a href="#">範例教學</a></p></label>
                         </div>
                     </li>
                     <li>
                         <label for=""><p class="label_title"><span class="f_red">*</span>目的地</p></label>
                         <input class="tbox t50" id="" name="" type="text" value="">
+                        <!-- 勾選才會出現此 input 欄位 ↓ -->
+                        <input class="tbox" id="" name="" type="text" value="" placeholder="請輸入 Google Map 連結">
+                        <div class="map_ex clearfix">
+                            <input class="the_radio" type="checkbox" checked=""><label for=""><p class="p_s_note">輸入 Google Map 連結  <a href="#">範例教學</a></p></label>
+                        </div>
                     </li>
                     <li>
                         <label for=""><p class="label_title"><span class="f_red">*</span>活動日期</p></label>
-                        <input class="tbox t50" id="" name="" type="text" value="">
+                        <div class="dataBox clearfix">
+                            <div class="the_data"><input type="" name="" placeholder="起始日期"></div>
+                            <p>至</p>
+                            <div class="the_data"><input type="" name="" placeholder="起始日期"></div>
+                        </div>
                     </li>
                     <li>
                         <label for=""><p class="label_title"><span class="f_red">*</span>集合地點</p></label>
                         <input class="tbox t50" id="" name="" type="text" value="">
+                        <!-- 勾選才會出現此 input 欄位 ↓ -->
+                        <!-- <input class="tbox" id="" name="" type="text" value="" placeholder="請輸入 Google Map 連結"> -->
+                        <div class="map_ex clearfix">
+                            <input class="the_radio" type="checkbox" checked=""><label for=""><p class="p_s_note">輸入 Google Map 連結  <a href="#">範例教學</a></p></label>
+                        </div>
                     </li>
                     <li>
                         <label for=""><p class="label_title"><span class="f_red">*</span>集合時間</p></label>
                         <div class="clearfix">
-                            <div class="form-select">
+                            <div class="form-select"><!-- 24小時制 -->
                                 <select class="md-input">
                                     <option value="0">00:00</option>
                                     <option value="1">12:00</option>
@@ -211,153 +227,94 @@
                         </div>
                     </li>
                     <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>活動限制說明 (可複選)</p></label>
-                        <textarea class="tbox" type="text"></textarea>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>活動限制說明<span>(可複選)</span></p></label>
+                        <ul class="event_type clearfix">
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>無限制</p></label></li><!-- 勾選"無限制"這項目，後面不能勾選了 disabled掉。 -->
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>活動人數</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>年齡限制</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox" checked><label for=""><p>評價限制</p></label><input class="tbox t50" id="" name="" type="text" placeholder="例如：最少3顆星" value=""></li><!-- 。 -->
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>其他</p></label></li>
+                        </ul>
                     </li>
                     <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>輸入你想成為活動發起人的理由</p></label>
-                        <textarea class="tbox" type="text"></textarea>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>適合對象<span>(可複選)</span></p></label>
+                        <ul class="event_type clearfix">
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>不限</p></label></li><!-- 勾選"無限制"這項目，後面不能勾選了 disabled掉。 -->
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>男</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox" checked><label for=""><p>女</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>親子</p></label></li><!-- 。 -->
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>有一定程度</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox" checked><label for=""><p>中級程度</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>專業級</p></label></li>
+                        </ul>
                     </li>
                     <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>請上傳你參加過活動的相片或影片</p></label>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>活動邀約最後日期</p></label>
+                        <div class="dataBox clearfix">
+                            <div class="the_data"><input type="" name="" value="2018/08/23"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>活動費用型態</p></label>
+                        <div class="radio_select clearfix">
+                            <input class="the_radio" type="radio" name="text" value="p01"><label for=""><span>免費用</span></label>
+                            <input class="the_radio" type="radio" name="text" value="p02" checked><label for=""><span>固定費用</span></label>
+                            <input class="the_radio" type="radio" name="text" value="p03"><label for=""><span>按人數均攤</span></label>
+                        </div>
+                        <textarea class="tbox" placeholder="請填寫費用說明">費用包含：D0民宿費、D1早餐、中巴來回車資、300萬意外險附加5萬意外醫療險、入山證代辦服務費、嚮導費、慶功宴。</textarea>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>活動類型<span>(可複選)</span></p></label>
+                        <ul class="event_type clearfix">
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>登山</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>旅行</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>水世界</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox" checked><label for=""><p>慢跑</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>自行車</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>球類</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>全家樂</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>舞蹈</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>武術</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>氣功瑜珈</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>攝影</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>其他</p></label></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title">嚮導群</p></label>
+                         <input class="tbox" id="" name="" type="text" value="">
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>參加方式</p></label>
+                        <div class="radio_select clearfix">
+                            <input class="the_radio" type="radio" name="text" value="p01"><label for=""><span>自由參加</span></label>
+                            <input class="the_radio" type="radio" name="text" value="p02"><label for=""><span>需報名核准</span></label>
+                            <input class="the_radio" type="radio" name="text" value="p03"><label for=""><span>需報名核准及繳費</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>活動地點相片上傳</p></label>
                         <div class="upload_files">
                             <div class="btn"><a class="btn_style">上傳相片</a></div>
-                            <p class="p_s_note">最多可上傳20個檔案</p>
+                            <p class="p_s_note">最少需上傳1張照片</p>
                         </div>
                     </li>
                     <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>請上傳你參加過活動的相片或影片</p></label>
-                        <div class="upload_files">
-                            <div class="files_name"><!-- 點選上傳選擇相片後才會顯示 files_name 這欄位，icon+檔名 按XX刪除 -->
-                                <p><i class="far fa-image"></i> 64w864e8w6e.jpg<a><i class="none fas fa-times"></i></a></p>
-                                <p><i class="far fa-file-video"></i> me_video.jpg<a><i class="none fas fa-times"></i></a></p>
-                                <p><i class="far fa-image"></i> Iloveroya.jpg<a><i class="none fas fa-times"></i></a></p>
-                            </div>
-                            <div class="btn"><a class="btn_style">上傳相片</a></div>
-                            <p class="p_s_note">最多可上傳20張相片，已選擇 3 個相片</p>
-                        </div>
+                        <label for=""><p class="label_title">活動內容說明</p></label>
+                        <textarea class="tbox" placeholder="請填寫活動內容說明"></textarea>
                     </li>
                     <li>
-                        <label for=""><p class="label_title">是否為旅行社</p></label>
-                        <div class="radio_select clearfix">
-                            <input class="the_radio" type="radio" name="text" value="travelAgency_01" checked=""><label for=""><span>是</span></label>
-                            <input class="the_radio" type="radio" name="text" value="travelAgency_02"><label for=""><span>否</span></label>
-                        </div>
-                        <!-- 勾選 是，才會出現以下欄位：公司名稱、負責人姓名 -->
-                        <!-- <div class="upload_files">
-                            <label for=""><p class="label_title">公司名稱</p></label>
-                            <input class="tbox" id="" name="" type="text" value="">
-                            <label for=""><p class="label_title">負責人姓名</p></label>
-                            <input class="tbox t50" id="" name="" type="text" value="">
-                            <label for=""><p class="label_title">身分證明文件 </p></label>
-                            <div class="files_name">
-                                <p><i class="far fa-image"></i> 64w864e8w6e.jpg<a><i class="none fas fa-times"></i></a></p>
-                            </div>
-                            <div class="btn"><a class="btn_style">上傳相片</a></div>
-                            <p class="p_s_note">請上傳任一證明文件(正面)如：健保卡、身分證、駕照</p>
-                        </div> -->
+                        <label for=""><p class="label_title">乘車建議</p></label>
+                        <textarea class="tbox" placeholder="請填寫路線規劃內容"></textarea>
                     </li>
                     <li>
-                        <label for=""><p class="label_title">申請者 E-mail</p></label>
-                        <p class="info_show">abc_tony1278273823.gmaol.com</p>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>連絡電話</p></label>
-                        <input class="tbox t50" id="" name="" type="text" value="">
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">生日</p></label>
-                        <div class="clearfix">
-                            <div class="form-select">
-                                <select class="md-input">
-                                    <option value="0">西元</option>
-                                    <option value="1">1981</option>
-                                    <option value="2">1982</option>
-                                    <option value="3">1983</option>
-                                    <option value="4">1984</option>
-                                    <option value="5">1985</option>
-                                    <option value="6">1986</option>
-                                    <option value="7">1987</option>
-                                    <option value="8" selected="selected">1988</option>
-                                    <option value="9">1989</option>
-                                    <option value="10">1990</option>
-                                    <option value="11">1991</option>
-                                    <option value="12">1992</option>
-                                </select>
-                            </div>
-                            <div class="form-select w95">
-                                <select class="md-input">
-                                    <option value="0">月份</option>
-                                    <option value="0">一月</option>
-                                    <option value="0">二月</option>
-                                    <option value="0">三月</option>
-                                    <option value="0">四月</option>
-                                    <option value="0">五月</option>
-                                    <option value="0">六月</option>
-                                    <option value="0">七月</option>
-                                    <option value="0" selected="selected">八月</option>
-                                    <option value="0">九月</option>
-                                    <option value="0">十月</option>
-                                    <option value="0">十一月</option>
-                                    <option value="0">十二月</option>
-                                </select>
-                            </div>
-                            <div class="form-select w95">
-                                <select class="md-input">
-                                    <option value="0">日期</option>
-                                    <option value="1">01</option>
-                                    <option value="2">02</option>
-                                    <option value="3">03</option>
-                                    <option value="4">04</option>
-                                    <option value="5">05</option>
-                                    <option value="6">06</option>
-                                    <option value="7">07</option>
-                                    <option value="8" selected="selected">08</option>
-                                    <option value="9">09</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                </select>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">性別</p></label>
-                        <div class="radio_select clearfix">
-                            <input class="the_radio" type="radio" name="text" value="gender_01" checked=""><label for=""><span>男</span></label>
-                            <input class="the_radio" type="radio" name="text" value="gender_02"><label for=""><span>女</span></label>
-                        </div>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">緊急連絡人</p></label>
-                        <input class="tbox t50" id="" name="" type="text" value="">
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">緊急連絡人電話</p></label>
-                        <input class="tbox t50" id="" name="" type="text" value="">
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>請輸入Line ID / Line 行動條碼</p></label>
-                        <input class="tbox t50" id="" name="" type="text" value="">
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>請上傳個人相片</p></label>
+                        <label for=""><p class="label_title">活動 LINE 群族二維碼</p></label>
+                        <input class="tbox t50" id="" name="" type="text" value="" placeholder="請填寫 LINE 群族邀請網址">
                         <div class="upload_files">
                             <div class="files_name"><!-- 點選上傳選擇相片後才會顯示 files_name 這欄位，icon+檔名 按XX刪除 -->
-                                <p><i class="far fa-image"></i> isme100x200.jpg<a><i class="none fas fa-times"></i></a></p>
+                                <p><i class="fas fa-qrcode"></i> IMG_5832.PNG<a><i class="none fas fa-times"></i></a></p>
                             </div>
-                            <div class="btn"><a class="btn_style">上傳相片</a></div>
-                        </div>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">簡介</p></label>
-                        <textarea class="tbox" type="text">不多不少，剛剛好</textarea>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">是否為醫護人員</p></label>
-                        <div class="radio_select clearfix">
-                            <input class="the_radio" type="radio" name="text" value="medicalStaff_01" checked=""><label for=""><span>是</span></label>
-                            <input class="the_radio" type="radio" name="text" value="medicalStaff_02"><label for=""><span>否</span></label>
+                            <div class="btn"><a class="btn_style">上傳LINE二維碼</a></div>
                         </div>
                     </li>
                     <li>
@@ -365,7 +322,7 @@
                         <textarea class="tbox"></textarea>
                     </li>
                 </ul>
-                <div class="btn"><input class="btn_style btn_done" type="submit" class="" value="送出申請"></div>
+                <div class="btn btn_both"><input class="btn_style btn_org btn_done" type="submit" class="" value="預覽活動"> <input class="btn_style btn_done" type="submit" class="" value="建立活動"></div>
             </form>
         </div>
     </section>
@@ -375,7 +332,6 @@
     <p class="teachingBox"><a href="#">使用教學</a></p><!-- 每一頁出來的使用教學說明link不一樣 -->
     <a class="go_top"></a>
 </section>
-<div class="Ad_please"></div>
 
 <footer class="FooterBox">
     <section class="serviceBox">

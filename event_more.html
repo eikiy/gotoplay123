@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<title>GoToPlay123來去玩 - 申請成為活動發起人</title>
+<title>GoToPlay123來去玩 - XX活動列表</title>
 <meta name='description' content="GoToPlay123來去玩是一個招集戶外活動的平台，我們的目的是讓大家都能透過這個平台，自行策劃線路、約伴、排程及內容之自助招集或自由參加適合自己的戶外活動，適合喜愛戶外活動、崇尚自由、喜歡團體活動和樂於探索新奇目的地的大眾。"/>
 <meta name='keywords' content="GoToPlay123來去玩, GoToPlay123, 戶外活動, 揪團, 呼朋引伴, 約伴, 團體活動, 大自然, 探索, 邀約, 運動, 熱愛, 自由"/>
 
@@ -27,6 +27,10 @@
 <link rel="stylesheet" href="on-server/css/fontawesome-all.css">
 <script type="text/javascript" src="on-server/js/fontawesome-all.css.js"></script>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
 
 <!-- Menu -->
 <link rel="stylesheet" type="text/css" href="jvmobilemenu/jv-jquery-mobile-menu.css">
@@ -34,6 +38,10 @@
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/retina.min.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
+
+  <!-- jQuery -->
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+<script src="js/jquery.vide.js"></script>
 
 
 </head>
@@ -92,9 +100,9 @@
     <script src="jvmobilemenu/jv-jquery-mobile-menu-min.js"></script>
     <script src="js/script-right.js"></script>
 
-<header class="HeaderBox">
+<!-- <header class="HeaderBox">
     <nav class="Menu ContentsBox clearfix">
-        <h1 class="Gotoplay123_logo"><a href="index.html"></a></h1>
+        <h1 class="Gotoplay123_logo"><a href="index.html">GoTopPlay123</a></h1>
         <ul class="menu clearfix">
             <li><p><a href="index.html">首頁</a></p></li>
             <li class="the_event"><p class="color"><a>活動</a></p>
@@ -167,181 +175,182 @@
             </div>
         </div>
     </nav>
-</header>
-
-<main class="editBox">
-    <section class="ContentsBox">
-        <div class="fillinBox"><!-- 填寫過"個人資料"後，"申請活動發起人"那邊應該要幫他"帶入有填寫的資料"相反的，如果他先"申請過活動發起人"，"未填寫個人資料"，也該幫他自動帶入 -->
-            <h2 class="h2_title">申請成為活動發起人</h2>
-            <form>
-                <ul>
-                    <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>輸入你想成為活動發起人的理由</p></label>
-                        <textarea class="tbox" type="text"></textarea>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>請上傳你參加過活動的相片，並請標註你在哪裡喔！</p></label>
-                        <div class="upload_files">
-                            <div class="btn"><a class="btn_style">上傳相片</a></div>
-                            <p class="p_s_note">最多可上傳15個檔案</p>
+</header> -->
+<main class="middle_contents">
+    <section class="ContentsBox event_item_more clearfix">
+       <div class="leftBox">
+            <div class="eventTopBox clearfix">
+                <h2 class="h2_title h2_icon_02"><a href="event_more.html">登山<span>Mountain climbing</span></a></h2>
+                <div class="eventItemSearch clearfix">
+                    <p class="quantity">共有 <span>114</span> 個活動</p>
+                    <div class="form-select">
+                        <select class="md-input">
+                            <option value="0">顯示全部</option>
+                            <option value="1">活動報名中</option>
+                            <option value="2">已結束</option>
+                        </select>
+                    </div>
+                    <div class="the_data"><input type="" name="" placeholder="日期區間" value="2018/08/23 - 2018/08/30"></div>
+                </div>
+            </div>
+            <ul class="events_list clearfix">
+                <li>
+                    <a href="event_info.html">
+                    <div class="photo" style="background-image:url(images/photo/04.jpg)"><p class="where">澎湖</p></div></a>
+                    <div class="event_post_Summery">
+                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                        <div class="other_info clearfix">
+                            <p class="heart">22人追蹤</p>
+                            <p class="eye">153人看過</p>
+                            <p class="good">153人按讚</p>
                         </div>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>請上傳你參加過活動的相片，並請標註你在哪裡喔！</p></label>
-                        <div class="upload_files">
-                            <div class="files_name"><!-- 點選上傳選擇相片後才會顯示 files_name 這欄位，icon+檔名 按XX刪除 -->
-                                <p><i class="far fa-image"></i> 64w864e8w6e.jpg<a><i class="none fas fa-times"></i></a></p>
-                                <!-- <p><i class="far fa-file-video"></i> me_video.jpg<a><i class="none fas fa-times"></i></a></p> --><!-- 影片取消，但先保留html 之後或許會有？XD -->
-                                <p><i class="far fa-image"></i> Iloveroya.jpg<a><i class="none fas fa-times"></i></a></p>
-                            </div>
-                            <div class="btn"><a class="btn_style">上傳相片</a></div>
-                            <p class="p_s_note">最多可上傳15張相片，已選擇 3 個相片</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="event_info.html">
+                    <div class="photo" style="background-image:url(images/photo/05.jpg)"><p class="where">阿里山</p></div></a>
+                    <div class="event_post_Summery">
+                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                        <div class="other_info clearfix">
+                            <p class="heart">22人追蹤</p>
+                            <p class="eye">153人看過</p>
+                            <p class="good">153人按讚</p>
                         </div>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">是否為旅行社</p></label>
-                        <div class="radio_select clearfix">
-                            <input class="the_radio" type="radio" name="text" value="travelAgency_01" checked=""><label for=""><span>是</span></label>
-                            <input class="the_radio" type="radio" name="text" value="travelAgency_02"><label for=""><span>否</span></label>
+                    </div>
+                </li>
+                <li>
+                    <a href="event_info.html">
+                    <div class="photo" style="background-image:url(images/photo/04.jpg)"><p class="where">北海道</p></div></a>
+                    <div class="event_post_Summery">
+                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                        <div class="other_info clearfix">
+                            <p class="heart">22人追蹤</p>
+                            <p class="eye">153人看過</p>
+                            <p class="good">153人按讚</p>
                         </div>
-                        <!-- 勾選 是，才會出現以下欄位：公司名稱、負責人姓名 -->
-                        <!-- <div class="upload_files">
-                            <label for=""><p class="label_title">公司名稱</p></label>
-                            <input class="tbox" id="" name="" type="text" value="">
-                            <label for=""><p class="label_title">負責人姓名</p></label>
-                            <input class="tbox t50" id="" name="" type="text" value="">
-                            <label for=""><p class="label_title">身分證明文件 </p></label>
-                            <div class="files_name">
-                                <p><i class="far fa-image"></i> 64w864e8w6e.jpg<a><i class="none fas fa-times"></i></a></p>
-                            </div>
-                            <div class="btn"><a class="btn_style">上傳相片</a></div>
-                            <p class="p_s_note">請上傳任一證明文件(正面)如：健保卡、身分證、駕照</p>
-                        </div> -->
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">申請者 E-mail</p></label>
-                        <p class="info_show">abc_tony1278273823@gmaol.com</p>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>連絡電話</p></label>
-                        <input class="tbox t50" id="" name="" type="text" value="">
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">生日</p></label>
-                        <div class="clearfix">
-                            <div class="form-select">
-                                <select class="md-input">
-                                    <option value="0">西元</option>
-                                    <option value="1">1981</option>
-                                    <option value="2">1982</option>
-                                    <option value="3">1983</option>
-                                    <option value="4">1984</option>
-                                    <option value="5">1985</option>
-                                    <option value="6">1986</option>
-                                    <option value="7">1987</option>
-                                    <option value="8" selected="selected">1988</option>
-                                    <option value="9">1989</option>
-                                    <option value="10">1990</option>
-                                    <option value="11">1991</option>
-                                    <option value="12">1992</option>
-                                </select>
-                            </div>
-                            <div class="form-select w95">
-                                <select class="md-input">
-                                    <option value="0">月份</option>
-                                    <option value="0">一月</option>
-                                    <option value="0">二月</option>
-                                    <option value="0">三月</option>
-                                    <option value="0">四月</option>
-                                    <option value="0">五月</option>
-                                    <option value="0">六月</option>
-                                    <option value="0">七月</option>
-                                    <option value="0" selected="selected">八月</option>
-                                    <option value="0">九月</option>
-                                    <option value="0">十月</option>
-                                    <option value="0">十一月</option>
-                                    <option value="0">十二月</option>
-                                </select>
-                            </div>
-                            <div class="form-select w95">
-                                <select class="md-input">
-                                    <option value="0">日期</option>
-                                    <option value="1">01</option>
-                                    <option value="2">02</option>
-                                    <option value="3">03</option>
-                                    <option value="4">04</option>
-                                    <option value="5">05</option>
-                                    <option value="6">06</option>
-                                    <option value="7">07</option>
-                                    <option value="8" selected="selected">08</option>
-                                    <option value="9">09</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                </select>
-                            </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="event_info.html">
+                    <div class="photo" style="background-image:url(images/photo/04.jpg)"><p class="where">澎湖</p></div></a>
+                    <div class="event_post_Summery">
+                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                        <div class="other_info clearfix">
+                            <p class="heart">22人追蹤</p>
+                            <p class="eye">153人看過</p>
+                            <p class="good">153人按讚</p>
                         </div>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">性別</p></label>
-                        <div class="radio_select clearfix">
-                            <input class="the_radio" type="radio" name="text" value="gender_01" checked=""><label for=""><span>男</span></label>
-                            <input class="the_radio" type="radio" name="text" value="gender_02"><label for=""><span>女</span></label>
+                    </div>
+                </li>
+                <li>
+                    <a href="event_info.html">
+                    <div class="photo" style="background-image:url(images/photo/04.jpg)"><p class="where">澎湖</p></div></a>
+                    <div class="event_post_Summery">
+                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                        <div class="other_info clearfix">
+                            <p class="heart">22人追蹤</p>
+                            <p class="eye">153人看過</p>
+                            <p class="good">153人按讚</p>
                         </div>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">緊急連絡人</p></label>
-                        <input class="tbox t50" id="" name="" type="text" value="">
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">緊急連絡人電話</p></label>
-                        <input class="tbox t50" id="" name="" type="text" value="">
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>請輸入Line ID / Line 行動條碼</p></label>
-                        <input class="tbox t50" id="" name="" type="text" value="" placeholder="請輸入Line ID">
-                        <div class="upload_files">
-                            <div class="files_name"><!-- 點選上傳選擇相片後才會顯示 files_name 這欄位，icon+檔名 按XX刪除 -->
-                                <p><i class="fas fa-qrcode"></i> IMG_5832.PNG<a><i class="none fas fa-times"></i></a></p>
-                            </div>
-                            <div class="btn"><a class="btn_style">上傳LINE二維碼</a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="event_info.html">
+                    <div class="photo" style="background-image:url(images/photo/04.jpg)"><p class="where">澎湖</p></div></a>
+                    <div class="event_post_Summery">
+                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                        <div class="other_info clearfix">
+                            <p class="heart">22人追蹤</p>
+                            <p class="eye">153人看過</p>
+                            <p class="good">153人按讚</p>
                         </div>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>請上傳個人相片</p></label>
-                        <div class="upload_files">
-                            <div class="files_name"><!-- 點選上傳選擇相片後才會顯示 files_name 這欄位，icon+檔名 按XX刪除 -->
-                                <p><i class="far fa-image"></i> isme100x200.jpg<a><i class="none fas fa-times"></i></a></p>
-                            </div>
-                            <div class="btn"><a class="btn_style">上傳相片</a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="event_info.html">
+                    <div class="photo" style="background-image:url(images/photo/04.jpg)"><p class="where">澎湖</p></div></a>
+                    <div class="event_post_Summery">
+                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                        <div class="other_info clearfix">
+                            <p class="heart">22人追蹤</p>
+                            <p class="eye">153人看過</p>
+                            <p class="good">153人按讚</p>
                         </div>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">簡介</p></label>
-                        <textarea class="tbox" type="text">不多不少，剛剛好</textarea>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">是否為醫護人員</p></label>
-                        <div class="radio_select clearfix">
-                            <input class="the_radio" type="radio" name="text" value="medicalStaff_01" checked=""><label for=""><span>是</span></label>
-                            <input class="the_radio" type="radio" name="text" value="medicalStaff_02"><label for=""><span>否</span></label>
+                    </div>
+                </li>
+                <li>
+                    <a href="event_info.html">
+                    <div class="photo" style="background-image:url(images/photo/04.jpg)"><p class="where">澎湖</p></div></a>
+                    <div class="event_post_Summery">
+                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                        <div class="other_info clearfix">
+                            <p class="heart">22人追蹤</p>
+                            <p class="eye">153人看過</p>
+                            <p class="good">153人按讚</p>
                         </div>
-                    </li>
-                    <li>
-                        <label for=""><p class="label_title">備註 (請輸入特殊專長，例如：高山響導，緊急救護...等)</p></label>
-                        <textarea class="tbox"></textarea>
-                    </li>
-                </ul>
-                <div class="btn"><input class="btn_style btn_done" type="submit" class="" value="送出申請"></div>
-            </form>
+                    </div>
+                </li>
+                <li>
+                    <a href="event_info.html">
+                    <div class="photo" style="background-image:url(images/photo/04.jpg)"><p class="where">北海道</p></div></a>
+                    <div class="event_post_Summery">
+                        <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                        <h3 class="even_name"><a href="event_info.html">紅毛埤山</a></h3>
+                        <div class="other_info clearfix">
+                            <p class="heart">22人追蹤</p>
+                            <p class="eye">153人看過</p>
+                            <p class="good">153人按讚</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="AdBox2">
+                <div class="ad300x250"></div>
+            </div>
+            <ul class="pageBox"> <!-- 最多八個或幾個網站? 就出現頁籤 -->
+                <li><p><a href="#" class="border">Prev</a></p></li>
+                <li><p><a href="#">1</a></p></li>
+                <li><p><a class="btn_in" href="#">2</a></p></li>
+                <li><p><a href="#">3</a></p></li>
+                <li><p><a href="#">4</a></p></li>
+                <li><p>...</p></li>
+                <li><p><a href="#">15</a></p></li>
+                <li><p><a href="#">16</a></p></li>
+                <li><p><a href="#">17</a></p></li>
+                <li><p><a href="#" class="border">Next</a></p></li>
+            </ul>
+            <div class="AdBox">
+                <div class="ad300x100"></div>
+                <div class="ad300x100"></div>
+                <div class="ad300x100"></div>
+                <div class="ad300x100"></div>
+            </div>
+        </div>
+        <div class="rightAD">
+            <div class="AdBox">
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+                <div class="ad300x600"></div>
+            </div>
         </div>
     </section>
 </main>
-
-<section class="fixed_screenBox">
-    <p class="teachingBox"><a href="#">使用教學</a></p><!-- 每一頁出來的使用教學說明link不一樣 -->
+<!-- 每一頁出來的使用教學說明link不一樣 -->
+<!-- <section class="fixed_screenBox">
+    <p class="teachingBox"><a href="#">使用教學</a></p>
     <a class="go_top"></a>
 </section>
+<div class="Ad_please"></div> -->
 
 <footer class="FooterBox">
     <section class="serviceBox">

@@ -124,7 +124,7 @@ body{ min-width: 320px;}
 .middle_contents .leftBox .events_list .photo p.where{ position: absolute; bottom: 10px; right: 10px; font-size: 14px; line-height: 24px; padding: 3px 15px;  -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; color: #fff; background-color: rgba(0,0,0,.8);}
 .middle_contents .leftBox .events_list .event_post_Summery{padding: 12px 0 10px; width: calc(100% - 30px); margin: 0 auto;}
 .middle_contents .leftBox .events_list .event_post_Summery p.date{ font-size: 15px; color: #777777; padding-bottom: 3px; }
-.middle_contents .leftBox .events_list .event_post_Summery h3.even_name{font-size: 20px; line-height: 30px;}
+.middle_contents .leftBox .events_list .event_post_Summery h3.even_name{font-size: 20px; line-height: 30px; height: 30px; display: block; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; height: 30px * 1;}
 .middle_contents .leftBox .events_list .event_post_Summery h3.even_name a{ color: #333; }
 .middle_contents .leftBox .events_list .event_post_Summery h3.even_name a:hover{ color: #68b82d;}
 .middle_contents .leftBox .events_list .event_post_Summery .other_info{width: 100%; padding-top:8px; }
@@ -152,7 +152,7 @@ body{ min-width: 320px;}
 .index_mainBanner::after{position: absolute; content: ""; width: 100%; height: 500px; display: block; z-index: 13; top: 0; left: 0; background-color: rgba(169, 227, 255, 0.3); /*-webkit-filter:blur(3px);*/ }
 .index_mainBanner p.source{ color: #fff; position: absolute; right: 2%; bottom: 10px; z-index: 14;}
 
-.main_searchBox{ width: 950px; height: 60px; background-color: rgb(0,0,0,.5); position: absolute; top: 50%; margin-top: -30px; left: 50%; margin-left: -475px; z-index: 15;}
+.main_searchBox{ width: 950px; height: 60px; background-color: rgb(0,0,0,.5); position: absolute; top: 50%; margin-top: -30px; left: 50%; margin-left: -475px; z-index: 14;}
 .main_searchBox .the_item{ width:calc( (100% - 152px) / 4); float: left; position: relative; }
 .main_searchBox .the_item .form-select{  float: left; border:none; display: block; background-color: transparent; width: 100%; height: 60px; padding: 0px 10px 0px 20px; font-size: 15px; line-height: 60px;  color: #fff; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
 .main_searchBox .the_item .form-select::-ms-expand{  display: none;}/*IE 10 */
@@ -243,11 +243,11 @@ body{ min-width: 320px;}
 .fixed_screenBox{ position: fixed; bottom:205px; right: 15px; z-index: 15; text-align: right; }
 .fixed_screenBox p.teachingBox{ text-indent: -9999px;}
 .fixed_screenBox p.teachingBox a{width: 74px; height: 93px; color: transparent; display: inline-block; background: url(../images/img_teaching.png); background-size: contain;}
-.fixed_screenBox a.go_top{width: 74px; height: 55px; cursor: pointer; display: inline-block; background: url(../images/img_gotop.png); background-size: contain;}
+.fixed_screenBox a.go_top{width: 74px; height: 55px; cursor: pointer; display: inline-block; background: url(../images/img_gotop.png) center center no-repeat; background-size: contain; }
 .fixed_screenBox a.go_top:hover{opacity: .9;}
 .Ad_please{ position: fixed;bottom: 10px; right: 10px; z-index: 14; width: 200px; height: 216px; display: block; background: url(../images/img_ad_please.png); background-size: contain; }
 
-/*register*/
+/*register & login*/
 .registerBox{ width: 100%; min-height: 100vh; background:url(../images/br/br_01.jpg) center center no-repeat; background-size: cover; background-attachment: fixed; }
 .registerBox .ContentsBox{padding: 80px 0; max-width: 460px;}
 .registerBox h1.Gotoplay123_logo{ width: 100%;}
@@ -258,6 +258,7 @@ body{ min-width: 320px;}
 
 .fillinBox{ width:calc(100% - 110px); padding:40px 55px; background-color: #fff; -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px; margin: 0 auto; box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 35px, rgba(0, 0, 0, 0.22) 0px 10px 18px; }
 .fillinBox input.tbox, .fillinBox textarea.tbox{ width:calc(100% - 30px); color: #333; margin-bottom: 10px; font-size: 15px; background-color: #eff0f1; height: 35px; line-height: 35px; padding: 5px 15px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+.fillinBox textarea.tbox{ line-height: 26px;}
 .fillinBox input.tbox::-webkit-input-placeholder, .fillinBox textarea.tbox::-webkit-input-placeholder { color: #888888;}/* WebKit browsers */
 .fillinBox input.tbox::-moz-placeholder, .fillinBox textarea.tbox::-moz-placeholder { color: #888888;}/* Mozilla Firefox 4 to 18 */
 .fillinBox input.tbox::-ms-input-placeholder, .fillinBox textarea.tbox::-ms-input-placeholder { color: #888888;}/* Internet Explorer 10+ */
@@ -305,15 +306,16 @@ body{ min-width: 320px;}
 .br_02{ background-image: url(../images/br/br_03.jpg);}
 .br_03{ background-image: url(../images/br/br_04.jpg);}
 
-
+/* 表單之類的頁面 */
 .editBox{ width: 100%; min-height:calc( 100vh - 220px); background:url(../images/br/br_04.jpg) center center no-repeat; background-size: cover; background-attachment: fixed;}
 .editBox .ContentsBox{ padding: 170px 0 110px 0; max-width: 700px;}
 .editBox h2.h2_title{ font-size: 26px; color: #68b82d; text-align: center; padding-bottom: 15px; }
 .editBox .fillinBox ul{width: 100%;}
 .editBox .fillinBox ul li{ padding-bottom: 15px; }
 .editBox .fillinBox p.label_title{ padding: 12px; font-weight: bold;}
-.editBox .fillinBox p.info_show{ color: #68b82d; width: calc(100% - 30px); padding: 10px 15px; font-size: 15px; line-height: 24px;}
-.editBox .fillinBox .f_red{ color: #ff2121; }
+.editBox .fillinBox p.label_title span{ color: #666666; }
+.editBox .fillinBox p.info_show{ color: #68b82d; width: calc(100% - 30px); padding: 10px 15px; line-height: 24px;}
+.editBox .fillinBox .f_red, .editBox .fillinBox p.label_title span.f_red{color: #ff2121; }
 .editBox .fillinBox textarea.tbox{ min-height: 50px; }
 .editBox .fillinBox .website p.right_title{ line-height: 45px; float: left; width: 90px; padding-left: 12px;  }
 .editBox .fillinBox .website input.tbox{ float: left; width: calc(100% - 143px); }
@@ -342,26 +344,82 @@ body{ min-width: 320px;}
 .editBox .addressBox .form-select{ width:160px;}
 .editBox .addressBox input.tbox{ width:calc(50% - 40px) ; max-width: 160px; margin-right: 10px;}
 .editBox .addressBox input.tbox100{ width: calc(100% - 30px); max-width: inherit; margin-top: 10px;}
+
 .editBox .btn{ padding-bottom: 10px; max-width: 360px; margin: 0 auto;}
 .editBox .btn .btn_done{ max-width: 360px; height: 56px; line-height: 56px;}
+
 .editBox .upload_files .btn{ max-width:170px; margin: 0; padding: 0 15px 10px 15px; }
 .editBox .upload_files .files_name{text-align: left; padding:0 15px 15px 15px;}
 .editBox .upload_files .files_name p{ display: inline-block; margin-right: 15px; color: #333; line-height: 30px;}
 .editBox .upload_files .files_name p i{padding-right: 5px; color: #68b82d; font-size: 18px;}
 .editBox .upload_files .files_name p i.none{ cursor: pointer; color: #bbbbbb; padding: 0 0 0 10px;}
 .editBox .upload_files .files_name p i.none:hover{ color: #333; }
+
 .editBox .fillinBox .the_radio{ width: 18px; height: 44px; float: left; }
-.editBox .fillinBox .map_ex{ padding: 0 15px; }
+.editBox .fillinBox .map_ex{ padding: 0 15px;}
 .editBox .fillinBox .map_ex label{ float: left;}
 .editBox .fillinBox .map_ex p{ line-height: 20px; color: #666; }
+.editBox .fillinBox .map_ex p.p_s_note{ padding: 0 15px 10px 10px;}
 .editBox .fillinBox .map_ex p a{ color: #68b82d; }
 .editBox .fillinBox .map_ex p a:hover{text-decoration: underline;}
 .editBox .fillinBox .map_ex .the_radio{height: 20px;}
 
+.editBox .fillinBox .dataBox{ width: 100%;}
+.editBox .fillinBox .dataBox p{ padding: 0 15px; float: left; line-height: 45px;}
+.editBox .fillinBox .the_data{ float: left; width:calc( (100% - 152px) / 2); min-width: 150px; position: relative; border:none; display: block; background-color: transparent; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
+.editBox .fillinBox .the_data input{ background-color: #eff0f1; color: #333; width: calc(100% - 50px); font-size: 15px; height: 45px; line-height: 45px; padding: 0px 10px 0px 40px; }
+.editBox .fillinBox .the_data input::-webkit-input-placeholder { /* WebKit browsers */color:#333;}
+.editBox .fillinBox .the_data input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:#333;}
+.editBox .fillinBox .the_data input::-moz-placeholder { /* Mozilla Firefox 19+ */color:#333;}
+.editBox .fillinBox .the_data input:-ms-input-placeholder { /* Internet Explorer 10+ */color:#333;}
+.editBox .fillinBox .the_data::before{ content: '\f073'; text-align: center; position: absolute; width: 40px; color: #bbbbbb; height: 45px; line-height: 45px; top: 0; left: 0; cursor: pointer; font-family:  Font Awesome\ 5 Free; font-weight: 900; }
+.editBox .fillinBox .the_data::after{ content: '\f107'; text-align: center; width: 40px; height: 45px; line-height: 45px; position: absolute; top: 0px; cursor: pointer; right: 0px; color: #bbbbbb;  font-family:  Font Awesome\ 5 Free; font-weight: 900; }
+
+.editBox .fillinBox ul.event_type{ padding: 0 15px;}
+.editBox .fillinBox ul.event_type li{ float: left; display: inline-block; padding-right: 25px; padding-bottom: 5px;}
+.editBox .fillinBox ul.event_type li p{ float: left; line-height: 44px; padding-left: 10px;}
+.editBox .fillinBox ul.event_type li .the_radio{ height: 44px; }
+.editBox .fillinBox ul.event_type li input.t50{float: left; max-width:140px; margin-left: 10px; }
+.editBox .btn_both{ text-align: center; max-width: inherit; }
+.editBox .btn_both .btn_style{ display: inline-block; width: 50%; max-width: 240px ; margin: 0 5px;}
+.editBox .btn .btn_org{background-color: #f08700;}
 .editBox p.goback{text-align: center; padding: 10px 0 20px 0;}
 .editBox p.goback a{color: #68b82d;}
 .editBox p.goback a:hover{text-decoration: underline;}
 
+/*活動內頁相關*/
+.middle_contents .leftBox .eventTopBoxㄝ{width: 100%;}
+.middle_contents .leftBox .eventTopBox h2.h2_title{display: inline-block; float: left;}
+.middle_contents .leftBox .eventTopBox p.quantity{ float: left; line-height: 20px; padding: 10px 25px 0 5px;}
+.middle_contents .leftBox .eventTopBox p.quantity span{color: #67b82d;}
+.middle_contents .eventItemSearch{float: right;}
+.eventItemSearch .form-select{ width:130px; float: left; position: relative; margin-right: 10px; padding-bottom: 5px;}
+.eventItemSearch .form-select .md-input{ width: 100%; border:none; display: block; background-color: #f3f3f3; height: 40px; padding: 0px 15px 0 12px; -moz-border-radius: 5px; -webkit-border-radius: 5px;  border-radius: 5px; font-size: 15px; line-height: 40px;  color: #333; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
+.eventItemSearch .form-select::after{ content: "\f107"; position: absolute; top:0px; height: 40px; line-height: 40px;  color: #bbbbbb; right: 15px; display: inline-block; font-family:  Font Awesome\ 5 Free; font-weight: 900;}
+.eventItemSearch .form-select::-ms-expand{  display: none;}/*IE 10 */
+.eventItemSearch .the_data{ float: left; width:260px; position: relative; border:none; display: block; background-color: transparent; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
+.eventItemSearch .the_data input{ background-color: #f3f3f3; color: #333; width: calc(100% - 50px); font-size: 15px; height: 40px; line-height: 40px; padding: 0px 10px 0px 40px; }
+.eventItemSearch .the_data input::-webkit-input-placeholder { /* WebKit browsers */color:#333;}
+.eventItemSearch .the_data input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:#333;}
+.eventItemSearch .the_data input::-moz-placeholder { /* Mozilla Firefox 19+ */color:#333;}
+.eventItemSearch .the_data input:-ms-input-placeholder { /* Internet Explorer 10+ */color:#333;}
+.eventItemSearch .the_data::before{ content: '\f073'; text-align: center; position: absolute; width: 40px; color: #bbbbbb; height: 40px; line-height: 40px; top: 0; left: 0; cursor: pointer; font-family:  Font Awesome\ 5 Free; font-weight: 900; }
+.eventItemSearch .the_data::after{ content: '\f107'; text-align: center; width: 40px; height: 40px; line-height: 40px; position: absolute; top: 0px; cursor: pointer; right: 0px; color: #bbbbbb;  font-family:  Font Awesome\ 5 Free; font-weight: 900; }
+
+.event_item_more .leftBox ul.events_list li:nth-child(3n+1) { margin-left: 0;}
+.event_item_more .leftBox ul.events_list li:nth-child(3n) { margin-right: 0;}
+.event_item_more .leftBox ul.events_list li:nth-child(4) { display: block;}
+.event_item_more .leftBox ul.events_list{ padding-bottom: 0px;}
+
+/*pageBox*/
+.middle_contents ul.pageBox{width: 100%; text-align: center; padding: 20px 0 60px 0;}
+.middle_contents ul.pageBox li{display: inline-block; margin: 0 3px;}
+.middle_contents ul.pageBox li p{font-size: 14px; color: #666;}
+.middle_contents ul.pageBox li p a{ padding:8px 14px; color: #666; display: inline-block;}
+.middle_contents ul.pageBox li p a:hover{color: #67b82d;}
+.middle_contents ul.pageBox li p a.btn_in{ color: #67b82d; font-weight: bold; /*border-bottom: 1px solid #27d0ca; */}
+.middle_contents ul.pageBox li p a.border{border: 1px solid #c9c9c9; font-size: 13px;}
+.middle_contents ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 
 
 /*==== RWD ====*/
@@ -372,14 +430,22 @@ body{ min-width: 320px;}
 	.HeaderBox .Menu .searchBox{max-width: 170px;}
 	.middle_contents .leftBox .AdBox .ad300x100:nth-child(4){ display: inline-block; }
 }
+@media (max-width:1250px){
+	.middle_contents .eventItemSearch{ width: 100%; padding-bottom: 15px; }
+}
 
 @media (max-width:1200px){
 	.HeaderBox .Menu ul.menu{padding-left: 15px;}
 	.HeaderBox .Menu ul.menu li p a{padding: 10px 15px 25px 15px;}
 	.middle_contents .leftBox ul.events_list li{ width: calc(50% - 16px);}
-	.middle_contents .leftBox ul.events_list li:nth-child(2) { margin-right: 0;}
-	.middle_contents .leftBox ul.events_list li:nth-child(3) { margin-right: 12px; margin-left: 0;}
-	.middle_contents .leftBox ul.events_list li:nth-child(4) { margin-right: 0; display: block; }
+	/*.middle_contents .leftBox ul.events_list li:nth-child(1) { margin-left: inherit;}
+	.middle_contents .leftBox ul.events_list li:nth-child(3) { margin-right: inherit;}
+	.middle_contents .leftBox ul.events_list li:nth-child(4) { display: inherit;}*/
+
+	.middle_contents .leftBox ul.events_list li:nth-child(1n) { margin-right: 15px; margin-left: 0;}
+	.middle_contents .leftBox ul.events_list li:nth-child(2n) { margin-right: 0px; margin-left: 15px;}
+/*	.middle_contents .leftBox ul.events_list li:nth-child(3n) { margin-right: 15px; margin-left: 0;}
+	.middle_contents .leftBox ul.events_list li:nth-child(4n) { margin-left: 15px; display: block; }*/
 	.middle_contents .AdBox .ad300x600:nth-child(odd){ display: inline-block; }
 	.gotopaly_noticeBox .AdBox .ad300x600:nth-child(odd){display:initial;}
 }
@@ -424,6 +490,13 @@ body{ min-width: 320px;}
 @media (max-width:650px){
 	.gotopaly_noticeBox .bothBox .lBox{ width: 100%; }
 	.gotopaly_noticeBox .bothBox .rBox{width: 100%; padding-left: 0;}
+	.editBox .btn_both .btn_style{ width: 46%; margin: 0 1%;}
+	.registerBox .btn .btn_style, .editBox .btn .btn_style{ font-size: 15px; }
+	.fixed_screenBox{ bottom: 155px; }
+	.fixed_screenBox p.teachingBox a{ width: 60px; height: 75px; }
+	.fixed_screenBox a.go_top{width: 60px;}
+	.Ad_please{ width: 150px; height: 162px;}
+	.FooterBox .copyright{padding: 20px 0;}
 }
 @media (max-width:600px){
 	.ContentsBox{width: 90%;}
@@ -436,9 +509,11 @@ body{ min-width: 320px;}
 	.middle_contents .leftBox h2.h2_title a.more{font-size: 14px;}
 	.middle_contents .leftBox ul.events_list{padding-bottom: 15px;}
 	.middle_contents .leftBox ul.events_list li{ width: calc(100%); margin: 0  0 22px;}
+	.middle_contents .leftBox ul.events_list li:nth-child(2n) { margin-right: 0px; margin-left: 0px;}
 	.middle_contents .leftBox ul.events_list li:nth-child(4){display: none;}
 	.middle_contents .leftBox .AdBox2{display: block;}
 	.middle_contents .leftBox .AdBox3{display: none;}
+	.event_item_more .leftBox ul.events_list li:nth-child(4){ display: block;}
 	.FooterBox .serviceBox .infoBox{ width: calc(50% - 10px);}
 	.FooterBox .serviceBox .infoBox:nth-child(3){ width: 100%; padding-top: 20px;}
 
@@ -446,13 +521,16 @@ body{ min-width: 320px;}
 	.registerBox h2{padding-bottom: 10px;}
 	.registerBox h2 span{display: block;}
 	.registerBox .fillinBox, .editBox .fillinBox{width: calc(100% - 50px); padding: 25px;}
-	.registerBox .fillinBox input.tbox, .editBox .fillinBox input.tbox, .editBox .form-select .md-input {font-size: 14px;}
+	.registerBox .fillinBox input.tbox, .editBox .fillinBox input.tbox, .editBox .form-select .md-input, .fillinBox input.tbox,	.fillinBox textarea.tbox, .editBox .radio_select span, .editBox .fillinBox ul.event_type li p, .editBox .upload_files .files_name p, .editBox .fillinBox .the_data input {font-size: 14px;}
 	.registerBox .btn .btn_style{font-size: 15px;}
 	.registerBox .confirm{padding-bottom: 20px;}
 	.registerBox .confirm p{font-size: 13px;}
 	.registerBox .Copyright_info p{font-size: 11px;}
-	.editBox .w95, .editBox .addressBox .form-select{padding-bottom: 10px;}
-
+	.editBox .btn .btn_done{ height: 50px; line-height: 50px; }
+	.editBox .w95, .editBox .addressBox .form-select{ padding-bottom: 10px;}
+	.middle_contents .leftBox .eventTopBox h2.h2_title{ padding-bottom: 15px; border-bottom: 1px solid #cacacb; width: calc(100% - 50px);}
+	.middle_contents .eventItemSearch{padding-top: 5px;}
+	.eventItemSearch .form-select .md-input{font-size: 14px;}
 }
 @media (max-width:550px){
 	.HeaderBox .the_language{ display: none; }
