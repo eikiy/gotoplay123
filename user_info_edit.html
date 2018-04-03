@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<title>GoToPlay123來去玩(網) - 編輯個人資料</title>
-<meta name='description' content="GoToPlay123來去玩(網)是一個招集戶外活動的平台，我們的目的是讓大家都能透過這個平台，自行策劃線路、約伴、排程及內容之自助招集或自由參加適合自己的戶外活動，適合喜愛戶外活動、崇尚自由、喜歡團體活動和樂於探索新奇目的地的大眾。"/>
+<title>GoToPlay123來去玩 - 編輯個人資料</title>
+<meta name='description' content="GoToPlay123來去玩是一個招集戶外活動的平台，我們的目的是讓大家都能透過這個平台，自行策劃線路、約伴、排程及內容之自助招集或自由參加適合自己的戶外活動，適合喜愛戶外活動、崇尚自由、喜歡團體活動和樂於探索新奇目的地的大眾。"/>
 <meta name='keywords' content="GoToPlay123來去玩, GoToPlay123, 戶外活動, 揪團, 呼朋引伴, 約伴, 團體活動, 大自然, 探索, 邀約, 運動, 熱愛, 自由"/>
 
 <meta property="og:image" content="http://www.gotoplay123.com/images/share_pic.jpg"/>
-<meta property="og:title" content="GoToPlay123來去玩(網)"/>
+<meta property="og:title" content="GoToPlay123來去玩"/>
 <meta property="og:url" content="http://www.gotoplay123.com"/>
-<meta property="og:description" content="GoToPlay123來去玩(網)是一個招集戶外活動的平台，我們的目的是讓大家都能透過這個平台，自行策劃線路、約伴、排程及內容之自助招集或自由參加適合自己的戶外活動，適合喜愛戶外活動、崇尚自由、喜歡團體活動和樂於探索新奇目的地的大眾。"/>
+<meta property="og:description" content="GoToPlay123來去玩是一個招集戶外活動的平台，我們的目的是讓大家都能透過這個平台，自行策劃線路、約伴、排程及內容之自助招集或自由參加適合自己的戶外活動，適合喜愛戶外活動、崇尚自由、喜歡團體活動和樂於探索新奇目的地的大眾。"/>
 <meta property="og:type" content="website"/>
 
 <!-- Share image -->
@@ -182,7 +182,7 @@
                             </div>
                             <div class="user_name">
                                 <label for=""><p class="label_title"><span class="f_red">*</span>稱呼</p></label>
-                                <input class="tbox" id="" name="" type="text" value="小太陽">
+                                <input class="tbox" id="" name="" type="text" value="">
                                 <p class="p_s_note">希望活動中隊員如何稱呼你(例如：小蘋果等)</p>
                             </div>
                         </div>
@@ -191,10 +191,10 @@
                         <label for=""><p class="label_title"><span class="f_red">*</span>E-mail</p></label>
                         <input class="tbox" id="" name="" type="text" value="">
                     </li>
-                    <li>
+                    <!-- <li>
                         <label for=""><p class="label_title">個人介紹</p></label>
                         <textarea class="tbox" type="text"></textarea>
-                    </li>
+                    </li> -->
                     <li>
                         <label for=""><p class="label_title">個人網址</p></label>
                         <div class="website clearfix">
@@ -280,7 +280,7 @@
                                     <option value="2">文山區</option>
                                 </select>
                             </div>
-                            <input class="tbox tbox100" id="" name="" type="text" value="請輸入街道地址">
+                            <input class="tbox tbox100" id="" name="" type="text" placeholder="請輸入街道地址">
                         </div>
                         <!-- 選擇其他國家，顯示以下↓ -->
                         <div class="clearfix">
@@ -295,7 +295,7 @@
                     <li>
                         <label for=""><p class="label_title">連絡電話</p></label>
                         <input class="tbox t50" id="" name="" type="text" value="">
-                        <p class="p_s_note">方便參加活動時,領隊在必要時能聯繫到你 !</p>
+                        <p class="p_s_note">方便參加活動時，領隊在必要時能聯繫到你 !</p>
                     </li>
                     <li>
                         <label for=""><p class="label_title">性別</p></label>
@@ -319,6 +319,12 @@
                     <li>
                         <label for=""><p class="label_title">請輸入Line ID / Line 行動條碼</p></label>
                         <input class="tbox t50" id="" name="" type="text" value="">
+                        <div class="upload_files">
+                            <div class="files_name"><!-- 點選上傳選擇相片後才會顯示 files_name 這欄位，icon+檔名 按XX刪除 -->
+                                <p><i class="fas fa-qrcode"></i> IMG_5832.PNG<a><i class="none fas fa-times"></i></a></p>
+                            </div>
+                            <div class="btn"><a class="btn_style">上傳Line 行動條碼</a></div>
+                        </div>
                     </li>
                     <li>
                         <label for=""><p class="label_title">是否為旅行社</p></label>
@@ -348,7 +354,7 @@
                         </div>
                     </li>
                     <li>
-                        <label for=""><p class="label_title">備註</p></label>
+                        <label for=""><p class="label_title">備註 (請輸入特殊專長，例如：高山響導，緊急救護...等)</p></label>
                         <textarea class="tbox"></textarea>
                     </li>
                 </ul>
@@ -358,6 +364,12 @@
         </div>
     </section>
 </main>
+
+<section class="fixed_screenBox">
+    <p class="teachingBox"><a href="#">使用教學</a></p><!-- 每一頁出來的使用教學說明link不一樣 -->
+    <a class="go_top"></a>
+</section>
+<div class="Ad_please"></div>
 
 <footer class="FooterBox">
     <section class="serviceBox">
@@ -374,10 +386,11 @@
                 <li><p><a href="event_terms.html">活動風險告知及免責聲明</a></p></li>
             </ul>
             <ul class="infoBox box-w">
-                <li><h4>客服中心</h4></li>
-                <li><p class="doubt">若您對本服務隱私權保護政策或個人資料行使權利有任何疑問，請參考<span>關於本站</span>及<span>網路條款內容</span><br>
-                    Email：<a href="mailto:Service@gotoplay123.com">Service@gotoplay123.com</a><br>
-                    週一至週五 09:00-17:30</p></li>
+                <li><h4>聯絡我們</h4></li>
+                <li><p class="mail">客服信箱：<a href="mailto:Service@gotoplay123.com">Service@gotoplay123.com</a></p></li>
+                <li><p class="mail">合作洽詢：<a href="mailto:marketing@gotoplay123.com">marketing@gotoplay123.com</a></p></li>
+                <li><p class=""><span>服務時間：週一至週五 09:00-17:30</span></p></li>
+                <li><p class="doubt">若您對本服務隱私權保護政策或個人資料行使權利有任何疑問，請參考<span>關於本站</span>及<span>網路條款</span>內容</p></li>
             </ul>
             <div class="infoBox box-w">
                 <div class="followUsBox">

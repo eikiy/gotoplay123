@@ -201,7 +201,7 @@ body{ min-width: 320px;}
 .FooterBox .serviceBox .infoBox p a{ color: #666;word-break: keep-all;}
 .FooterBox .serviceBox .infoBox p a:hover{text-decoration: underline;}
 .FooterBox .serviceBox .infoBox p.company{ font-size: 14px; color: #959595;line-height: 22px; padding-top: 10px;}
-.FooterBox .serviceBox .infoBox p.doubt{ max-width: 328px; font-size: 14px; /*font-weight: bold;*/}
+.FooterBox .serviceBox .infoBox p.doubt{ max-width: 328px; color: #959595; font-size: 14px; /*font-weight: bold;*/}
 .FooterBox .serviceBox .infoBox p.doubt span{font-weight: bold;}
 .FooterBox .serviceBox .box-w{ width: calc(28% - 10px); }
 
