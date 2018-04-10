@@ -35,7 +35,6 @@
 <script type="text/javascript" src="js/retina.min.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
 
-
 </head>
 <body class="page">
 <div id="fb-root"></div>
@@ -179,24 +178,71 @@
                         <label for=""><p class="label_title"><span class="f_red">*</span>活動名稱</p></label>
                         <input class="tbox" id="" name="" type="text" value="">
                     </li>
+
+                    <!-- 20180410出發地目的地說要改成像 點選台灣各縣市或國外 -->
                     <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>出發地</p></label>
-                        <input class="tbox t50" id="" name="" type="text" value="">
-                        <!-- 勾選才會出現此 input 欄位 ↓ -->
-                        <!-- <input class="tbox" id="" name="" type="text" value="" placeholder="請輸入 Google Map 連結"> -->
-                        <div class="map_ex clearfix">
-                            <input class="the_radio" type="checkbox"><label for=""><p class="p_s_note">輸入 Google Map 連結  <a href="#">範例教學</a></p></label>
+                        <label for=""><p class="label_title">出發地</p></label>
+                        <div class="radio_select clearfix">
+                            <input class="the_radio" type="radio" name="text" value="country_01" checked=""><label for=""><span>台灣</span></label>
+                            <input class="the_radio" type="radio" name="text" value="country_02"><label for=""><span>其他</span></label>
+                        </div>
+                        <!-- 選擇台灣顯示以下↓ -->
+                        <div class="addressBox clearfix">
+                            <div class="form-select">
+                                <select class="md-input">
+                                    <option value="0">請選擇縣市</option>
+                                    <option value="1">台北市</option>
+                                    <option value="2">新北市</option>
+                                </select>
+                            </div>
+                             <div class="form-select">
+                                <select class="md-input">
+                                    <option value="0">請選擇行政區</option>
+                                    <option value="1">中正區</option>
+                                    <option value="2">文山區</option>
+                                </select>
+                            </div>
+                            <input class="tbox tbox100" id="" name="" type="text" placeholder="請輸入街道地址">
+                        </div>
+                        <!-- 選擇其他國家，顯示以下↓ -->
+                        <div class="clearfix">
+                            <input class="tbox" id="" name="" type="text" placeholder="請輸入聯絡地址">
+                            <p class="p_s_note">若居住地非台灣地區，請直接於地址欄輸入即可</p>
                         </div>
                     </li>
+
                     <li>
-                        <label for=""><p class="label_title"><span class="f_red">*</span>目的地</p></label>
-                        <input class="tbox t50" id="" name="" type="text" value="">
-                        <!-- 勾選才會出現此 input 欄位 ↓ -->
-                        <input class="tbox" id="" name="" type="text" value="" placeholder="請輸入 Google Map 連結">
-                        <div class="map_ex clearfix">
-                            <input class="the_radio" type="checkbox" checked=""><label for=""><p class="p_s_note">輸入 Google Map 連結  <a href="#">範例教學</a></p></label>
+                        <label for=""><p class="label_title">目的地</p></label>
+                        <div class="radio_select clearfix">
+                            <input class="the_radio" type="radio" name="text1" value="country_01" checked=""><label for=""><span>台灣</span></label>
+                            <input class="the_radio" type="radio" name="text1" value="country_02"><label for=""><span>其他</span></label>
+                        </div>
+                        <!-- 選擇台灣顯示以下↓ -->
+                        <div class="addressBox clearfix">
+                            <div class="form-select">
+                                <select class="md-input">
+                                    <option value="0">請選擇縣市</option>
+                                    <option value="1">台北市</option>
+                                    <option value="2">新北市</option>
+                                </select>
+                            </div>
+                             <div class="form-select">
+                                <select class="md-input">
+                                    <option value="0">請選擇行政區</option>
+                                    <option value="1">中正區</option>
+                                    <option value="2">文山區</option>
+                                </select>
+                            </div>
+                            <input class="tbox tbox100" id="" name="" type="text" placeholder="請輸入街道地址">
+                        </div>
+                        <!-- 選擇其他國家，顯示以下↓ -->
+                        <div class="clearfix">
+                            <input class="tbox" id="" name="" type="text" placeholder="請輸入聯絡地址">
+                            <p class="p_s_note">若居住地非台灣地區，請直接於地址欄輸入即可</p>
                         </div>
                     </li>
+                    <!-- 20180410出發地目的地說要改成像 點選台灣各縣市或國外  END-->
+
                     <li>
                         <label for=""><p class="label_title"><span class="f_red">*</span>活動日期</p></label>
                         <div class="dataBox clearfix">
@@ -211,7 +257,7 @@
                         <!-- 勾選才會出現此 input 欄位 ↓ -->
                         <!-- <input class="tbox" id="" name="" type="text" value="" placeholder="請輸入 Google Map 連結"> -->
                         <div class="map_ex clearfix">
-                            <input class="the_radio" type="checkbox" checked=""><label for=""><p class="p_s_note">輸入 Google Map 連結  <a href="#">範例教學</a></p></label>
+                            <input class="the_radio" type="checkbox" checked=""><label for=""><p class="p_s_note">輸入 Google Map 連結  <a target="_blank" href="https://support.google.com/maps/answer/144361?co=GENIE.Platform%3DDesktop&hl=zh-Hant">範例教學</a></p></label>
                         </div>
                     </li>
                     <li>
@@ -296,7 +342,7 @@
                         <label for=""><p class="label_title"><span class="f_red">*</span>活動地點相片上傳</p></label>
                         <div class="upload_files">
                             <div class="btn"><a class="btn_style">上傳相片</a></div>
-                            <p class="p_s_note">最少需上傳1張照片</p>
+                            <p class="p_s_note">最少需上傳1張照片，最多上限為10張</p>
                         </div>
                     </li>
                     <li>
