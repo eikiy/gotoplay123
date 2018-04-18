@@ -534,6 +534,21 @@ body{ min-width: 320px;}
 .preview_bottom_btn{ min-height:initial; background:initial; background-size: inherit; background-attachment: inherit; width: 100%; position: fixed; bottom: 0; z-index: 15; background-color: #fff; padding: 15px 0;    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
 .preview_bottom_btn .btn{padding-bottom: 0;}
 
+/*news*/
+.middle_contents .newsBox .leftBox h2.h2_title{ padding-left: 0;}
+.middle_contents .newsBox ul.news_list{width: 100%; padding-bottom: 30px;}
+.middle_contents .newsBox ul.news_list li{ padding: 30px 0; border-bottom: 1px solid #d5d5d5;}
+.middle_contents .newsBox ul.news_list li .titleBox{ padding-bottom: 5px; }
+.middle_contents .newsBox p.day{ float: left; width: 100px; color: #f18902; position: relative;}
+.middle_contents .newsBox ul.news_list li .titleBox p.day::after{content: ""; position: absolute; top: 2px; right: 10px; width: 1px; height: 16px; background-color: #d5d5d5;}
+.middle_contents .newsBox ul.news_list li .titleBox h3{ width: calc(100% - 100px) ; font-size: 18px; float: left; color: #68b82d; font-weight: bold;}
+.middle_contents .newsBox ul.news_list li p.info{ color: #777; text-align: justify; overflow: hidden; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 30px; height: 30px * 1;}
+.middle_contents .newsBox ul.news_list li a:hover p.info{ color: #555; text-decoration: underline;}
+
+.middle_contents .newsBox .news_info_more{ padding-bottom: 40px;}
+.middle_contents .newsBox .news_info_more p.day{width: inherit; float: none; padding-bottom: 10px;}
+.middle_contents .newsBox .news_info_more p.info{ text-align: justify; line-height: 30px;}
+
 /*popup - style*/
 .white-popup { position: relative; background: #FFF; padding: 30px 60px 50px 60px; width: auto; max-width: 640px; margin: 20px auto;}
 .mfp-fade.mfp-bg {  opacity: 0; -webkit-transition: all 0.15s ease-out; -moz-transition: all 0.15s ease-out;  transition: all 0.15s ease-out;}
@@ -578,8 +593,8 @@ body{ min-width: 320px;}
 
 	.middle_contents .leftBox ul.events_list li:nth-child(1n) { margin-right: 15px; margin-left: 0;}
 	.middle_contents .leftBox ul.events_list li:nth-child(2n) { margin-right: 0px; margin-left: 15px;}
-/*	.middle_contents .leftBox ul.events_list li:nth-child(3n) { margin-right: 15px; margin-left: 0;}
-	.middle_contents .leftBox ul.events_list li:nth-child(4n) { margin-left: 15px; display: block; }*/
+/*	.middle_contents .leftBox ul.events_list li:nth-child(3n) { margin-right: 15px; margin-left: 0;}*/
+	.middle_contents .leftBox ul.events_list li:nth-child(4n) { margin-left: 15px; display: block; }
 	.middle_contents .AdBox .ad300x600:nth-child(odd){ display: inline-block; }
 	.gotopaly_noticeBox .AdBox .ad300x600:nth-child(odd){display:initial;}
 
@@ -640,6 +655,9 @@ body{ min-width: 320px;}
 	.event_inside .event_info_Box .event_instructions .eBox .p_leftBox{ max-width: 150px; }
 	.event_inside .event_info_Box .event_instructions .eBox .right_info{ padding: 15px 20px; max-width: calc(100% - 192px);}
 
+	.middle_contents .newsBox ul.news_list li .titleBox h3{width: 100%;}
+	.middle_contents .newsBox ul.news_list li .titleBox p.day{width: 100%; padding-bottom: 10px;}
+	.middle_contents .newsBox ul.news_list li .titleBox p.day::after{display: none;}
 }
 @media (max-width:650px){
 	.gotopaly_noticeBox .bothBox .lBox{ width: 100%; }
@@ -713,11 +731,12 @@ body{ min-width: 320px;}
 	.registerBox .Copyright_info p{ width: 100%; float: none; text-align: center; padding-bottom: 10px;}
 	.registerBox .Copyright_info .the_language{float: none; margin: 0 auto; border-width:1px; border-style: solid; border-color: #fff;-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
 	.registerBox .Copyright_info .the_language::after{right: 10px;}
-	.event_inside .event_info_Box .event_photo ul.photos li{ height: 90px; }
 	.event_inside .eventTopBox .topTitle{padding-top: 0px;}
 	.event_inside .eventTopBox .titleBox{padding: 0;}
 	.event_inside .eventTopBox .topTitle h2.h2_title{font-size: 26px;}
 	.event_inside .event_info_Box .event_top .left_photo .main_photo{height: 180px;}
+	.event_inside .event_info_Box .event_photo ul.photos li{ height: 90px; }
+	.event_inside .event_info_Box .event_instructions .qrcode .right_info p{line-height: 30px;}
 	.middle_contents .leftBox .AdBox .ad300x100{margin: 0 0 15px 0;}
 }
 @media (max-width:320px){
