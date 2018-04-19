@@ -271,7 +271,7 @@ body{ min-width: 320px;}
 .fillinBox p.for_note i{ padding-right: 5px; }
 
 .registerBox .btn{width: 100%; padding-bottom: 10px;}
-.registerBox .btn .btn_style, .editBox .btn .btn_style{ background-color: #68b82d; cursor: pointer; position: relative; display: block; width: 100%; text-align: center; height: 44px; line-height: 44px; font-size: 16px; color: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; appearance: none; -moz-appearance: none; /* Firefox */-webkit-appearance: none}
+.registerBox .btn .btn_style, .editBox .btn .btn_style, .event_photo_top .btn .btn_style{ background-color: #68b82d; cursor: pointer; position: relative; display: block; width: 100%; text-align: center; height: 44px; line-height: 44px; font-size: 16px; color: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; appearance: none; -moz-appearance: none; /* Firefox */-webkit-appearance: none}
 .registerBox .btn .btn_style:hover, .editBox .btn .btn_style:hover{opacity: .9;}
 .registerBox .btn .btn_style i{ position: absolute; left: 10px; height: 44px; line-height: 44px; left: 6%; font-size: 18px; }
 /*.registerBox .btn .btn_style::before{content: '\f082'; position: absolute; top: 0px; height: 44px; left: 12px; display: block; font-family: Font Awesome\ 5 Free; font-weight: 900;}*/
@@ -525,6 +525,21 @@ body{ min-width: 320px;}
 .event_inside .event_info_Box .event_photo .bottom_other p.more a{color: #68b82d; padding-right: 5px;}
 .event_inside .event_info_Box .event_photo .bottom_other p.more a:hover{ text-decoration: underline; }
 
+.event_inside .event_info_Box .event_photo_top{ width: 100%; padding-bottom: 30px; }
+.event_inside .event_info_Box .event_photo_top h3{ float: left; padding-right: 15px; font-size: 26px; line-height: 44px; }
+.event_inside .event_info_Box .event_photo_top p{ float: left; color: #666;  line-height: 44px;}
+.event_inside .event_info_Box .event_photo_top .btn{ float: right; /*width: 100%;*/ min-width: 180px; margin-left: 10px; }
+.event_inside .event_info_Box .event_photo_top .btn i{padding-right: 10px;}
+.event_inside .event_info_Box .event_photo_top .btn:hover{ opacity:  }
+.event_inside .event_info_Box .event_photo_top .btn_org { min-width: 150px;}
+.event_inside .event_info_Box .event_photo_top .btn_org .btn_style{background-color: #f08700;}
+
+.event_inside .event_info_Box ul.photo_albums li{ float: left; width:calc(33.333% - 20px); margin: 0 15px 22px; }
+.event_inside .event_info_Box ul.photo_albums li .photo{height: 230px; position: relative; background-size: cover; background-color: #eee; background-repeat: no-repeat; background-position: center center;}
+.event_inside .event_info_Box ul.photo_albums li:nth-child(1n) { margin-left: 0;}
+.event_inside .event_info_Box ul.photo_albums li:nth-child(3n) { margin-right: 0;}
+.event_inside .event_info_Box ul.pageBox{padding-bottom: 30px;}
+
 /*預覽活動*/
 .event_preview{ padding-top: 0;}
 .event_preview .leftBox{ margin:-130px auto 0 auto; float: none; }
@@ -587,19 +602,19 @@ body{ min-width: 320px;}
 	.HeaderBox .Menu ul.menu{padding-left: 15px;}
 	.HeaderBox .Menu ul.menu li p a{padding: 10px 15px 25px 15px;}
 	.middle_contents .leftBox ul.events_list li{ width: calc(50% - 16px);}
-	/*.middle_contents .leftBox ul.events_list li:nth-child(1) { margin-left: inherit;}
-	.middle_contents .leftBox ul.events_list li:nth-child(3) { margin-right: inherit;}
-	.middle_contents .leftBox ul.events_list li:nth-child(4) { display: inherit;}*/
-
 	.middle_contents .leftBox ul.events_list li:nth-child(1n) { margin-right: 15px; margin-left: 0;}
 	.middle_contents .leftBox ul.events_list li:nth-child(2n) { margin-right: 0px; margin-left: 15px;}
-/*	.middle_contents .leftBox ul.events_list li:nth-child(3n) { margin-right: 15px; margin-left: 0;}*/
 	.middle_contents .leftBox ul.events_list li:nth-child(4n) { margin-left: 15px; display: block; }
 	.middle_contents .AdBox .ad300x600:nth-child(odd){ display: inline-block; }
 	.gotopaly_noticeBox .AdBox .ad300x600:nth-child(odd){display:initial;}
 
 	.event_inside .event_info_Box .event_top .main_event_info ul li p.l_title{ float: none; width: inherit; padding-left: 15px;}
 	.event_inside .event_info_Box .event_top .main_event_info ul li p.info{float: none; max-width: inherit; padding-left: 15px;}
+
+	.event_inside .event_info_Box ul.photo_albums li{ width: calc(50% - 16px);}
+	.event_inside .event_info_Box ul.photo_albums li:nth-child(1n) { margin-right: 15px; margin-left: 0;}
+	.event_inside .event_info_Box ul.photo_albums li:nth-child(2n) { margin-right: 0; margin-left: 15px;}
+	.event_inside .event_info_Box ul.photo_albums li:nth-child(4n) { margin-left: 15px;}
 }
 @media (max-width:1150px){
 	.FooterBox .downloadAppBox .lBox ul li{ float: none; }
