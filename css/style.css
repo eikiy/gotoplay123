@@ -413,14 +413,14 @@ body{ min-width: 320px;}
 .event_item_more .leftBox ul.events_list{ padding-bottom: 0px;}
 
 /*pageBox*/
-.middle_contents ul.pageBox{width: 100%; text-align: center; padding: 20px 0 60px 0;}
-.middle_contents ul.pageBox li{display: inline-block; margin: 0 3px;}
-.middle_contents ul.pageBox li p{font-size: 14px; color: #666;}
-.middle_contents ul.pageBox li p a{ padding:8px 14px; color: #666; display: inline-block;}
-.middle_contents ul.pageBox li p a:hover{color: #67b82d;}
-.middle_contents ul.pageBox li p a.btn_in{ color: #67b82d; font-weight: bold; /*border-bottom: 1px solid #27d0ca; */}
-.middle_contents ul.pageBox li p a.border{border: 1px solid #c9c9c9; font-size: 13px;}
-.middle_contents ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
+ul.pageBox{width: 100%; text-align: center; padding: 20px 0 60px 0;}
+ul.pageBox li{display: inline-block; margin: 0 3px;}
+ul.pageBox li p{font-size: 14px; color: #666;}
+ul.pageBox li p a{ padding:8px 14px; color: #666; display: inline-block;}
+ul.pageBox li p a:hover{color: #67b82d;}
+ul.pageBox li p a.btn_in{ color: #67b82d; font-weight: bold; /*border-bottom: 1px solid #27d0ca; */}
+ul.pageBox li p a.border{border: 1px solid #c9c9c9; font-size: 13px;}
+ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 
 /* event_inside  */
 .event_inside{ width: 100%;}
@@ -528,7 +528,8 @@ body{ min-width: 320px;}
 .event_inside .event_info_Box .event_photo_top{ width: 100%; padding-bottom: 30px; }
 .event_inside .event_info_Box .event_photo_top h3{ float: left; padding-right: 15px; font-size: 26px; line-height: 44px; }
 .event_inside .event_info_Box .event_photo_top p{ float: left; color: #666;  line-height: 44px;}
-.event_inside .event_info_Box .event_photo_top .btn{ float: right; /*width: 100%;*/ min-width: 180px; margin-left: 10px; }
+.event_inside .event_info_Box .event_photo_top .rightbox{float: right; text-align: right;}
+.event_inside .event_info_Box .event_photo_top .btn{display: inline-block; min-width: 180px; margin-left: 10px; }
 .event_inside .event_info_Box .event_photo_top .btn i{padding-right: 10px;}
 .event_inside .event_info_Box .event_photo_top .btn:hover{ opacity:  }
 .event_inside .event_info_Box .event_photo_top .btn_org { min-width: 150px;}
@@ -536,7 +537,7 @@ body{ min-width: 320px;}
 
 .event_inside .event_info_Box ul.photo_albums li{ float: left; width:calc(33.333% - 20px); margin: 0 15px 22px; }
 .event_inside .event_info_Box ul.photo_albums li .photo{height: 230px; position: relative; background-size: cover; background-color: #eee; background-repeat: no-repeat; background-position: center center;}
-.event_inside .event_info_Box ul.photo_albums li:nth-child(1n) { margin-left: 0;}
+.event_inside .event_info_Box ul.photo_albums li:nth-child(3n+1) { margin-left: 0;}
 .event_inside .event_info_Box ul.photo_albums li:nth-child(3n) { margin-right: 0;}
 .event_inside .event_info_Box ul.pageBox{padding-bottom: 30px;}
 
@@ -578,6 +579,16 @@ body{ min-width: 320px;}
 .width-M {max-width: 1000px;}
 /*popup - style END*/
 
+.choosePhotoBox{ width: 100%; }
+.choosePhotoBox .top_title{ width: 100%; padding: 15px 0;}
+.choosePhotoBox .top_title h3.title{ text-align: center; font-size: 26px; padding-bottom: 10px;}
+.choosePhotoBox .top_title p.subtitle{ text-align: center; font-size: 16px; color: #666; padding-bottom: 10px;}
+.choosePhotoBox .top_title p.subtitle span{ color: #68b82d; }
+.choosePhotoBox ul.photos{ width: 100%;}
+.choosePhotoBox ul.photos li{ width: 20%; float: left; padding-bottom: 10px; }
+.choosePhotoBox ul.photos li .photo{ cursor: pointer; width: 90%; margin: 0 auto; opacity: .8; height: 120px; display: block; background-size: cover; border:4px #fff solid; }
+.choosePhotoBox ul.photos li .photo:hover{ opacity: 1; }
+.choosePhotoBox ul.photos li .p_selected{ border-color: #68b82d; opacity: 1; }
 /*==== RWD ====*/
 @media (max-width:1400px){
 	.ContentsBox, .event_inside .eventTopBox .titleBox{ width:95%; margin: 0 auto; }
@@ -636,6 +647,7 @@ body{ min-width: 320px;}
 	.middle_contents .leftBox{width: 100%;}
 	.middle_contents .rightAD{display: none;}
 	.FooterBox .serviceBox .infoBox p{font-size: 14px;}
+	.choosePhotoBox ul.photos li{ width: 25%;}
 }
 @media (max-width:850px){
 	.middle_contents{padding-top: 80px;}
@@ -649,6 +661,8 @@ body{ min-width: 320px;}
 	.FooterBox .serviceBox .infoBox:nth-child(4){ width: 100%; padding:20px 0 0 0; margin-top: 25px; text-align: center; border-top: 1px solid #dedbd7;}
 	.FooterBox .serviceBox .infoBox p.icon{text-align: center;}
 	.event_preview{padding-top: 0;}
+	.white-popup{padding: 30px;}
+
 }
 @media (max-width:750px){
 	.HeaderBox .Menu ul.menu{ display: none; }
@@ -674,11 +688,14 @@ body{ min-width: 320px;}
 	.middle_contents .newsBox ul.news_list li .titleBox p.day{width: 100%; padding-bottom: 10px;}
 	.middle_contents .newsBox ul.news_list li .titleBox p.day::after{display: none;}
 }
+@media (max-width:700px){
+	.choosePhotoBox ul.photos li{ width: 33.33%; }
+}
 @media (max-width:650px){
 	.gotopaly_noticeBox .bothBox .lBox{ width: 100%; }
 	.gotopaly_noticeBox .bothBox .rBox{width: 100%; padding-left: 0;}
 	.editBox .btn_both .btn_style{ width: 46%; margin: 0 1%;}
-	.registerBox .btn .btn_style, .editBox .btn .btn_style{ font-size: 15px; }
+	.registerBox .btn .btn_style, .editBox .btn .btn_style, .event_photo_top .btn .btn_style{ font-size: 15px; }
 	.fixed_screenBox{ bottom: 155px; }
 	.fixed_screenBox p.teachingBox a{ width: 60px; height: 75px; }
 	.fixed_screenBox a.go_top{width: 60px;}
@@ -688,6 +705,12 @@ body{ min-width: 320px;}
 	.event_inside .eventTopBox .titleBox{width: 90%;}
 	.event_inside .eventTopBox .titleBox{padding-top: 20px;}
 	.event_inside .eventTopBox .topTitle h2.h2_title{font-size: 28px;}
+	.event_inside .event_info_Box ul.photo_albums li .photo{ height: 120px; }
+	.event_inside .event_info_Box ul.photo_albums li{ width: calc(50% - 5px); margin-bottom: 10px;}
+	.event_inside .event_info_Box ul.photo_albums li:nth-child(1n){ margin-right: 5px;}
+	.event_inside .event_info_Box ul.photo_albums li:nth-child(2n){ margin-left: 5px; margin-right: 0;}
+	.event_inside .event_info_Box .event_photo_top .rightbox{text-align: center; width: 100%; padding-top: 8px;}
+	.choosePhotoBox ul.photos li{ width: 50%; }
 }
 @media (max-width:600px){
 	.ContentsBox{width: 90%;}
@@ -753,6 +776,15 @@ body{ min-width: 320px;}
 	.event_inside .event_info_Box .event_photo ul.photos li{ height: 90px; }
 	.event_inside .event_info_Box .event_instructions .qrcode .right_info p{line-height: 30px;}
 	.middle_contents .leftBox .AdBox .ad300x100{margin: 0 0 15px 0;}
+	.event_inside .event_info_Box .event_photo_top .btn{ min-width: 154px; margin: 0 5px; }
+	.event_inside .event_info_Box .event_photo_top .btn_org{min-width: 130px;}
+	.choosePhotoBox ul.photos li{ padding-bottom: 15px; }
+	.choosePhotoBox ul.photos li .photo{ width: 85%;  height: 90px;}
+}
+@media (max-width:400px){
+	.event_photo_top .btn .btn_style{ font-size: 14px; height: 40px; line-height: 40px; }
+	.event_inside .event_info_Box .event_photo_top .btn{ min-width: 142px; }
+	.event_inside .event_info_Box .event_photo_top .btn_org{ min-width: 115px;}
 }
 @media (max-width:320px){
 	.HeaderBox .Menu .searchBox{ max-width: 145px;}
