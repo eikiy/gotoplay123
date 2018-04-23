@@ -389,10 +389,26 @@ body{ min-width: 320px;}
 .editBox p.goback a:hover{text-decoration: underline;}
 
 /*活動內頁相關*/
-.middle_contents .leftBox .eventTopBoxㄝ{width: 100%;}
+.middle_contents .leftBox .eventTopBox{width: 100%;}
 .middle_contents .leftBox .eventTopBox h2.h2_title{display: inline-block; float: left;}
 .middle_contents .leftBox .eventTopBox p.quantity{ float: left; line-height: 20px; padding: 10px 25px 0 5px;}
 .middle_contents .leftBox .eventTopBox p.quantity span{color: #67b82d;}
+
+.middle_contents .leftBox .eventTopBox .searchBox{ width: 100%; max-width: 280px; float: left; position: relative; padding-right: 15px;}
+.middle_contents .leftBox .eventTopBox .searchBox input{ width: calc(100% - 65px); text-align: center; height: 60px; line-height: 60px; color: #333;  -moz-border-radius: 60px; -webkit-border-radius: 60px; border-radius: 60px; background-color: #fff; font-size: 26px; padding: 0 45px 0 20px; -moz-box-shadow: 1px 1px 1px 0 rgba(51,51,51,0.1);  -webkit-box-shadow: 1px 1px 1px 0 rgba(51,51,51,0.1); box-shadow: 1px 1px 1px 0 rgba(51,51,51,0.1);}
+.middle_contents .leftBox .eventTopBox .searchBox input::-webkit-input-placeholder { /* WebKit browsers */color:#888888;}
+.middle_contents .leftBox .eventTopBox .searchBox input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:#888888;}
+.middle_contents .leftBox .eventTopBox .searchBox input::-moz-placeholder { /* Mozilla Firefox 19+ */color:#888888;}
+.middle_contents .leftBox .eventTopBox .searchBox input:-ms-input-placeholder { /* Internet Explorer 10+ */color:#888888;}
+.middle_contents .leftBox .eventTopBox .searchBox::after{ content: '\f002'; font-size: 18px; width: 40px; height: 60px; line-height: 60px; position: absolute; top: 0px; cursor: pointer; right: 0px; color: #cfcfcf;  font-family:  Font Awesome\ 5 Free; font-weight: 900; }
+.middle_contents .leftBox .eventTopBox p.search_result{float: left; padding: 15px 0 5px 0; line-height: 30px;}
+.middle_contents .leftBox .eventTopBox p.search_result span{ color: #ef8700;}
+.middle_contents .leftBox .eventTopBox p.search_result a{color: #68b82d; text-decoration: underline;}
+.middle_contents .leftBox .eventTopBox p.search_result a:hover{ text-decoration: none; }
+.middle_contents .leftBox .eventTopBox p.search_newest_keyword{width: 100%; float: left; padding: 10px 0 25px 0;}
+.middle_contents .leftBox .eventTopBox p.search_newest_keyword a{color: #68b82d; text-decoration: underline;}
+.middle_contents .leftBox .eventTopBox p.search_newest_keyword a:hover{ text-decoration: none; }
+
 .middle_contents .eventItemSearch{float: right;}
 .eventItemSearch .form-select{ width:130px; float: left; position: relative; margin-right: 10px; padding-bottom: 5px;}
 .eventItemSearch .form-select .md-input{ width: 100%; border:none; display: block; background-color: #f3f3f3; height: 40px; padding: 0px 15px 0 12px; -moz-border-radius: 5px; -webkit-border-radius: 5px;  border-radius: 5px; font-size: 15px; line-height: 40px;  color: #333; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
@@ -435,7 +451,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .event_inside .eventTopBox .event_host{ width: 100%; }
 .event_inside .eventTopBox .event_host p.host{ color: #fff; font-size: 16px; padding-bottom: 5px;}
 .event_inside .eventTopBox .event_host p.host a.img_avatar{color: #fff; position: relative; padding-left: 45px;}
-.event_inside .eventTopBox .event_host p.host a.img_avatar span{ position: absolute; left: 0; top: -8px; width: 34px; height: 34px; display: inline-block; background-color: #f6f6f6;  -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;}
+.event_inside .eventTopBox .event_host p.host a.img_avatar span{ position: absolute; left: 0; top: -8px; width: 34px; height: 34px; display: inline-block; background-color: #f6f6f6;  -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background-position: center center; background-repeat: no-repeat; background-size: cover;}
 .event_inside .eventTopBox .event_host p.host a:hover{ text-decoration: underline;}
 .event_inside .eventTopBox .event_host p.host a.follow{ background-color: #f08900; margin-left: 10px; color: #fff; padding: 0px 15px; line-height: 32px; display: inline-block; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
 .event_inside .eventTopBox .event_host p.host a.follow:hover{text-decoration: none; opacity: .9;}
@@ -589,6 +605,59 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .choosePhotoBox ul.photos li .photo{ cursor: pointer; width: 90%; margin: 0 auto; opacity: .8; height: 120px; display: block; background-size: cover; border:4px #fff solid; }
 .choosePhotoBox ul.photos li .photo:hover{ opacity: 1; }
 .choosePhotoBox ul.photos li .p_selected{ border-color: #68b82d; opacity: 1; }
+
+
+/*User info*/
+.user_inside{position: relative;}
+.user_inside p.change_background{ position: absolute; right: 10px; top: 10px; }
+.user_inside p.change_background a{ color: #fff; background-color: rgba(0,0,0,.5); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; padding: 8px 10px; display: block; }
+.user_inside p.change_background a:hover{ opacity: .9; }
+.user_inside p.change_background i{ padding-right: 5px;}
+
+.user_inside .eventTopBox .event_host p.host a.img_avatar{ padding-left: 100px; font-size: 34px;}
+.user_inside .eventTopBox .event_host p.host a.img_avatar span{ width: 86px; height: 86px; border:3px solid #fff; }
+.user_inside .eventTopBox .event_host p.other_info{ padding-left: 105px; color: #fff;}
+.user_inside .eventTopBox .event_host p.other_info a{ color: #fff; }
+.user_inside .eventTopBox .event_host p.other_info a:hover{text-decoration: underline;}
+.user_inside .eventTopBox .event_host p.other_info span{ padding: 0 10px; }
+
+.user_inside .event_info_Box{ padding-top: 15px;}
+.user_inside .user_data_Box ul.menu{ width: 100%; border-bottom: 4px solid #f8f9fa; padding-bottom: 15px; }
+.user_inside .user_data_Box ul.menu li{ float: left;  }
+.user_inside .user_data_Box ul.menu li p{ font-size: 20px; position: relative; }
+.user_inside .user_data_Box ul.menu li p a{ padding: 20px 35px; line-height: 30px; color: #666666; display: inline-block; }
+.user_inside .user_data_Box ul.menu li p.btn_in a{ color: #f08900;}
+.user_inside .user_data_Box ul.menu li p.btn_in::after{ position: absolute; content: ""; position: absolute; bottom: -4px; left: 0; background-color: #f08900; height: 4px; display: inline-block; width: 100%; }
+
+.user_inside .user_aboutMe{ width:100%; padding-top: 15px;}
+.user_inside .user_aboutMe .lBox{ width: 240px; float: left; }
+.user_inside .user_aboutMe .lBox .user_photo{ position: relative; width: 164px; height: 164px; border-radius:50%; margin: 0 auto; overflow: hidden; background-size: cover;background-repeat: no-repeat;  background-position: center center; }
+.user_inside .user_aboutMe .lBox .user_photo p{ position: absolute; bottom: 0px; width: 100%;}
+.user_inside .user_aboutMe .lBox .user_photo p a{ background-color: rgba(0,0,0,.5); width: 100%; display: block; color: #fff; padding: 10px 0 16px 0; text-align: center; }
+.user_inside .user_aboutMe .lBox .user_photo p a:hover{text-decoration: underline;}
+
+.user_inside .user_aboutMe .lBox p.name{ text-align: center; padding: 10px 0; color: #222222; font-size: 18px; }
+.user_inside .user_aboutMe .lBox .score p{ text-align: center; color: #d0d0d0; font-size: 17px; padding: 5px 0; }
+.user_inside .user_aboutMe .lBox .score p span{ color: #999; font-size: 14px;}
+.user_inside .user_aboutMe .lBox p.edit_user{ text-align: center; font-size: 16px; padding: 15px 0; }
+.user_inside .user_aboutMe .lBox p.edit_user a{ padding: 0 15px; line-height: 40px; color: #888888; border:1px solid #eceef0; display: inline-block; -moz-border-radius: 4px; -webkit-border-radius: 4px;  border-radius: 4px; }
+.user_inside .user_aboutMe .lBox p.edit_user a i{padding-right: 6px;}
+.user_inside .user_aboutMe .lBox p.edit_user a:hover{ border-color: #555; color: #555; }
+
+.user_inside .user_aboutMe .dataBox { width: 100%; max-width: calc(100% - 240px); float: left; }
+.user_inside .user_aboutMe .dataBox .topBox{ width: 100%; background-color: #f8f9fa;  -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; padding: 18px 21px; margin-bottom: 15px; }
+.user_inside .user_aboutMe .dataBox .topBox p{ color: #868686; line-height: 30px; float: left; width:calc(33.33% - 7px); text-align: center; }
+.user_inside .user_aboutMe .dataBox .topBox p span{ color: #f08900 ; font-size:30px; padding: 15px 0 ; display: block; }
+
+.user_inside .user_aboutMe .dataBox .eBox{width: 100%;}
+.user_inside .user_aboutMe .dataBox .eBox .p_leftBox{ float: left; width: 100%; max-width: 150px; padding: 12px 0; }
+.user_inside .user_aboutMe .dataBox .eBox .p_leftBox p{ font-size: 16px; margin: 0 auto; max-width: 100px;}
+.user_inside .user_aboutMe .dataBox .eBox .right_info{float: left; padding: 12px 15px;  width: 100%; max-width: calc(100% - 180px);}
+.user_inside .user_aboutMe .dataBox .eBox .right_info p a{ color: #67b82d; text-decoration: underline; }
+.user_inside .user_aboutMe .dataBox .eBox .right_info p a:hover{ text-decoration: none;}
+.user_inside .user_aboutMe .dataBox .eBox .communities{ padding-top: 10px;}
+.user_inside .user_aboutMe .dataBox .eBox .communities p{ line-height: 30px; }
+.user_inside .user_aboutMe .dataBox .eBox .communities i {padding-right: 10px;}
 /*==== RWD ====*/
 @media (max-width:1400px){
 	.ContentsBox, .event_inside .eventTopBox .titleBox{ width:95%; margin: 0 auto; }
@@ -648,6 +717,18 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.middle_contents .rightAD{display: none;}
 	.FooterBox .serviceBox .infoBox p{font-size: 14px;}
 	.choosePhotoBox ul.photos li{ width: 25%;}
+
+	.middle_contents .leftBox .eventTopBox .searchBox{ float: none; padding-right: 0; margin: 0 auto; }
+	.middle_contents .leftBox .eventTopBox p.search_result{ float: none; text-align: center; }
+	.middle_contents .leftBox .eventTopBox p.search_newest_keyword{ float: left; text-align: center; }
+
+	.user_inside .ContentsBox{ padding-top: 10px;}
+	.user_inside .eventTopBox .titleBox{padding-top: 10px;}
+	.user_inside .eventTopBox .event_host p.host{ text-align: center; }
+	.user_inside .eventTopBox .event_host p.host a.img_avatar{ padding-top: 90px; padding-left: 0; display: block; font-size: 24px; margin-bottom: 5px; }
+	.user_inside .eventTopBox .event_host p.host a.img_avatar span{left: 50%; margin-left: -44px;}
+	.user_inside .eventTopBox .event_host p.host a.follow{ display: inline-block; margin-left: 0; }
+	.user_inside .eventTopBox .event_host p.other_info{ text-align: center; padding-left: 0; }
 }
 @media (max-width:850px){
 	.middle_contents{padding-top: 80px;}
@@ -687,6 +768,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.middle_contents .newsBox ul.news_list li .titleBox h3{width: 100%;}
 	.middle_contents .newsBox ul.news_list li .titleBox p.day{width: 100%; padding-bottom: 10px;}
 	.middle_contents .newsBox ul.news_list li .titleBox p.day::after{display: none;}
+
 }
 @media (max-width:700px){
 	.choosePhotoBox ul.photos li{ width: 33.33%; }
@@ -744,6 +826,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.editBox .btn .btn_done{ height: 50px; line-height: 50px; }
 	.editBox .w95, .editBox .addressBox .form-select{ padding-bottom: 10px;}
 	.middle_contents .leftBox .eventTopBox h2.h2_title{ padding-bottom: 15px; border-bottom: 1px solid #cacacb; width: calc(100% - 50px);}
+	.middle_contents .leftBox .eventTopBox .searchBox input{ height: 50px; line-height: 50px; font-size: 22px; }
 	.middle_contents .eventItemSearch{padding-top: 5px;}
 	.eventItemSearch .form-select .md-input{font-size: 14px;}
 
@@ -756,6 +839,8 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.event_inside .event_info_Box .event_instructions .eBox:last-child .right_info{ border-bottom: none; }
 	.event_inside .eventTopBox .event_host p.host a.follow{display: block; max-width: 65px; margin: 10px 0 5px 40px;}
 
+	.user_inside .eventTopBox .event_host p.host a.follow{ margin: 5px auto; }
+	.user_inside p.change_background a{font-size: 14px;}
 }
 @media (max-width:550px){
 	.HeaderBox .the_language{ display: none; }
