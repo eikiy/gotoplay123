@@ -35,6 +35,17 @@
 <script type="text/javascript" src="js/retina.min.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
 
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
+    });
+});
+</script>
 
 </head>
 <body class="page">
@@ -178,7 +189,7 @@
                     <p class="host">
                         <a class="img_avatar" href="#"><span style="background-image:url(images/photo/01.jpg);"></span>Tony Liu</a><a class="follow" href="#">＋ 關注他</a>
                     </p>
-                    <p class="other_info"><a href="#">22 位粉絲</a> <span>·</span> <a href="#">10 位關注對象</a></p>
+                    <p class="other_info"><a class="popup-link" href="#popup1">22 位粉絲</a> <span>·</span> <a class="popup-link" href="#popup2">10 位關注對象</a></p>
                 </div>
             </div>
         </div>
@@ -198,7 +209,7 @@
                 <div class="user_aboutMe clearfix">
                     <div class="lBox">
                         <div class="user_photo" style="background-image: url(images/photo/01.jpg);">
-                            <p><a href="#">編輯照片</a></p>
+                            <p><a href="#">上傳相片</a></p>
                         </div>
                         <p class="name">Tony Liu</p>
                         <div class="score"><p>
@@ -213,7 +224,7 @@
                     </div>
                     <div class="dataBox">
                         <div class="topBox clearfix">
-                            <p><span><i class="fas fa-flag-checkered"></i></span>活動發起人</p>
+                            <p class="title"><span><i class="fas fa-flag-checkered"></i></span>活動發起人</p>
                             <p><span>18</span>發起活動總次數</p>
                             <p><span>53</span>參加活動總次數</p>
                         </div>
@@ -231,28 +242,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="event_instructions">
-                    <div class="eBox star clearfix">
-                        <div class="p_leftBox"><p>領隊評價</p></div>
-                        <div class="right_info"><p>
-                            <i class="fas fa-star" style="color: #f08900;"></i>
-                            <i class="fas fa-star" style="color: #f08900;"></i>
-                            <i class="fas fa-star" style="color: #f08900;"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>共205個評比</span></p>
-                        </div>
-                    </div>
-                    <div class="eBox clearfix">
-                        <div class="p_leftBox"><p>參加方式</p></div>
-                        <div class="right_info"><p><span>需報名及繳費</span></p></div>
-                    </div>
-                    <div class="eBox clearfix">
-                        <div class="p_leftBox"><p>出發地</p></div>
-                        <div class="right_info"><p><a href="#" target="_blank">桃園機場</a></p></div>
-                    </div>
-                </div> -->
             </div>
             <div class="AdBox2">
                 <div class="ad300x250"></div>
@@ -274,6 +263,218 @@
     </section>
 </main>
 
+<div id="popup1" class="white-popup mfp-hide width-S">
+    <div class="fansBox">
+        <div class="top_title">
+            <h3 class="title">粉絲</h3>
+        </div>
+        <ul class="interactiveBox">
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(images/photo/05.jpg);"></a>
+                    <p class="name"><a href="#">Rana Liu</a></p><!-- ID有沒有限制最多長度？ -->
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow" href="#">＋ 關注他</a></p><!-- 對方對您送出關注邀請 -->
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(images/photo/01.jpg);"></a>
+                    <p class="name"><a href="#">王小白</a></p>
+                    <p class="invite">對您送出關注邀請<a href="#">允許</a></p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow" href="#">＋ 關注他</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(images/photo/03.jpg);"></a>
+                    <p class="name"><a href="#">jeffjwiojeo_w9e</a></p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow send" href="#">送出關注</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/22049908_10203617073423619_3611267303700684978_n.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=d7240428b85c74870244ddb4f93b6ea5&oe=5B53771B);"></a>
+                    <p class="name"><a href="#">孫姣姣</a></p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow send" href="#">關注中</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/26756274_10216237225751771_2875696835444778457_o.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=3d2a918c4bf484d309e05c22774dcbe2&oe=5B5AF734);"></a>
+                    <p class="name"><a href="#">王民</a></p>
+                    <p class="invite">對您送出關注邀請<a class="none" href="#">取消</a></p><!-- 剛送出可以再取消 -->
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow" href="#">＋ 關注他</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/12645125_1118236431534072_6067808022734031088_n.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=c266bb43efca2e8a9a92a66fb0003e6d&oe=5B63977A);"></a>
+                    <p class="name"><a href="#">薛櫻桃</a></p>
+                    <p class="invite">對您送出關注邀請<a href="#">允許</a></p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow" href="#">＋ 關注他</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(images/photo/03.jpg);"></a>
+                    <p class="name"><a href="#">jeffjwiojeo_w9e</a></p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow send" href="#">送出關注</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/22049908_10203617073423619_3611267303700684978_n.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=d7240428b85c74870244ddb4f93b6ea5&oe=5B53771B);"></a>
+                    <p class="name"><a href="#">孫姣姣</a></p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow send" href="#">關注中</a></p>
+                </div>
+            </li>
+        </ul>
+        <ul class="photos clearfix"><!-- 選了照片＋p_selected -->
+            <li><a class="photo p_selected" style="background-image:url(images/photo/03.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/02.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
+            <li><a class="photo p_selected" style="background-image:url(images/photo/01.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/05.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
+            <li><a class="photo p_selected" style="background-image:url(images/photo/04.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/02.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/05.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/02.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="popup2" class="white-popup mfp-hide width-S">
+    <div class="fansBox">
+        <div class="top_title">
+            <h3 class="title">關注對象</h3>
+        </div>
+        <ul class="interactiveBox">
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(images/photo/05.jpg);"></a>
+                    <p class="name"><a href="#">Rana Liu</a></p><!-- ID有沒有限制最多長度？ -->
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow" href="#">＋ 關注他</a></p><!-- 關注中再按一次就變成＋關注他 -->
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(images/photo/01.jpg);"></a>
+                    <p class="name"><a href="#">王小白</a></p>
+                    <p class="no_invite">尚未允許關注邀請</p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow send" href="#">送出關注</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(images/photo/03.jpg);"></a>
+                    <p class="name"><a href="#">jeffjwiojeo_w9e</a></p>
+                    <p class="no_invite">尚未允許關注邀請</p><!-- 送出關注但沒被允許 -->
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow send" href="#">送出關注</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/22049908_10203617073423619_3611267303700684978_n.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=d7240428b85c74870244ddb4f93b6ea5&oe=5B53771B);"></a>
+                    <p class="name"><a href="#">孫姣姣</a></p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow send" href="#">關注中</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/26756274_10216237225751771_2875696835444778457_o.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=3d2a918c4bf484d309e05c22774dcbe2&oe=5B5AF734);"></a>
+                    <p class="name"><a href="#">王民</a></p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow send" href="#">關注中</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/12645125_1118236431534072_6067808022734031088_n.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=c266bb43efca2e8a9a92a66fb0003e6d&oe=5B63977A);"></a>
+                    <p class="name"><a href="#">薛櫻桃</a></p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow send" href="#">關注中</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(images/photo/03.jpg);"></a>
+                    <p class="name"><a href="#">jeffjwiojeo_w9e</a></p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow send" href="#">關注中</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="lBox clearfix">
+                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/22049908_10203617073423619_3611267303700684978_n.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=d7240428b85c74870244ddb4f93b6ea5&oe=5B53771B);"></a>
+                    <p class="name"><a href="#">孫姣姣</a></p>
+                </div>
+                <div class="rBox">
+                    <p class="add_user"><a class="follow send" href="#">關注中</a></p>
+                </div>
+            </li>
+        </ul>
+        <ul class="photos clearfix"><!-- 選了照片＋p_selected -->
+            <li><a class="photo p_selected" style="background-image:url(images/photo/03.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/02.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
+            <li><a class="photo p_selected" style="background-image:url(images/photo/01.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/05.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
+            <li><a class="photo p_selected" style="background-image:url(images/photo/04.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/02.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/05.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/02.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
+            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
+        </ul>
+    </div>
+</div>
 <section class="fixed_screenBox">
     <p class="teachingBox"><a href="#">使用教學</a></p><!-- 每一頁出來的使用教學說明link不一樣 -->
     <a class="go_top"></a>

@@ -591,7 +591,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content { opacity: 0;}
 
 .popup-w-s{max-width: 360px;}
-.popup-w-s .setBox .top_title::after{ display: none;}
+.width-S{ max-width: 780px; padding: 0px;}
 .width-M {max-width: 1000px;}
 /*popup - style END*/
 
@@ -606,7 +606,27 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .choosePhotoBox ul.photos li .photo:hover{ opacity: 1; }
 .choosePhotoBox ul.photos li .p_selected{ border-color: #68b82d; opacity: 1; }
 
+.fansBox .top_title{ width: 100%; padding: 20px 0; border-bottom: 4px solid #eeeeee;}
+.fansBox .top_title h3.title{ font-size: 26px; padding: 0 40px;}
+.fansBox ul.interactiveBox{ width: 100%; overflow-y: auto; max-height: 550px;}
+.fansBox ul.interactiveBox li{ border-bottom: 1px solid #eeeeee; padding: 12px 40px;position: relative; }
+.fansBox ul.interactiveBox li .lBox{ float: left; width: calc(100% - 140px);}
+.fansBox ul.interactiveBox li .lBox p{ float: left; line-height: 50px;margin-right: 5px; }
+.fansBox ul.interactiveBox li a.theFans{ float: left; width: 50px; height: 50px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius:50%; display: block; margin-right: 15px; background-size: cover; background-repeat: no-repeat; background-position:  center center;}
+.fansBox ul.interactiveBox li p.name{ width: 100%; max-width: 125px; }
+.fansBox ul.interactiveBox li p.name a{ color: #333; }
+.fansBox ul.interactiveBox li p.name a:hover{ text-decoration: underline; }
 
+.fansBox ul.interactiveBox li p.invite{ color: #68b82d; }
+.fansBox ul.interactiveBox li p.invite a{ padding: 8px 15px; cursor: pointer; margin-left: 15px;  background-color: #68b82d; color: #fff; border-radius: 50px; -moz-border-radius: 50px; -webkit-border-radius:50px;}
+.fansBox ul.interactiveBox li p.invite a.none{ border:1px solid #c4c4c4; color: #777; background: transparent; }
+.fansBox ul.interactiveBox li p.no_invite{ color: #acacac;  }
+
+.fansBox ul.interactiveBox li .rBox{ position: absolute; right: 10px; top: 11px;} 
+.fansBox ul.interactiveBox li .rBox p{ line-height: 50px;}
+.fansBox ul.interactiveBox li p.add_user a.follow{ text-align: center; padding: 8px 15px; cursor: pointer;  background-color: #f28707; color: #fff; border-radius: 50px; -moz-border-radius: 50px; -webkit-border-radius:50px;}
+.fansBox ul.interactiveBox li p.add_user a.send{ border:1px solid #c4c4c4; background-color: transparent; color: #777; }
+.fansBox ul.interactiveBox li p.invite a:hover, .fansBox ul.interactiveBox li p.add_user a:hover{ opacity: .9; }
 /*User info*/
 .user_inside{position: relative;}
 .user_inside p.change_background{ position: absolute; right: 10px; top: 10px; }
@@ -622,14 +642,14 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .user_inside .eventTopBox .event_host p.other_info span{ padding: 0 10px; }
 
 .user_inside .event_info_Box{ padding-top: 15px;}
-.user_inside .user_data_Box ul.menu{ width: 100%; border-bottom: 4px solid #f8f9fa; padding-bottom: 15px; }
+.user_inside .user_data_Box ul.menu{ width: 100%; border-bottom: 4px solid #f8f9fa; margin-bottom: 15px; }
 .user_inside .user_data_Box ul.menu li{ float: left;  }
 .user_inside .user_data_Box ul.menu li p{ font-size: 20px; position: relative; }
 .user_inside .user_data_Box ul.menu li p a{ padding: 20px 35px; line-height: 30px; color: #666666; display: inline-block; }
 .user_inside .user_data_Box ul.menu li p.btn_in a{ color: #f08900;}
 .user_inside .user_data_Box ul.menu li p.btn_in::after{ position: absolute; content: ""; position: absolute; bottom: -4px; left: 0; background-color: #f08900; height: 4px; display: inline-block; width: 100%; }
 
-.user_inside .user_aboutMe{ width:100%; padding-top: 15px;}
+.user_inside .user_aboutMe{ width:100%; padding-top: 15px; min-height: 420px;}
 .user_inside .user_aboutMe .lBox{ width: 240px; float: left; }
 .user_inside .user_aboutMe .lBox .user_photo{ position: relative; width: 164px; height: 164px; border-radius:50%; margin: 0 auto; overflow: hidden; background-size: cover;background-repeat: no-repeat;  background-position: center center; }
 .user_inside .user_aboutMe .lBox .user_photo p{ position: absolute; bottom: 0px; width: 100%;}
@@ -645,19 +665,20 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .user_inside .user_aboutMe .lBox p.edit_user a:hover{ border-color: #555; color: #555; }
 
 .user_inside .user_aboutMe .dataBox { width: 100%; max-width: calc(100% - 240px); float: left; }
-.user_inside .user_aboutMe .dataBox .topBox{ width: 100%; background-color: #f8f9fa;  -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; padding: 18px 21px; margin-bottom: 15px; }
+.user_inside .user_aboutMe .dataBox .topBox{ width:calc(100% - 42px); background-color: #f8f9fa;  -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; padding: 18px 21px; margin-bottom: 15px; }
 .user_inside .user_aboutMe .dataBox .topBox p{ color: #868686; line-height: 30px; float: left; width:calc(33.33% - 7px); text-align: center; }
-.user_inside .user_aboutMe .dataBox .topBox p span{ color: #f08900 ; font-size:30px; padding: 15px 0 ; display: block; }
+.user_inside .user_aboutMe .dataBox .topBox p span{ color: #f08900 ; font-size:30px; padding: 15px 0 10px 0 ; display: block; }
 
 .user_inside .user_aboutMe .dataBox .eBox{width: 100%;}
 .user_inside .user_aboutMe .dataBox .eBox .p_leftBox{ float: left; width: 100%; max-width: 150px; padding: 12px 0; }
 .user_inside .user_aboutMe .dataBox .eBox .p_leftBox p{ font-size: 16px; margin: 0 auto; max-width: 100px;}
 .user_inside .user_aboutMe .dataBox .eBox .right_info{float: left; padding: 12px 15px;  width: 100%; max-width: calc(100% - 180px);}
-.user_inside .user_aboutMe .dataBox .eBox .right_info p a{ color: #67b82d; text-decoration: underline; }
+.user_inside .user_aboutMe .dataBox .eBox .right_info p a{ color: #67b82d; text-decoration: underline; word-break: break-all; }
 .user_inside .user_aboutMe .dataBox .eBox .right_info p a:hover{ text-decoration: none;}
 .user_inside .user_aboutMe .dataBox .eBox .communities{ padding-top: 10px;}
 .user_inside .user_aboutMe .dataBox .eBox .communities p{ line-height: 30px; }
 .user_inside .user_aboutMe .dataBox .eBox .communities i {padding-right: 10px;}
+
 /*==== RWD ====*/
 @media (max-width:1400px){
 	.ContentsBox, .event_inside .eventTopBox .titleBox{ width:95%; margin: 0 auto; }
@@ -729,6 +750,9 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.user_inside .eventTopBox .event_host p.host a.img_avatar span{left: 50%; margin-left: -44px;}
 	.user_inside .eventTopBox .event_host p.host a.follow{ display: inline-block; margin-left: 0; }
 	.user_inside .eventTopBox .event_host p.other_info{ text-align: center; padding-left: 0; }
+	.user_inside .user_data_Box ul.menu li p{font-size: 18px;}
+	.user_inside .user_data_Box ul.menu li p a{ padding: 20px 25px;}
+	.event_inside .event_info_Box .event_top{ padding-bottom: 10px; }
 }
 @media (max-width:850px){
 	.middle_contents{padding-top: 80px;}
@@ -743,6 +767,13 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.FooterBox .serviceBox .infoBox p.icon{text-align: center;}
 	.event_preview{padding-top: 0;}
 	.white-popup{padding: 30px;}
+
+	.user_inside .user_aboutMe .lBox{ width: 180px; }
+	.user_inside .user_aboutMe .lBox .user_photo{ width: 135px; height: 135px; }
+	.user_inside .user_aboutMe .dataBox{ max-width: calc(100% - 180px);}
+	.user_inside .user_aboutMe .dataBox .eBox .p_leftBox{ max-width: 120px; }
+	.user_inside .user_aboutMe .dataBox .eBox .right_info{ max-width: calc(100% - 150px);}
+	.width-S{padding: 0;}
 
 }
 @media (max-width:750px){
@@ -769,9 +800,16 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.middle_contents .newsBox ul.news_list li .titleBox p.day{width: 100%; padding-bottom: 10px;}
 	.middle_contents .newsBox ul.news_list li .titleBox p.day::after{display: none;}
 
+	.user_inside .user_aboutMe .lBox{ width: 100%; padding-bottom: 20px; }
+	.user_inside .user_aboutMe .dataBox{ max-width: 100%;}
+	.user_inside .ContentsBox{padding-top: 10px;}
+	.user_inside .user_data_Box ul.menu li p a{padding: 20px 18px;}
+
 }
 @media (max-width:700px){
 	.choosePhotoBox ul.photos li{ width: 33.33%; }
+	.fansBox .top_title h3.title{ padding: 0 20px; }
+	.fansBox ul.interactiveBox li{ padding: 12px 20px; }
 }
 @media (max-width:650px){
 	.gotopaly_noticeBox .bothBox .lBox{ width: 100%; }
@@ -841,6 +879,13 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 
 	.user_inside .eventTopBox .event_host p.host a.follow{ margin: 5px auto; }
 	.user_inside p.change_background a{font-size: 14px;}
+
+	.user_inside .user_aboutMe .dataBox .eBox .p_leftBox{ max-width: 100%; }
+	.user_inside .user_aboutMe .dataBox .eBox .p_leftBox p{ max-width:calc(100% - 30px); color: #999; padding: 12px 15px; text-align: left; }
+	.user_inside .user_aboutMe .dataBox .eBox .right_info{ max-width:calc(100% - 30px);}
+
+	.fansBox ul.interactiveBox li .lBox{ width: 100%; }
+	.fansBox ul.interactiveBox li p.invite, .fansBox ul.interactiveBox li p.no_invite{ width: 100%; }
 }
 @media (max-width:550px){
 	.HeaderBox .the_language{ display: none; }
@@ -848,6 +893,14 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.event_inside .event_info_Box .event_top .main_event_info p{font-size: 15px;}
 	.event_inside .event_info_Box .event_top .left_photo .bottom_other .share_pic p{font-size: 13px;}
 	.event_inside .event_info_Box p,.event_inside .event_info_Box .event_instructions .eBox .p_leftBox p{font-size: 14px;}
+
+	.user_inside .user_aboutMe .dataBox .topBox p{ width: 50%; }
+	.user_inside .user_aboutMe .dataBox .topBox p span{padding-bottom: 6px;}
+	.user_inside .user_aboutMe .dataBox .topBox p.title{width: 100%; border-bottom: 1px solid #e9e9ea; padding-bottom: 10px;}
+	.user_inside .event_info_Box{ padding-top: 0; }
+	.user_inside .user_data_Box ul.menu{ text-align: center; }
+	.user_inside .user_data_Box ul.menu li p{font-size: 16px;}
+	.user_inside .user_data_Box ul.menu li{float: none; display: inline-block;}
 }
 @media (max-width:420px){
 	.registerBox .fillinBox, .editBox .fillinBox{width: calc(100% - 40px); padding: 20px;}
@@ -865,6 +918,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.event_inside .event_info_Box .event_photo_top .btn_org{min-width: 130px;}
 	.choosePhotoBox ul.photos li{ padding-bottom: 15px; }
 	.choosePhotoBox ul.photos li .photo{ width: 85%;  height: 90px;}
+	.user_inside .eventTopBox .titleBox{ padding-top: 10px; }
 }
 @media (max-width:400px){
 	.event_photo_top .btn .btn_style{ font-size: 14px; height: 40px; line-height: 40px; }
