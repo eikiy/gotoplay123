@@ -123,17 +123,17 @@ body{ min-width: 320px;}
 .middle_contents .leftBox .events_list .photo{height: 230px; position: relative; background-size: cover; background-color: #eee; background-repeat: no-repeat; background-position: center center;}
 .middle_contents .leftBox .events_list .photo:hover{opacity: .9;}
 .middle_contents .leftBox .events_list .photo p.where{ position: absolute; bottom: 10px; right: 10px; font-size: 14px; line-height: 24px; padding: 3px 15px;  -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; color: #fff; background-color: rgba(0,0,0,.8);}
-.middle_contents .leftBox .events_list .event_post_Summery{padding: 12px 0 10px; width: calc(100% - 30px); margin: 0 auto;}
-.middle_contents .leftBox .events_list .event_post_Summery p.date{ font-size: 15px; color: #777777; padding-bottom: 3px; }
-.middle_contents .leftBox .events_list .event_post_Summery h3.even_name{font-size: 20px; line-height: 30px; height: 30px; display: block; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; height: 30px * 1;}
-.middle_contents .leftBox .events_list .event_post_Summery h3.even_name a{ color: #333; }
-.middle_contents .leftBox .events_list .event_post_Summery h3.even_name a:hover{ color: #68b82d;}
-.middle_contents .leftBox .events_list .event_post_Summery .other_info{width: 100%; padding-top:8px; }
-.middle_contents .leftBox .events_list .event_post_Summery .other_info p{float: left; color: #a3a3a3; font-size: 13px; line-height: 16px; padding-right: 10px; position: relative; padding-left: 20px; margin-bottom: 8px;}
-.middle_contents .leftBox .events_list .event_post_Summery .other_info p::before{ content: ""; position: absolute; top: 0; left: 0; font-weight: 900; font-family: Font Awesome\ 5 Free; }
-.middle_contents .leftBox .events_list .event_post_Summery .other_info p.heart::before{content: "\f004";}
-.middle_contents .leftBox .events_list .event_post_Summery .other_info p.eye::before{content: "\f06e";}
-.middle_contents .leftBox .events_list .event_post_Summery .other_info p.good::before{content:"\f164";}
+.middle_contents .leftBox .event_post_Summery{ padding: 12px 0 10px; width: calc(100% - 30px); margin: 0 auto;}
+.middle_contents .leftBox .event_post_Summery p.date{ font-size: 15px; color: #777777; padding-bottom: 3px; }
+.middle_contents .leftBox .event_post_Summery h3.even_name{font-size: 20px; line-height: 30px; height: 30px; display: block; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; height: 30px * 1;}
+.middle_contents .leftBox .event_post_Summery h3.even_name a{ color: #333; }
+.middle_contents .leftBox .event_post_Summery h3.even_name a:hover{ color: #68b82d;}
+.middle_contents .leftBox .event_post_Summery .other_info{width: 100%; padding-top:8px; }
+.middle_contents .leftBox .event_post_Summery .other_info p{float: left; color: #a3a3a3; font-size: 13px; line-height: 16px; padding-right: 10px; position: relative; padding-left: 20px; margin-bottom: 8px;}
+.middle_contents .leftBox .event_post_Summery .other_info p::before{ content: ""; position: absolute; top: 0; left: 0; font-weight: 900; font-family: Font Awesome\ 5 Free; }
+.middle_contents .leftBox .event_post_Summery .other_info p.heart::before{content: "\f004";}
+.middle_contents .leftBox .event_post_Summery .other_info p.eye::before{content: "\f06e";}
+.middle_contents .leftBox .event_post_Summery .other_info p.good::before{content:"\f164";}
 
 .middle_contents .rightAD{ float: right; width: 300px; }
 .middle_contents .AdBox{ width: 100%;}
@@ -271,7 +271,7 @@ body{ min-width: 320px;}
 .fillinBox p.for_note i{ padding-right: 5px; }
 
 .registerBox .btn{width: 100%; padding-bottom: 10px;}
-.registerBox .btn .btn_style, .editBox .btn .btn_style, .event_photo_top .btn .btn_style{ background-color: #68b82d; cursor: pointer; position: relative; display: block; width: 100%; text-align: center; height: 44px; line-height: 44px; font-size: 16px; color: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; appearance: none; -moz-appearance: none; /* Firefox */-webkit-appearance: none}
+.registerBox .btn .btn_style, .editBox .btn .btn_style, .event_info_Box .btn .btn_style{ background-color: #68b82d; cursor: pointer; position: relative; display: block; width: 100%; text-align: center; height: 44px; line-height: 44px; font-size: 16px; color: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; appearance: none; -moz-appearance: none; /* Firefox */-webkit-appearance: none}
 .registerBox .btn .btn_style:hover, .editBox .btn .btn_style:hover{opacity: .9;}
 .registerBox .btn .btn_style i{ position: absolute; left: 10px; height: 44px; line-height: 44px; left: 6%; font-size: 18px; }
 /*.registerBox .btn .btn_style::before{content: '\f082'; position: absolute; top: 0px; height: 44px; left: 12px; display: block; font-family: Font Awesome\ 5 Free; font-weight: 900;}*/
@@ -411,17 +411,17 @@ body{ min-width: 320px;}
 
 .middle_contents .eventItemSearch{float: right;}
 .eventItemSearch .form-select{ width:130px; float: left; position: relative; margin-right: 10px; padding-bottom: 5px;}
-.eventItemSearch .form-select .md-input{ width: 100%; border:none; display: block; background-color: #f3f3f3; height: 40px; padding: 0px 15px 0 12px; -moz-border-radius: 5px; -webkit-border-radius: 5px;  border-radius: 5px; font-size: 15px; line-height: 40px;  color: #333; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
+.eventItemSearch .form-select .md-input{ width: 100%; border:none; display: block; background-color: #f3f3f3; height: 44px; padding: 0px 15px 0 12px; -moz-border-radius: 5px; -webkit-border-radius: 5px;  border-radius: 5px; font-size: 15px; line-height: 44px;  color: #333; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
 .eventItemSearch .form-select::after{ content: "\f107"; position: absolute; top:0px; height: 40px; line-height: 40px;  color: #bbbbbb; right: 15px; display: inline-block; font-family:  Font Awesome\ 5 Free; font-weight: 900;}
 .eventItemSearch .form-select::-ms-expand{  display: none;}/*IE 10 */
-.eventItemSearch .the_data{ float: left; width:260px; position: relative; border:none; display: block; background-color: transparent; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
-.eventItemSearch .the_data input{ background-color: #f3f3f3; color: #333; width: calc(100% - 50px); font-size: 15px; height: 40px; line-height: 40px; padding: 0px 10px 0px 40px; }
+.eventItemSearch .the_data{ float: left; width:260px; position: relative; border:none; display: block; background-color: transparent; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */ padding-bottom: 5px;}
+.eventItemSearch .the_data input{ background-color: #f3f3f3; color: #333; width: calc(100% - 50px); font-size: 15px; height: 44px; line-height: 44px; padding: 0px 10px 0px 40px; }
 .eventItemSearch .the_data input::-webkit-input-placeholder { /* WebKit browsers */color:#333;}
 .eventItemSearch .the_data input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:#333;}
 .eventItemSearch .the_data input::-moz-placeholder { /* Mozilla Firefox 19+ */color:#333;}
 .eventItemSearch .the_data input:-ms-input-placeholder { /* Internet Explorer 10+ */color:#333;}
-.eventItemSearch .the_data::before{ content: '\f073'; text-align: center; position: absolute; width: 40px; color: #bbbbbb; height: 40px; line-height: 40px; top: 0; left: 0; cursor: pointer; font-family:  Font Awesome\ 5 Free; font-weight: 900; }
-.eventItemSearch .the_data::after{ content: '\f107'; text-align: center; width: 40px; height: 40px; line-height: 40px; position: absolute; top: 0px; cursor: pointer; right: 0px; color: #bbbbbb;  font-family:  Font Awesome\ 5 Free; font-weight: 900; }
+.eventItemSearch .the_data::before{ content: '\f073'; text-align: center; position: absolute; width: 44px; color: #bbbbbb; height: 44px; line-height: 44px; top: 0; left: 0; cursor: pointer; font-family:  Font Awesome\ 5 Free; font-weight: 900; }
+.eventItemSearch .the_data::after{ content: '\f107'; text-align: center; width: 40px; height: 44px; line-height: 40px; position: absolute; top: 0px; cursor: pointer; right: 0px; color: #bbbbbb;  font-family:  Font Awesome\ 5 Free; font-weight: 900; }
 
 .event_item_more .leftBox ul.events_list li:nth-child(3n+1) { margin-left: 0;}
 .event_item_more .leftBox ul.events_list li:nth-child(3n) { margin-right: 0;}
@@ -545,11 +545,11 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .event_inside .event_info_Box .event_photo_top h3{ float: left; padding-right: 15px; font-size: 26px; line-height: 44px; }
 .event_inside .event_info_Box .event_photo_top p{ float: left; color: #666;  line-height: 44px;}
 .event_inside .event_info_Box .event_photo_top .rightbox{float: right; text-align: right;}
-.event_inside .event_info_Box .event_photo_top .btn{display: inline-block; min-width: 180px; margin-left: 10px; }
-.event_inside .event_info_Box .event_photo_top .btn i{padding-right: 10px;}
-.event_inside .event_info_Box .event_photo_top .btn:hover{ opacity:  }
-.event_inside .event_info_Box .event_photo_top .btn_org { min-width: 150px;}
-.event_inside .event_info_Box .event_photo_top .btn_org .btn_style{background-color: #f08700;}
+.event_inside .event_info_Box .btn{display: inline-block; min-width: 180px; margin-left: 10px; }
+.event_inside .event_info_Box .btn i{padding-right: 10px;}
+.event_inside .event_info_Box .btn:hover{ opacity:  }
+.event_inside .event_info_Box .btn_org { min-width: 150px;}
+.event_inside .event_info_Box .btn_org .btn_style{background-color: #f08700;}
 
 .event_inside .event_info_Box ul.photo_albums li{ float: left; width:calc(33.333% - 20px); margin: 0 15px 22px; }
 .event_inside .event_info_Box ul.photo_albums li .photo{height: 230px; position: relative; background-size: cover; background-color: #eee; background-repeat: no-repeat; background-position: center center;}
@@ -622,11 +622,13 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .fansBox ul.interactiveBox li p.invite a.none{ border:1px solid #c4c4c4; color: #777; background: transparent; }
 .fansBox ul.interactiveBox li p.no_invite{ color: #acacac;  }
 
-.fansBox ul.interactiveBox li .rBox{ position: absolute; right: 10px; top: 11px;} 
+.fansBox ul.interactiveBox li .rBox{ position: absolute; right: 20px; top: 11px;} 
 .fansBox ul.interactiveBox li .rBox p{ line-height: 50px;}
 .fansBox ul.interactiveBox li p.add_user a.follow{ text-align: center; padding: 8px 15px; cursor: pointer;  background-color: #f28707; color: #fff; border-radius: 50px; -moz-border-radius: 50px; -webkit-border-radius:50px;}
 .fansBox ul.interactiveBox li p.add_user a.send{ border:1px solid #c4c4c4; background-color: transparent; color: #777; }
 .fansBox ul.interactiveBox li p.invite a:hover, .fansBox ul.interactiveBox li p.add_user a:hover{ opacity: .9; }
+.fansBox ul.go_approve li p.add_user a.approve{ background-color: #68b82d; min-width: 77px; padding:8px 24px; }
+
 /*User info*/
 .user_inside{position: relative;}
 .user_inside p.change_background{ position: absolute; right: 10px; top: 10px; }
@@ -679,6 +681,26 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .user_inside .user_aboutMe .dataBox .eBox .communities p{ line-height: 30px; }
 .user_inside .user_aboutMe .dataBox .eBox .communities i {padding-right: 10px;}
 
+.user_inside .eventItemSearch{ float: none; }
+.user_inside .leftBox .eventItemSearch p.quantity{ float: left; line-height: 20px; padding: 12px 25px 0 5px;}
+.user_inside .leftBox .eventItemSearch p.quantity span{color: #67b82d;}
+.user_inside .user_data_Box .btn{float: right;}
+.user_inside .leftBox .eventItemSearch .search_date{ float: left; }
+
+.user_inside .leftBox ul.the_event{width: 100%; padding: 30px 0;}
+.user_inside .leftBox ul.the_event li{ width: 100%; background-color: #f8f9fa; margin-bottom: 25px; }
+.user_inside .leftBox .the_event .photo{ float: left; width:100%; max-width: 300px; display: block; height: 195px; background-size: cover; background-color: #eee; background-repeat: no-repeat; background-position: center center;}
+.user_inside .leftBox .the_event .photo:hover{opacity: .9;}
+.user_inside .leftBox .the_event .event_post_Summery{ float: left; width:initial; padding: 30px 0px 10px 40px; max-width: 350px;  }
+.user_inside .leftBox .the_event .event_post_Summery p.where{ display: inline-block; margin-bottom: 10px; font-size: 14px; line-height: 24px; padding: 3px 15px;  -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; color: #fff; background-color: #bdbdbe;}
+.user_inside .leftBox .the_event .event_post_Summery h3.even_name{margin: 5px 0;}
+.user_inside .leftBox .the_event .tools_btn{ width: 100%; max-width: 240px; float: right; text-align: right; height: 195px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center}
+.user_inside .leftBox .the_event .tools_btn p{ text-align: center; padding: 5px 0;}
+.user_inside .leftBox .the_event .tools_btn p a{ color: #888888; line-height: 40px; display: block; height: 40px; width: 168px; border:1px solid #e7e9ec; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; background-color: #fff; }
+.user_inside .leftBox .the_event .tools_btn p a:hover{ color: #67b82d; }
+.user_inside .leftBox .the_event .tools_btn p i{padding-right: 8px;}
+
+
 /*==== RWD ====*/
 @media (max-width:1400px){
 	.ContentsBox, .event_inside .eventTopBox .titleBox{ width:95%; margin: 0 auto; }
@@ -688,13 +710,22 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.HeaderBox .Menu .searchBox{max-width: 170px;}
 	.middle_contents .leftBox .AdBox .ad300x100:nth-child(4){ display: inline-block; }
 	.event_preview .leftBox{width: 95%;}
+
+	.user_inside .leftBox .the_event .photo{ max-width: 245px;}
+	.user_inside .leftBox .the_event .event_post_Summery{max-width: 280px;}
+	.user_inside .leftBox .event_post_Summery h3.even_name{ font-size: 18px; }
+	.user_inside .leftBox .the_event .tools_btn{max-width: 220px;}
 }
 @media (max-width:1280px){
 	.event_inside .event_info_Box .event_top .left_photo{ max-width: 340px; }
 	.event_inside .event_info_Box .event_top .left_photo .main_photo{height: 220px;}
 	.event_inside .event_info_Box .event_top .main_event_info{width: calc(100% - 365px);}
+	.user_inside .leftBox .the_event .photo{ max-width:190px; }
+	.user_inside .leftBox .the_event .event_post_Summery{padding-left: 30px;}
 }
-
+@media (max-width:1270px){
+	.user_inside .user_data_Box .btn{ float: left;  margin:0 20px 0 0; padding-top: 8px; }
+}
 @media (max-width:1250px){
 	.middle_contents .eventItemSearch{ width: 100%; padding-bottom: 15px; }
 }
@@ -716,6 +747,8 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.event_inside .event_info_Box ul.photo_albums li:nth-child(1n) { margin-right: 15px; margin-left: 0;}
 	.event_inside .event_info_Box ul.photo_albums li:nth-child(2n) { margin-right: 0; margin-left: 15px;}
 	.event_inside .event_info_Box ul.photo_albums li:nth-child(4n) { margin-left: 15px;}
+
+	.user_inside .leftBox .the_event .photo{ max-width: 100%;}
 }
 @media (max-width:1150px){
 	.FooterBox .downloadAppBox .lBox ul li{ float: none; }
@@ -752,7 +785,13 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.user_inside .eventTopBox .event_host p.other_info{ text-align: center; padding-left: 0; }
 	.user_inside .user_data_Box ul.menu li p{font-size: 18px;}
 	.user_inside .user_data_Box ul.menu li p a{ padding: 20px 25px;}
-	.event_inside .event_info_Box .event_top{ padding-bottom: 10px; }
+	.event_inside .event_info_Box .event_top{ padding-bottom: 10px;}
+	.user_inside .user_data_Box .btn{ float: right;  margin:0 0 0 0; padding-top: 0px; }
+
+	.user_inside .leftBox .the_event .photo{ max-width:190px; }
+}
+@media (max-width:930px){
+	.user_inside .user_data_Box .btn{ float: left;  margin:0 20px 0 0; padding-top: 8px; }
 }
 @media (max-width:850px){
 	.middle_contents{padding-top: 80px;}
@@ -773,8 +812,12 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.user_inside .user_aboutMe .dataBox{ max-width: calc(100% - 180px);}
 	.user_inside .user_aboutMe .dataBox .eBox .p_leftBox{ max-width: 120px; }
 	.user_inside .user_aboutMe .dataBox .eBox .right_info{ max-width: calc(100% - 150px);}
-	.width-S{padding: 0;}
-
+	.width-S{padding: 0; width: 90%;}
+	.user_inside .leftBox .the_event .photo{ height: 250px;}
+	.user_inside .leftBox .the_event .event_post_Summery{ max-width: calc(100% - 240px);}
+	.user_inside .leftBox .the_event .tools_btn{ max-width: initial; width: initial; padding-right: 15px; height: initial; float: left; padding-left: 25px; }
+	.user_inside .leftBox .the_event .tools_btn .both{ text-align: center; }
+	.user_inside .leftBox .the_event .tools_btn .both p{ display: inline-block; min-width: 145px; }
 }
 @media (max-width:750px){
 	.HeaderBox .Menu ul.menu{ display: none; }
@@ -805,17 +848,25 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.user_inside .ContentsBox{padding-top: 10px;}
 	.user_inside .user_data_Box ul.menu li p a{padding: 20px 18px;}
 
+	.user_inside .leftBox .eventItemSearch .search_date{width: 100%;}
+
 }
 @media (max-width:700px){
 	.choosePhotoBox ul.photos li{ width: 33.33%; }
 	.fansBox .top_title h3.title{ padding: 0 20px; }
 	.fansBox ul.interactiveBox li{ padding: 12px 20px; }
+	.user_inside .leftBox ul.the_event li{padding-bottom: 20px;}
+	.user_inside .leftBox .the_event .event_post_Summery{ padding: 15px 0; max-width: calc(100% - 30px); float: none;}
+	.user_inside .leftBox .the_event .photo{ max-width: 100%; height: 190px; float: none; }
+	.user_inside .leftBox .the_event .tools_btn{padding-left: 15px;}
+	.user_inside .leftBox .the_event .tools_btn p a{ width: initial; padding: 0 15px;}
+
 }
 @media (max-width:650px){
 	.gotopaly_noticeBox .bothBox .lBox{ width: 100%; }
 	.gotopaly_noticeBox .bothBox .rBox{width: 100%; padding-left: 0;}
 	.editBox .btn_both .btn_style{ width: 46%; margin: 0 1%;}
-	.registerBox .btn .btn_style, .editBox .btn .btn_style, .event_photo_top .btn .btn_style{ font-size: 15px; }
+	.registerBox .btn .btn_style, .editBox .btn .btn_style, .event_info_Box .btn .btn_style{ font-size: 15px; }
 	.fixed_screenBox{ bottom: 155px; }
 	.fixed_screenBox p.teachingBox a{ width: 60px; height: 75px; }
 	.fixed_screenBox a.go_top{width: 60px;}
@@ -901,6 +952,8 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.user_inside .user_data_Box ul.menu{ text-align: center; }
 	.user_inside .user_data_Box ul.menu li p{font-size: 16px;}
 	.user_inside .user_data_Box ul.menu li{float: none; display: inline-block;}
+	.middle_contents .leftBox .event_post_Summery p.date{ font-size: 14px; }
+	.user_inside .user_data_Box ul.menu li p a{ padding: 17px 18px 8px 18px; }
 }
 @media (max-width:420px){
 	.registerBox .fillinBox, .editBox .fillinBox{width: calc(100% - 40px); padding: 20px;}
@@ -924,6 +977,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.event_photo_top .btn .btn_style{ font-size: 14px; height: 40px; line-height: 40px; }
 	.event_inside .event_info_Box .event_photo_top .btn{ min-width: 142px; }
 	.event_inside .event_info_Box .event_photo_top .btn_org{ min-width: 115px;}
+	.user_inside .leftBox .the_event .tools_btn .both p{ font-size: 13px; }
 }
 @media (max-width:320px){
 	.HeaderBox .Menu .searchBox{ max-width: 145px;}
