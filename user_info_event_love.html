@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<title>GoToPlay123來去玩 - User 個人資料</title>
+<title>GoToPlay123來去玩 - User 追蹤活動</title>
 <meta name='description' content="GoToPlay123來去玩是一個招集戶外活動的平台，我們的目的是讓大家都能透過這個平台，自行策劃線路、約伴、排程及內容之自助招集或自由參加適合自己的戶外活動，適合喜愛戶外活動、崇尚自由、喜歡團體活動和樂於探索新奇目的地的大眾。"/>
 <meta name='keywords' content="GoToPlay123來去玩, GoToPlay123, 戶外活動, 揪團, 呼朋引伴, 約伴, 團體活動, 大自然, 探索, 邀約, 運動, 熱愛, 自由"/>
 
@@ -199,49 +199,90 @@ $(document).ready(function() {
             <div class="event_info_Box user_data_Box">
                 <div class="event_top clearfix">
                     <ul class="menu clearfix">
-                        <li><p class="btn_in"><a href="user_info.html">關於我</a></p></li>
+                        <li><p><a href="user_info.html">關於我</a></p></li>
                         <li><p><a href="user_info_event_host.html">活動發起</a></p></li><!-- 是活動發起者才會顯示 -->
                         <li><p><a href="user_info_event_join.html">活動參與</a></p></li>
-                        <li><p><a href="user_info_event_love.html">追蹤活動</a></p></li>
+                        <li><p class="btn_in"><a href="user_info_event_love.html">追蹤活動</a></p></li>
                         <li><p><a href="user_info_event_album.html">活動照片</a></p></li>
                     </ul>
                 </div>
-                <div class="user_aboutMe clearfix">
-                    <div class="lBox">
-                        <div class="user_photo" style="background-image: url(images/photo/01.jpg);">
-                            <p><a href="#">上傳相片</a></p>
-                        </div>
-                        <p class="name">Tony Liu</p>
-                        <div class="score"><p>
-                            <i class="fas fa-star" style="color: #f08900;"></i>
-                            <i class="fas fa-star" style="color: #f08900;"></i>
-                            <i class="fas fa-star" style="color: #f08900;"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i></p>
-                            <p><span>共205個評比</span></p>
-                        </div>
-                        <p class="edit_user"><a href="#"><i class="far fa-edit"></i>編輯個人資料</a></p>
+                <div class="eventItemSearch clearfix">
+                    <p class="quantity">已追蹤 <span>3</span> 個活動</p>
+                    <div class="form-select">
+                        <select class="md-input">
+                            <option value="0">顯示全部</option>
+                            <option value="1">活動報名中</option>
+                            <option value="2">已結束</option>
+                        </select>
                     </div>
-                    <div class="dataBox">
-                        <div class="topBox clearfix">
-                            <p class="title"><span><i class="fas fa-flag-checkered"></i></span>活動發起人</p>
-                            <p><span>18</span>發起活動總次數</p>
-                            <p><span>53</span>參加活動總次數</p>
-                        </div>
-                        <div class="eBox clearfix">
-                            <div class="p_leftBox"><p>加入日期</p></div>
-                            <div class="right_info"><p>2018/03/28</p></div>
-                        </div>
-                        <div class="eBox clearfix">
-                            <div class="p_leftBox"><p>個人介紹</p></div>
-                            <div class="right_info"><p>I am an Balinese woodworker, artist and garderner. </p></div>
-                        </div>
-                        <div class="eBox clearfix">
-                            <div class="p_leftBox"><p>個人網址</p></div>
-                            <div class="right_info communities"><p><i class="fab fa-facebook-square"></i><a href="#" target="_blank">https://www.facebook.com/app_scoped_user_id/1218850398136424/</a></p><p><i class="fab fa-instagram"></i><a href="#" target="_blank">https://www.instagram.com/tony_liu/</a></p></div>
-                        </div>
+                    <div class="search_date clearfix">
+                        <p class="quantity">日期區間</p>
+                        <div class="the_data"><input type="" name="" placeholder="日期區間" value="2018/08/23 - 2018/08/30"></div>
                     </div>
                 </div>
+                <ul class="the_event">
+                    <li class="clearfix">
+                        <a class="photo" style="background-image:url(images/photo/02.jpg)" href="event_info.html" target="_blank"></a>
+                        <div class="event_post_Summery">
+                            <div class="clearfix">
+                                <p class="where">北海道</p>
+                            </div>
+                            <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                            <h3 class="even_name"><a href="event_info.html" target="_blank">爬雪山囉</a></h3>
+                            <div class="other_info clearfix">
+                                <p class="heart">22人追蹤</p>
+                                <p class="eye">153人看過</p>
+                                <p class="good">153人按讚</p>
+                            </div>
+                        </div>
+                        <div class="tools_btn btn_w_short btn_pink">
+                            <div class="both">
+                                <p class="to_join"><a href="#"><i class="far fa-flag"></i>我要報名</a></p><!-- 追蹤活動後還沒有報名就會出現「我要報名」的按鈕 -->
+                                <p><a href="#"><i class="fas fa-heart"></i>加回追蹤</a></p><!-- 按了「取消追蹤」，畫面還沒離開時會顯示「加回追蹤」 -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a class="photo" style="background-image:url(images/photo/01.jpg)" href="event_info.html" target="_blank"></a>
+                        <div class="event_post_Summery">
+                            <div class="clearfix">
+                                <p class="where">澳大利亞</p>
+                            </div>
+                            <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                            <h3 class="even_name"><a href="event_info.html" target="_blank">The border-radius CSS property lets you round the corners of an element's outer border </a></h3>
+                            <div class="other_info clearfix">
+                                <p class="heart">22人追蹤</p>
+                                <p class="eye">153人看過</p>
+                                <p class="good">153人按讚</p>
+                            </div>
+                        </div>
+                        <div class="tools_btn btn_w_short btn_pink">
+                            <div class="both">
+                                <p><a href="#"><i class="far fa-heart"></i>取消追蹤</a></p><!-- 已參加活動就只會有一顆紐 -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a class="photo" style="background-image:url(images/photo/04.jpg)" href="event_info.html" target="_blank"></a>
+                        <div class="event_post_Summery">
+                            <div class="clearfix">
+                                <p class="where">北海道</p>
+                            </div>
+                            <p class="date">2015-06-16(二) ~ 2018-12-31(一)</p>
+                            <h3 class="even_name"><a href="event_info.html" target="_blank">紅毛埤山</a></h3>
+                            <div class="other_info clearfix">
+                                <p class="heart">22人追蹤</p>
+                                <p class="eye">153人看過</p>
+                                <p class="good">153人按讚</p>
+                            </div>
+                        </div>
+                        <div class="tools_btn btn_w_short btn_pink">
+                            <div class="both">
+                                <p><a href="#"><i class="far fa-heart"></i>取消追蹤</a></p><!-- 已參加活動就只會有一顆紐 -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="AdBox2">
                 <div class="ad300x250"></div>
@@ -475,11 +516,12 @@ $(document).ready(function() {
         </ul>
     </div>
 </div>
-<section class="fixed_screenBox">
-    <p class="teachingBox"><a href="#">使用教學</a></p><!-- 每一頁出來的使用教學說明link不一樣 -->
+
+<!-- <section class="fixed_screenBox">
+    <p class="teachingBox"><a href="#">使用教學</a></p>
     <a class="go_top"></a>
 </section>
-<div class="Ad_please"></div>
+<div class="Ad_please"></div> -->
 
 <footer class="FooterBox">
     <section class="serviceBox">

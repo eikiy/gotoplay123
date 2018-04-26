@@ -497,7 +497,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .event_inside .event_info_Box .event_top .main_event_info ul li p.info a:hover{ text-decoration: underline; }
 .event_inside .event_info_Box .event_top .main_event_info ul li p.type{ color: #9e9e9e; }
 .event_inside .event_info_Box .event_top .main_event_info ul li p.type a{ color: #9e9e9e; }
-.event_inside .event_info_Box .event_top .main_event_info .btn{ text-align: center;}
+.event_inside .event_info_Box .event_top .main_event_info .btn{ text-align: center; width: 100%;}
 .event_inside .event_info_Box .event_top .main_event_info .btn_style{ font-size: 18px; background-color: #68b82d; cursor: pointer; position: relative; display: inline-block; width: 100%; max-width: 230px; text-align: center; height: 56px; line-height: 56px; color: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; appearance: none; -moz-appearance: none; /* Firefox */-webkit-appearance: none}
 .event_inside .event_info_Box .event_top .main_event_info .btn_org{background-color: #f08700;}
 .event_inside .event_info_Box .event_top .main_event_info .btn_style:hover{opacity: .9;}
@@ -646,7 +646,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .user_inside .event_info_Box{ padding-top: 15px;}
 .user_inside .user_data_Box ul.menu{ width: 100%; border-bottom: 4px solid #f8f9fa; margin-bottom: 15px; }
 .user_inside .user_data_Box ul.menu li{ float: left;  }
-.user_inside .user_data_Box ul.menu li p{ font-size: 20px; position: relative; }
+.user_inside .user_data_Box ul.menu li p{ font-size: 18px; position: relative; }
 .user_inside .user_data_Box ul.menu li p a{ padding: 20px 35px; line-height: 30px; color: #666666; display: inline-block; }
 .user_inside .user_data_Box ul.menu li p.btn_in a{ color: #f08900;}
 .user_inside .user_data_Box ul.menu li p.btn_in::after{ position: absolute; content: ""; position: absolute; bottom: -4px; left: 0; background-color: #f08900; height: 4px; display: inline-block; width: 100%; }
@@ -692,14 +692,20 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .user_inside .leftBox .the_event .photo{ float: left; width:100%; max-width: 300px; display: block; height: 195px; background-size: cover; background-color: #eee; background-repeat: no-repeat; background-position: center center;}
 .user_inside .leftBox .the_event .photo:hover{opacity: .9;}
 .user_inside .leftBox .the_event .event_post_Summery{ float: left; width:initial; padding: 30px 0px 10px 40px; max-width: 350px;  }
-.user_inside .leftBox .the_event .event_post_Summery p.where{ display: inline-block; margin-bottom: 10px; font-size: 14px; line-height: 24px; padding: 3px 15px;  -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; color: #fff; background-color: #bdbdbe;}
+.user_inside .leftBox .the_event .event_post_Summery p.where{ float: left ; display: inline-block;  margin-bottom: 10px; font-size: 14px; line-height: 24px; padding: 3px 15px; margin-right: 12px;  -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; color: #fff; background-color: #bdbdbe;}
+.user_inside .leftBox .the_event .event_post_Summery p.out{ float: left; color: #ff4141; line-height: 24px; padding: 3px 15px; font-size: 14px; font-weight: bold; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; background-color: #fff6da; }
 .user_inside .leftBox .the_event .event_post_Summery h3.even_name{margin: 5px 0;}
+
 .user_inside .leftBox .the_event .tools_btn{ width: 100%; max-width: 240px; float: right; text-align: right; height: 195px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center}
 .user_inside .leftBox .the_event .tools_btn p{ text-align: center; padding: 5px 0;}
 .user_inside .leftBox .the_event .tools_btn p a{ color: #888888; line-height: 40px; display: block; height: 40px; width: 168px; border:1px solid #e7e9ec; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; background-color: #fff; }
 .user_inside .leftBox .the_event .tools_btn p a:hover{ color: #67b82d; }
 .user_inside .leftBox .the_event .tools_btn p i{padding-right: 8px;}
 
+.user_inside .leftBox .the_event .btn_pink p a:hover{ color: #ff5186; }
+.user_inside .leftBox .the_event .btn_w_short p a{ width: 148px; }
+.user_inside .leftBox .the_event .btn_w_short p.to_join a{ background-color: #f08900; color: #fff; border-color: #f08900; }
+.user_inside .leftBox .the_event .btn_w_short p.to_join a:hover{ background-color: #ff9202; }
 
 /*==== RWD ====*/
 @media (max-width:1400px){
@@ -783,7 +789,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.user_inside .eventTopBox .event_host p.host a.img_avatar span{left: 50%; margin-left: -44px;}
 	.user_inside .eventTopBox .event_host p.host a.follow{ display: inline-block; margin-left: 0; }
 	.user_inside .eventTopBox .event_host p.other_info{ text-align: center; padding-left: 0; }
-	.user_inside .user_data_Box ul.menu li p{font-size: 18px;}
+	.user_inside .user_data_Box ul.menu li p{font-size: 17px;}
 	.user_inside .user_data_Box ul.menu li p a{ padding: 20px 25px;}
 	.event_inside .event_info_Box .event_top{ padding-bottom: 10px;}
 	.user_inside .user_data_Box .btn{ float: right;  margin:0 0 0 0; padding-top: 0px; }
@@ -950,10 +956,10 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.user_inside .user_aboutMe .dataBox .topBox p.title{width: 100%; border-bottom: 1px solid #e9e9ea; padding-bottom: 10px;}
 	.user_inside .event_info_Box{ padding-top: 0; }
 	.user_inside .user_data_Box ul.menu{ text-align: center; }
-	.user_inside .user_data_Box ul.menu li p{font-size: 16px;}
 	.user_inside .user_data_Box ul.menu li{float: none; display: inline-block;}
-	.middle_contents .leftBox .event_post_Summery p.date{ font-size: 14px; }
+	.user_inside .user_data_Box ul.menu li p{font-size: 16px;}
 	.user_inside .user_data_Box ul.menu li p a{ padding: 17px 18px 8px 18px; }
+	.middle_contents .leftBox .event_post_Summery p.date{ font-size: 14px; }
 }
 @media (max-width:420px){
 	.registerBox .fillinBox, .editBox .fillinBox{width: calc(100% - 40px); padding: 20px;}
