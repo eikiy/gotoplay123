@@ -684,8 +684,14 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .user_inside .eventItemSearch{ float: none; }
 .user_inside .leftBox .eventItemSearch p.quantity{ float: left; line-height: 20px; padding: 12px 25px 0 5px;}
 .user_inside .leftBox .eventItemSearch p.quantity span{color: #67b82d;}
-.user_inside .user_data_Box .btn{float: right;}
 .user_inside .leftBox .eventItemSearch .search_date{ float: left; }
+
+.user_inside .user_data_Box .btn{float: right;}
+.user_inside .user_data_Box .event_photo{ margin-top: 25px; }
+.user_inside .user_data_Box .event_photo h3.title{ font-size: 20px; line-height: 28px; height: 28px; display: block; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; height: 28px * 1; }
+.user_inside .user_data_Box .event_photo h3.title a{color: #333; }
+.middle_contents .leftBox .event_post_Summery h3.even_name a:hover{ color: #68b82d;}
+.user_inside .user_data_Box .event_photo p.day{  padding: 5px 10px; color: #a3a3a3; font-size: 14px; }
 
 .user_inside .leftBox ul.the_event{width: 100%; padding: 30px 0;}
 .user_inside .leftBox ul.the_event li{ width: 100%; background-color: #f8f9fa; margin-bottom: 25px; }
