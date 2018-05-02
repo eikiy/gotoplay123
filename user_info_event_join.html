@@ -238,7 +238,7 @@ $(document).ready(function() {
                         </div>
                         <div class="tools_btn btn_w_short">
                             <div class="both">
-                                <p><a href="#"><i class="far fa-user"></i>活動簡介</a></p>
+                                <p><a class="popup-link" href="#popup-eventInfo1"><i class="far fa-user"></i>活動簡介</a></p><!-- 狀態一:有QRcodek的狀態 -->
                                 <p><a href="#"><i class="fas fa-times"></i>取消報名</a></p>
                             </div>
                         </div>
@@ -259,7 +259,7 @@ $(document).ready(function() {
                         </div>
                         <div class="tools_btn btn_w_short">
                             <div class="both">
-                                <p><a href="#"><i class="far fa-user"></i>活動簡介</a></p>
+                                <p><a class="popup-link" href="#popup-eventInfo2"><i class="far fa-user"></i>活動簡介</a></p><!-- 狀態二:沒有QRcodek的狀態，只有連結 -->
                                 <p><a href="#"><i class="fas fa-times"></i>取消報名</a></p>
                             </div>
                         </div>
@@ -280,7 +280,7 @@ $(document).ready(function() {
                         </div>
                         <div class="tools_btn btn_w_short">
                             <div class="both">
-                                <p><a href="#"><i class="far fa-user"></i>活動簡介</a></p>
+                                <p><a class="popup-link" href="#popup-eventInfo2"><i class="far fa-user"></i>活動簡介</a></p><!-- 狀態二:沒有QRcodek的狀態，只有連結 -->
                                 <p class="to_join"><a href="#"><i class="far fa-flag"></i>重新報名</a></p><!-- 按了「取消報名」，畫面還沒離開時會顯示「重新報名」 -->
                             </div>
                         </div>
@@ -362,6 +362,65 @@ $(document).ready(function() {
     </section>
 </main>
 
+<div id="popup-eventInfo1" class="white-popup mfp-hide width-S">
+    <div class="event_short_content clearfix">
+        <div class="lBox">
+            <h3>快加入該活動 Line 群組<br>方便參與者互相聯絡！</h3>
+            <div class="qrcodeBox"><a href="#"><img src="images/IMG_5832.PNG" width="100%" alt="LINE QRcode"></a></div>
+            <p class="line_link"><a href="#">http://line.me/ti/g/7p3a-34fW</a></p>
+        </div>
+        <div class="rBox">
+            <ul>
+                <li>
+                    <p class="sub_title">領隊 / Email</p>
+                    <p class="info">韓國歐巴  <a href="mailto:webokor@gmail.com">webokor@gmail.com</a></p>
+                </li>
+                <li>
+                    <p class="sub_title">集合時間</p>
+                    <p class="info">2018/04/23(五) 16:00</p>
+                </li>
+                <li>
+                    <p class="sub_title">集合地點</p>
+                    <p class="info"><a href="#" target="_blank">銘傳國小</a></p><!-- 有設google map才會出現a -->
+                </li>
+                <li>
+                    <p class="sub_title">響導群</p>
+                    <p class="info type">王小明、蔡阿嘎</p>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+<div id="popup-eventInfo2" class="white-popup mfp-hide width-S">
+    <div class="event_short_content clearfix">
+        <div class="lBox no_qrcode">
+            <h3>快加入該活動 Line 群組<br>方便參與者互相聯絡！</h3>
+            <p class="line_link"><a href="#">http://line.me/ti/g/7p3a-34fW</a></p>
+        </div>
+        <div class="rBox">
+            <ul>
+                <li>
+                    <p class="sub_title">領隊 / Email</p>
+                    <p class="info">韓國歐巴  <a href="mailto:webokor@gmail.com">webokor@gmail.com</a></p>
+                </li>
+                <li>
+                    <p class="sub_title">集合時間</p>
+                    <p class="info">2018/04/23(五) 16:00</p>
+                </li>
+                <li>
+                    <p class="sub_title">集合地點</p>
+                    <p class="info"><a href="#" target="_blank">銘傳國小</a></p><!-- 有設google map才會出現a -->
+                </li>
+                <li>
+                    <p class="sub_title">響導群</p>
+                    <p class="info type">王小明、蔡阿嘎</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 <div id="popup1" class="white-popup mfp-hide width-S">
     <div class="fansBox">
         <div class="top_title">

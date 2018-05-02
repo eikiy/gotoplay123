@@ -593,6 +593,25 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .popup-w-s{max-width: 360px;}
 .width-S{ max-width: 780px; padding: 0px;}
 .width-M {max-width: 1000px;}
+
+/*加入活動後的popup簡易資訊*/
+.event_short_content { width: 100%; background-color: #fff; }
+.event_short_content .lBox{float: left; width: 45%; background-color: #f8f9fa; padding: 20px 0;}
+.event_short_content .lBox h3{ font-size: 20px; text-align: center; padding: 15px; font-weight: bold;}
+.event_short_content .lBox .qrcodeBox{ width: 100%; max-width: 210px; margin:0 auto; }
+.event_short_content .lBox p.line_link{ padding: 15px; text-align: center; }
+.event_short_content .lBox p.line_link a{ color: #67b82d; text-decoration: underline; }
+.event_short_content .lBox p.line_link a:hover{ text-decoration: none; }
+.event_short_content .no_qrcode{ background: url(../images/illustration/img_illustration_05.png) center 40px no-repeat #f8f9fa; background-size: contain; padding-top: 240px; }
+
+.event_short_content .rBox{float: right; width:55%; padding:20px 0;}
+.event_short_content .rBox ul{ width: calc(100% - 40px); padding: 20px; }
+.event_short_content .rBox ul li{padding-bottom: 22px;}
+.event_short_content .rBox ul li p.sub_title{ font-size: 15px; color: #888; padding-bottom: 10px; }
+.event_short_content .rBox ul li p.info{ font-size: 18px; color: #333; }
+.event_short_content .rBox ul li p.info a{ color: #67b82d; text-decoration: underline;}
+.event_short_content .rBox ul li p.info a:hover{ text-decoration: none; }
+
 /*popup - style END*/
 
 .choosePhotoBox{ width: 100%; }
@@ -872,6 +891,10 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.user_inside .leftBox .the_event .photo{ max-width: 100%; height: 190px; float: none; }
 	.user_inside .leftBox .the_event .tools_btn{padding-left: 15px;}
 	.user_inside .leftBox .the_event .tools_btn p a{ width: initial; padding: 0 15px;}
+
+	.event_short_content .lBox,	.event_short_content .rBox{ width: 100%; text-align: center;}
+	.event_short_content .rBox ul li p.subtitle{font-size: 14px;}
+	.event_short_content .rBox ul li p.info{ font-size: 16px; }
 
 }
 @media (max-width:650px){
