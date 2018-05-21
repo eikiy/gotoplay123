@@ -388,8 +388,14 @@ body{ min-width: 320px;}
 .editBox p.goback a{color: #68b82d;}
 .editBox p.goback a:hover{text-decoration: underline;}
 
+.create_done h2.h2_title{ line-height: 38px; }
+.create_done p.link{ text-align: center; }
+.create_done p.link { color: #959595; padding-top: 10px;}
+.create_done p.link a{ color: #f08700; margin: 0 10px; text-decoration: underline; }
+.create_done p.link a:hover{text-decoration: none;}
+
 /*活動內頁相關*/
-.middle_contents .leftBox .eventTopBox{width: 100%;}
+.middle_contents .leftBox .eventTopBox{ width: 100%;}
 .middle_contents .leftBox .eventTopBox h2.h2_title{display: inline-block; float: left;}
 .middle_contents .leftBox .eventTopBox p.quantity{ float: left; line-height: 20px; padding: 10px 25px 0 5px;}
 .middle_contents .leftBox .eventTopBox p.quantity span{color: #67b82d;}
@@ -647,6 +653,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .fansBox ul.interactiveBox li p.add_user a.send{ border:1px solid #c4c4c4; background-color: transparent; color: #777; }
 .fansBox ul.interactiveBox li p.invite a:hover, .fansBox ul.interactiveBox li p.add_user a:hover{ opacity: .9; }
 .fansBox ul.go_approve li p.add_user a.approve{ background-color: #68b82d; min-width: 77px; padding:8px 24px; }
+.fansBox ul.go_approve li p.add_user a.no_approve{ color: #888; text-decoration: underline; padding: 0 10px; font-size: 13px; }
 
 /*User info*/
 .user_inside{position: relative;}
@@ -905,7 +912,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 }
 @media (max-width:700px){
 	.choosePhotoBox ul.photos li{ width: 33.33%; }
-	.fansBox .top_title h3.title{ padding: 0 20px; }
+	.fansBox .top_title h3.title{ padding: 0 20px; font-size: 24px; }
 	.fansBox ul.interactiveBox li{ padding: 12px 20px; }
 	.user_inside .leftBox ul.the_event li{padding-bottom: 20px;}
 	.user_inside .leftBox .the_event .event_post_Summery{ padding: 15px 0; max-width: calc(100% - 30px); float: none;}
@@ -916,7 +923,6 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.event_short_content .lBox,	.event_short_content .rBox{ width: 100%; text-align: center;}
 	.event_short_content .rBox ul li p.subtitle{font-size: 14px;}
 	.event_short_content .rBox ul li p.info{ font-size: 16px; }
-
 }
 @media (max-width:650px){
 	.gotopaly_noticeBox .bothBox .lBox{ width: 100%; }
@@ -942,6 +948,8 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.middle_contents .seach_advanced .eventItemSearch p.title, .middle_contents .seach_advanced .eventItemSearch .form-select, .middle_contents .seach_advanced ul.eventItemSearch li.box-w1{width: 100%;}
 	.middle_contents .seach_advanced .eventItemSearch .the_data, .middle_contents .seach_advanced ul.eventItemSearch li.box-w2{ width: calc( 100% - 20px);}
 	.middle_contents .seach_advanced ul.eventItemSearch li.box-w2 .btn{ max-width: 100%;}
+	.fansBox ul.interactiveBox li .lBox p, .fansBox ul.interactiveBox li .rBox p{ font-size: 14px; }
+	.fansBox ul.interactiveBox li a.theFans{ margin-right: 10px;}
 }
 @media (max-width:600px){
 	.ContentsBox{width: 90%;}
@@ -996,7 +1004,11 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.user_inside .user_aboutMe .dataBox .eBox .right_info{ max-width:calc(100% - 30px);}
 
 	.fansBox ul.interactiveBox li .lBox{ width: 100%; }
-	.fansBox ul.interactiveBox li p.invite, .fansBox ul.interactiveBox li p.no_invite{ width: 100%; }
+	.fansBox ul.interactiveBox li p.invite, .fansBox ul.interactiveBox li p.no_invite{ width: 100%; text-align: center;}
+	.fansBox ul.interactiveBox li .lBox{ float: none; }
+	.fansBox ul.interactiveBox li .rBox{ position: initial; width: 100%; text-align: center;}
+	.fansBox ul.interactiveBox li a.theFans{ margin:0 auto; float: none; }
+	.fansBox ul.interactiveBox li p.name{text-align: center; max-width: inherit;}
 }
 @media (max-width:550px){
 	.HeaderBox .the_language{ display: none; }
