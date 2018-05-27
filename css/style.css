@@ -394,6 +394,21 @@ body{ min-width: 320px;}
 .create_done p.link a{ color: #f08700; margin: 0 10px; text-decoration: underline; }
 .create_done p.link a:hover{text-decoration: none;}
 
+.ratingBox h2.h2_title{font-size: 18px; padding-bottom: 0; }
+.ratingBox h3.title{ text-align: center; font-size: 26px; line-height: 28px; }
+.ratingBox h3.title a{color: #333; }
+.ratingBox p.day{ padding: 15px 0px; color: #a3a3a3; font-size: 16px; text-align: center; }
+.ratingBox .ex{text-align: center; padding-bottom: 15px;}
+.ratingBox ul{width: 100%; border-top: 1px solid #eeeeee; padding-bottom: 35px;}
+.ratingBox ul li{ width: 100%; padding: 10px 0; border-bottom: 1px solid #eeeeee;}
+.ratingBox ul li .lBox{ float: left; width: 100%; max-width: 200px;}
+.ratingBox ul li .lBox p{ float: left; line-height: 50px;margin-right: 5px; }
+.ratingBox ul li a.user{ float: left; width: 50px; height: 50px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius:50%; display: block; margin-right: 15px; background-size: cover; background-repeat: no-repeat; background-position:  center center;}
+.ratingBox ul li p.name{ width: 100%; max-width: 125px; }
+.ratingBox ul li p.name a{ color: #333; }
+.ratingBox ul li p.name a:hover{ text-decoration: underline; }
+.ratingBox .radio_select{ float: right; width:300px; padding:3px 0 0 0;}
+
 /*活動內頁相關*/
 .middle_contents .leftBox .eventTopBox{ width: 100%;}
 .middle_contents .leftBox .eventTopBox h2.h2_title{display: inline-block; float: left;}
@@ -659,6 +674,14 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 .fansBox .searchUser{ float: left; width: 100%; max-width: 200px; position: relative;; margin-right: 50px; }
 .fansBox .searchUser input{ text-align: center; padding:0 35px; line-height: 34px; height: 34px; width:calc(100% - 70px); border:1px solid #eeeeee; border-radius: 40px;-moz-border-radius: 40px; -webkit-border-radius:40px; overflow-y: hidden;}
 .fansBox .searchUser::before{ content: '\f002'; width: 35px; height: 34px; text-align: center; line-height: 34px; position: absolute; top: 0px; cursor: pointer; left: 0px; color: #cfcfcf;  font-family:  Font Awesome\ 5 Free; font-weight: 900; z-index: 10; }
+
+.pop_addPhoto .top_title h3.title{ padding-right: 20px; }
+.pop_addPhoto .top_title p.sub{ line-height:35px; float: left; color: #999; }
+.pop_addPhoto ul{ width: 100%; overflow-y: auto; max-height: 550px;}
+.pop_addPhoto ul li{ width: 100%;width: calc(100% - 80px); cursor: pointer; border-bottom: 1px solid #eeeeee; padding:15px 40px; }
+.pop_addPhoto ul li:hover{ background-color: #eeeeee; }
+.pop_addPhoto ul li h3.title{ color: #495f91; font-size: 20px; line-height: 28px; height: 28px; margin-bottom: 5px; display: block; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; height: 28px * 1; }
+.pop_addPhoto ul li  p.day{ color: #a3a3a3; font-size: 14px; }
 
 /*User info*/
 .user_inside{position: relative;}
@@ -955,6 +978,12 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.middle_contents .seach_advanced ul.eventItemSearch li.box-w2 .btn{ max-width: 100%;}
 	.fansBox ul.interactiveBox li .lBox p, .fansBox ul.interactiveBox li .rBox p{ font-size: 14px; }
 	.fansBox ul.interactiveBox li a.theFans{ margin-right: 10px;}
+
+	.ratingBox ul li{padding-top: 15px;}
+	.ratingBox ul li .lBox, .ratingBox .radio_select{float: none; margin: 0 auto;}
+	.ratingBox ul li a.user{margin: 0 auto; float: none;}
+	.ratingBox ul li p.name{ max-width: initial; text-align: center; margin: 0; line-height: 44px; }
+	.ratingBox .radio_select{ width: 284px;padding: 0;}
 }
 @media (max-width:600px){
 	.ContentsBox{width: 90%;}
@@ -1034,6 +1063,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.user_inside .user_data_Box ul.menu li p{font-size: 16px;}
 	.user_inside .user_data_Box ul.menu li p a{ padding: 17px 18px 8px 18px; }
 	.middle_contents .leftBox .event_post_Summery p.date{ font-size: 14px; }
+	.ratingBox .radio_select{ width: 255px;}
 }
 @media (max-width:420px){
 	.registerBox .fillinBox, .editBox .fillinBox{width: calc(100% - 40px); padding: 20px;}

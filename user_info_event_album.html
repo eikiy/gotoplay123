@@ -212,7 +212,7 @@ $(document).ready(function() {
                         <p class="quantity">日期區間</p>
                         <div class="the_data"><input type="" name="" placeholder="日期區間" value="2018/08/23 - 2018/08/30"></div>
                     </div>
-                    <div class="btn"><a class="btn_style popup-link" href="event_create.html"><i class="far fa-image"></i>新增活動照片</a></div>
+                    <div class="btn"><a class="btn_style popup-link" href="#popup3"><i class="far fa-image"></i>新增活動照片</a></div>
                     <!-- 點了新增活動照片，先選那一個活動再上傳照片 -->
                 </div>
                 <div class="event_photo">
@@ -445,7 +445,7 @@ $(document).ready(function() {
 
 <div id="popup2" class="white-popup mfp-hide width-S">
     <div class="fansBox clearfix">
-        <div class="top_title">
+        <div class="top_title clearfix">
             <h3 class="title">關注對象</h3>
             <div class="searchUser"><input type="text" name="" placeholder="搜尋" value=""></div> <!-- 20180522新增搜尋欄位 -->
         </div>
@@ -550,105 +550,56 @@ $(document).ready(function() {
     </div>
 </div>
 <div id="popup3" class="white-popup mfp-hide width-S">
-    <div class="fansBox">
-        <div class="top_title">
-            <h3 class="title">查看名單/核可</h3>
+    <div class="fansBox pop_addPhoto">
+        <div class="top_title clearfix">
+            <h3 class="title">新增活動照片</h3><p class="sub">請選擇上傳的活動照片位置</p>
         </div>
-        <ul class="interactiveBox go_approve">
-            <li class="clearfix"><!-- 最新加入的在最上面 -->
-                <div class="lBox clearfix">
-                    <a class="theFans" href="#" style="background-image:url(images/photo/05.jpg);"></a>
-                    <p class="name"><a href="#">Rana Liu</a></p><!-- ID有沒有限制最多長度？ -->
-                </div>
-                <div class="rBox">
-                    <p class="add_user"><a class="follow approve" href="#">核可</a></p>
-                </div>
+        <ul>
+            <li>
+                <a><h3 class="title">滑雪人必去的朝聖地</h3>
+                    <p class="day">2015-06-16(二) ~ 2018-12-31(一)</p>
+                </a>
             </li>
-            <li class="clearfix">
-                <div class="lBox clearfix">
-                    <a class="theFans" href="#" style="background-image:url(images/photo/01.jpg);"></a>
-                    <p class="name"><a href="#">王小白</a></p>
-                </div>
-                <div class="rBox">
-                    <p class="add_user"><a class="follow send" href="#">已核可</a></p>
-                </div>
+            <li>
+                <a><h3 class="title">活動名稱</h3>
+                    <p class="day">2015-06-16(二) ~ 2018-12-31(一)</p>
+                </a>
             </li>
-            <li class="clearfix">
-                <div class="lBox clearfix">
-                    <a class="theFans" href="#" style="background-image:url(images/photo/03.jpg);"></a>
-                    <p class="name"><a href="#">jeffjwiojeo_w9e</a></p>
-                </div>
-                <div class="rBox">
-                    <p class="add_user"><a class="follow send" href="#">已核可</a></p>
-                </div>
+            <li>
+                <a><h3 class="title">活動名稱活動名稱活動名稱活動名</h3>
+                    <p class="day">2015-06-16(二) ~ 2018-12-31(一)</p>
+                </a>
             </li>
-            <li class="clearfix">
-                <div class="lBox clearfix">
-                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/22049908_10203617073423619_3611267303700684978_n.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=d7240428b85c74870244ddb4f93b6ea5&oe=5B53771B);"></a>
-                    <p class="name"><a href="#">孫姣姣</a></p>
-                </div>
-                <div class="rBox">
-                    <p class="add_user"><a class="follow send" href="#">已核可</a></p>
-                </div>
+            <li>
+                <a><h3 class="title">滑雪人必去的朝聖地</h3>
+                    <p class="day">2015-06-16(二) ~ 2018-12-31(一)</p>
+                </a>
             </li>
-            <li class="clearfix">
-                <div class="lBox clearfix">
-                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/26756274_10216237225751771_2875696835444778457_o.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=3d2a918c4bf484d309e05c22774dcbe2&oe=5B5AF734);"></a>
-                    <p class="name"><a href="#">王民</a></p>
-                </div>
-                <div class="rBox">
-                    <p class="add_user"><a class="follow send" href="#">已核可</a></p>
-                </div>
+            <li>
+                <a><h3 class="title">滑雪人必去的朝聖地</h3>
+                    <p class="day">2018-08-16(二)</p>
+                </a>
             </li>
-            <li class="clearfix">
-                <div class="lBox clearfix">
-                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/12645125_1118236431534072_6067808022734031088_n.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=c266bb43efca2e8a9a92a66fb0003e6d&oe=5B63977A);"></a>
-                    <p class="name"><a href="#">薛櫻桃</a></p>
-                </div>
-                <div class="rBox">
-                    <p class="add_user"><a class="follow send" href="#">已核可</a></p>
-                </div>
+            <li>
+                <a><h3 class="title">活動名稱</h3>
+                    <p class="day">2015-06-16(二) ~ 2018-12-31(一)</p>
+                </a>
             </li>
-            <li class="clearfix">
-                <div class="lBox clearfix">
-                    <a class="theFans" href="#" style="background-image:url(images/photo/03.jpg);"></a>
-                    <p class="name"><a href="#">jeffjwiojeo_w9e</a></p>
-                </div>
-                <div class="rBox">
-                    <p class="add_user"><a class="follow send" href="#">已核可</a></p>
-                </div>
+            <li>
+                <a><h3 class="title">活動名稱活動名稱活動名稱活動名</h3>
+                    <p class="day">2015-06-16(二) ~ 2018-12-31(一)</p>
+                </a>
             </li>
-            <li class="clearfix">
-                <div class="lBox clearfix">
-                    <a class="theFans" href="#" style="background-image:url(https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/22049908_10203617073423619_3611267303700684978_n.jpg?_nc_fx=ftpe7-3&_nc_cat=0&oh=d7240428b85c74870244ddb4f93b6ea5&oe=5B53771B);"></a>
-                    <p class="name"><a href="#">孫姣姣</a></p>
-                </div>
-                <div class="rBox">
-                    <p class="add_user"><a class="follow send" href="#">已核可</a></p>
-                </div>
+            <li>
+                <a><h3 class="title">滑雪人必去的朝聖地</h3>
+                    <p class="day">2015-06-16(二) ~ 2018-12-31(一)</p>
+                </a>
             </li>
-        </ul>
-        <ul class="photos clearfix"><!-- 選了照片＋p_selected -->
-            <li><a class="photo p_selected" style="background-image:url(images/photo/03.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/02.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
-            <li><a class="photo p_selected" style="background-image:url(images/photo/01.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/05.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
-            <li><a class="photo p_selected" style="background-image:url(images/photo/04.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/02.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/05.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/04.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/02.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/03.jpg);"></a></li>
-            <li><a class="photo" style="background-image:url(images/photo/01.jpg);"></a></li>
+            <li>
+                <a><h3 class="title">滑雪人必去的朝聖地</h3>
+                    <p class="day">2018-08-16(二)</p>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
