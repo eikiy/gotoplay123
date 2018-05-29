@@ -153,7 +153,7 @@ body{ min-width: 320px;}
 .index_mainBanner::after{position: absolute; content: ""; width: 100%; height: 500px; display: block; z-index: 13; top: 0; left: 0; background-color: rgba(169, 227, 255, 0.3); /*-webkit-filter:blur(3px);*/ }
 .index_mainBanner p.source{ color: #fff; position: absolute; right: 2%; bottom: 10px; z-index: 14;}
 
-.main_searchBox{ width: 950px; height: 60px; background-color: rgb(0,0,0,.5); position: absolute; top: 50%; margin-top: -30px; left: 50%; margin-left: -475px; z-index: 14;}
+.main_searchBox{ width: 950px; height: 60px; background-image: url(../images/br_00.png); background-position: 0 0 ; background-repeat: repeat;  position: absolute; top: 50%; margin-top: -30px; left: 50%; margin-left: -475px; z-index: 14;}
 .main_searchBox .the_item{ width:calc( (100% - 152px) / 4); float: left; position: relative; }
 .main_searchBox .the_item .form-select{  float: left; border:none; display: block; background-color: transparent; width: 100%; height: 60px; padding: 0px 10px 0px 20px; font-size: 15px; line-height: 60px;  color: #fff; -webkit-appearance: none;/* Chrome */ -moz-appearance: none;/* Firefox */	text-indent: 0.01px text-overflow: ' '; /* space */}
 .main_searchBox .the_item .form-select::-ms-expand{  display: none;}/*IE 10 */
@@ -790,7 +790,7 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.HeaderBox .Menu ul.menu{padding-left: 35px;}
 	.HeaderBox .Menu ul.menu li p a{padding: 10px 24px 25px 24px;}
 	.HeaderBox .Menu .searchBox{max-width: 170px;}
-	.middle_contents .leftBox .AdBox .ad300x100:nth-child(4){ display: inline-block; }
+	.middle_contents .leftBox .AdBox .ad300x100:nth-child(3){ display:none; }
 	.event_preview .leftBox{width: 95%;}
 
 	.user_inside .leftBox .the_event .photo{ max-width: 245px;}
@@ -1093,6 +1093,8 @@ ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
 	.HeaderBox .Menu .searchBox{ max-width: 145px;}
 	.HeaderBox .Menu .other_tools{padding-right: 24px; }
 }
+
+@media (max-device-width:1440px) {.main_kv_video{ background-position: center center; background-image: url(../images/gallery/banner_01.jpg); background-repeat: no-repeat; background-size: cover;}}
 @media (max-device-width:1240px) {.card_BidBox{background-attachment: inherit; background-size: cover;}}
 @media (max-device-width:600px) {.FooterBox .downloadAppBox .lBox ul li a.qrcode{display: none;}}
 
