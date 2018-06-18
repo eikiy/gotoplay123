@@ -265,6 +265,7 @@ body{ min-width: 320px;}
 .fillinBox input.tbox::-ms-input-placeholder, .fillinBox textarea.tbox::-ms-input-placeholder { color: #888888;}/* Internet Explorer 10+ */
 .fillinBox input.tbox[type=text], .fillinBox textarea.tbox[type=text]{ -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out;  outline: none;}
 .fillinBox input.tbox[type=text]:focus, .fillinBox textarea.tbox[type=text]:focus { background-color: #faf4ed;}
+.fillinBox input.tbox.required, .fillinBox input.tbox.required:focus{ background-color: #fff1fd;}
 
 .fillinBox p.p_s_note{ font-size: 13px; color: #9e9e9e; padding:0 15px 10px 15px; }
 .fillinBox p.for_note{ color: #F94F4F; font-size: 13px; padding-bottom: 15px; position: relative; }
@@ -384,6 +385,7 @@ body{ min-width: 320px;}
 .editBox .btn_both{ text-align: center; max-width: inherit; }
 .editBox .btn_both .btn_style{ display: inline-block; width: 50%; max-width: 240px ; margin: 0 5px;}
 .editBox .btn .btn_org{background-color: #f08700;}
+.editBox .btn .btn_k{ background-color: #494744; }
 .editBox p.goback{text-align: center; padding: 10px 0 20px 0;}
 .editBox p.goback a{color: #68b82d;}
 .editBox p.goback a:hover{text-decoration: underline;}
