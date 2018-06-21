@@ -259,9 +259,9 @@
                         <label for=""><p class="label_title"><span class="f_red">*</span>活動限制說明<span>(可複選)</span></p></label>
                         <ul class="event_type clearfix">
                             <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>無限制</p></label></li><!-- 勾選"無限制"這項目，後面不能勾選了 disabled掉。 -->
-                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>活動人數</p></label></li>
-                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>年齡限制</p></label></li>
-                            <li class="clearfix"><input class="the_radio" type="checkbox" checked><label for=""><p>評價限制</p></label><input class="tbox t50" id="" name="" type="text" placeholder="例如：最少3顆星" value=""></li><!-- 。 -->
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>活動人數</p><input class="tbox t50" id="" name="" type="text" placeholder="例如：最少3顆星" value=""><p>人以內</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>年齡限制</p><input class="tbox t50" id="" name="" type="text" placeholder="例如：最少3顆星" value=""><p>歲以下</p></label></li>
+                            <li class="clearfix"><input class="the_radio" type="checkbox" checked><label for=""><p>評價限制</p></label><input class="tbox t50" id="" name="" type="text" placeholder="例如：最少3顆星" value=""><p>分以上</p></li><!-- 。 -->
                             <li class="clearfix"><input class="the_radio" type="checkbox"><label for=""><p>其他</p></label></li>
                         </ul>
                     </li>
@@ -288,7 +288,7 @@
                         <div class="radio_select clearfix">
                             <input class="the_radio" type="radio" name="text" value="p01"><label for=""><span>免費用</span></label>
                             <input class="the_radio" type="radio" name="text" value="p02" checked><label for=""><span>固定費用</span></label>
-                            <input class="the_radio" type="radio" name="text" value="p03"><label for=""><span>按人數均攤</span></label>
+                            <input class="the_radio" type="radio" name="text" value="p03"><label for=""><span>按人數均攤費用</span></label>
                         </div>
                         <textarea class="tbox" placeholder="請填寫費用說明">費用包含：D0民宿費、D1早餐、中巴來回車資、300萬意外險附加5萬意外醫療險、入山證代辦服務費、嚮導費、慶功宴。</textarea>
                     </li>
@@ -337,8 +337,11 @@
                         <textarea class="tbox" placeholder="請填寫路線規劃內容"></textarea>
                     </li>
                     <li>
-                        <label for=""><p class="label_title">活動 LINE 群族二維碼</p></label>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>活動 LINE 群族連結</p></label>
                         <input class="tbox t50" id="" name="" type="text" value="" placeholder="請填寫 LINE 群族邀請網址">
+                    </li>
+                    <li>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>活動 LINE 群族二維碼</p></label>
                         <div class="upload_files">
                             <div class="files_name"><!-- 點選上傳選擇相片後才會顯示 files_name 這欄位，icon+檔名 按XX刪除 -->
                                 <p><i class="fas fa-qrcode"></i> IMG_5832.PNG<a><i class="none fas fa-times"></i></a></p>
@@ -347,7 +350,7 @@
                         </div>
                     </li>
                     <li>
-                        <label for=""><p class="label_title">備註</p></label>
+                        <label for=""><p class="label_title"><span class="f_red">*</span>備註</p></label>
                         <textarea class="tbox"></textarea>
                     </li>
                 </ul>
