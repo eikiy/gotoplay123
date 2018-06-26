@@ -208,10 +208,11 @@ body{ min-width: 320px;}
 
 .FooterBox .serviceBox .infoBox .followUsBox{ width: 100%; }
 .FooterBox .serviceBox .infoBox p.icon{ text-align: left; }
-.FooterBox .serviceBox .infoBox .followUsBox p.icon a{width: 40px; height: 40px; display: inline-block;  -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; overflow: hidden; margin-right: 10px;}
-.FooterBox .serviceBox .infoBox .followUsBox p.icon a.fb{ background: url(../images/follow_us_icon_fb.png) center center no-repeat; background-size: contain;}
-.FooterBox .serviceBox .infoBox .followUsBox p.icon a.youtube{ background: url(../images/follow_us_icon_youtube.png) center center no-repeat; background-size: contain;}
-.FooterBox .serviceBox .infoBox .followUsBox p.icon a.line{ background: url(../images/follow_us_icon_line.png) center center no-repeat; background-size: contain;}
+.FooterBox .serviceBox .infoBox .followUsBox p.icon a{width: 40px; height: 40px; display: inline-block; background-repeat: no-repeat; background-position: center center; background-size: contain;  -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; overflow: hidden; margin-right: 10px;}
+.FooterBox .serviceBox .infoBox .followUsBox p.icon a.fb{ background-image: url(../images/follow_us_icon_fb.png);}
+.FooterBox .serviceBox .infoBox .followUsBox p.icon a.youtube{ background-image: url(../images/follow_us_icon_youtube.png);}
+.FooterBox .serviceBox .infoBox .followUsBox p.icon a.line{ background-image: url(../images/follow_us_icon_line.png);}
+.FooterBox .serviceBox .infoBox .followUsBox p.icon a.ig{ background-image: url(../images/follow_us_icon_ig.png);}
 .FooterBox .serviceBox .infoBox .followUsBox p.icon a:hover{ opacity: .9; }
 
 .FooterBox .serviceBox .infoBox .shareUsBox{ width: 100%; }
